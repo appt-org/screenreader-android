@@ -69,6 +69,9 @@
 
     <!-- Toolbar -->
     <style name="Toolbar" parent="ThemeOverlay.AppCompat.DayNight.ActionBar">
+        <item name="fontPath">@string/font_bold</item>
+        <item name="android:accessibilityHeading" tools:targetApi="p">true</item>
+
         <item name="android:background">@color/background</item>
         <item name="android:textColor">@color/foreground</item>
         <item name="colorControlNormal">@color/primary</item>
