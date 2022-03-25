@@ -1,16 +1,154 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.Screenreader" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryVariant">@color/primary</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/primary</item>
-        <item name="colorSecondaryVariant">@color/primary</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/background</item>
-        <!-- Customize your theme here. -->
+    <style name="Theme.App" parent="Theme">
+        <!-- Can be overridden -->
+    </style>
+
+    <!-- Base Theme -->
+    <style name="Theme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/highlight</item>
+        <item name="colorSurface">@color/colorPrimary</item>
+        <item name="colorOnSurfaceVariant">@color/colorAccent</item>
+
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textColorPrimary">@color/foreground</item>
+
+        <item name="homeAsUpIndicator">@drawable/icon_back</item>
+
+        <item name="android:actionMenuTextColor">@color/foreground</item>
+        <item name="android:actionMenuTextAppearance">@style/Menu.TextAppearance</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">@bool/light_mode</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+
+        <item name="alertDialogTheme">@style/Dialog</item>
+        <item name="bottomNavigationStyle">@style/Widget.BottomNavigationView</item>
+    </style>
+
+    <!-- WebView -->
+    <style name="WebView">
+        <item name="colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="Dialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowTitleStyle">@style/Dialog.Title</item>
+        <item name="buttonBarButtonStyle">@style/Dialog.Button</item>
+        <item name="fontPath">@string/font_regular</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Dialog.Title">
+        <item name="fontPath">@string/font_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Title" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20sp</item> <!-- Dialog title text size -->
+    </style>
+
+    <style name="TextAppearance.AppCompat.Subhead" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">18sp</item> <!-- Dialog message text size -->
+    </style>
+
+    <style name="Dialog.Button" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="fontPath">@string/font_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Toast -->
+    <style name="Toast" parent="Dialog">
+        <item name="android:gravity">center</item>
+        <item name="fontPath">@string/font_semibold</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Toolbar" parent="ThemeOverlay.AppCompat.DayNight.ActionBar">
+        <item name="android:background">@color/background</item>
+        <item name="android:textColor">@color/foreground</item>
+        <item name="colorControlNormal">@color/primary</item>
+        <item name="colorControlHighlight">@color/primary</item>
+    </style>
+
+    <style name="Toolbar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="fontPath">@string/font_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Menu -->
+    <style name="Menu.TextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="fontPath">@string/font_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Widgets -->
+    <style name="Widget">
+        <!-- Empty -->
+    </style>
+
+    <style name="Widget.TextView">
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@color/foreground</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget.TextView.EditTextLabel">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.TextView.Bold">
+        <item name="fontPath">@string/font_bold</item>
+    </style>
+
+    <style name="Widget.TextView.SemiBold">
+        <item name="fontPath">@string/font_semibold</item>
+    </style>
+
+    <style name="Widget.TextView.Training">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_small</item>
+        <item name="android:paddingBottom">@dimen/margin_small</item>
+        <item name="android:paddingStart">@dimen/margin_medium</item>
+        <item name="android:paddingEnd">@dimen/margin_medium</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="Widget.TextView.Training.Bold">
+        <item name="fontPath">@string/font_bold</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="fontPath">@string/font_semibold</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.Button" parent="TextAppearance.AppCompat.Button">
+        <item name="fontPath">@string/font_semibold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="Widget.ViewPagerToolbar">
+        <item name="tabTextAppearance">@style/Toolbar.Title</item>
+        <item name="tabSelectedTextColor">@color/primary</item>
+        <item name="tabIndicatorColor">@color/primary</item>
+        <item name="tabTextColor">@color/foreground</item>
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="Widget.TextView.CheckBox">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
     </style>
 </resources>

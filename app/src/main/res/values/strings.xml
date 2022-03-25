@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">ScreenReader</string>
 
+    <!-- Fonts -->
+    <string name="font_regular" translatable="false">fonts/open_sans_regular.ttf</string>
+    <string name="font_semibold" translatable="false">fonts/open_sans_semibold.ttf</string>
+    <string name="font_bold" translatable="false">fonts/open_sans_bold.ttf</string>
+
+    <!-- Tabs -->
     <string name="tab_home">Home</string>
     <string name="tab_gestures">Gestures</string>
     <string name="tab_actions">Actions</string>
     <string name="tab_more">More</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
