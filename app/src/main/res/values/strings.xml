@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ScreenReader</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_gestures">Gestures</string>
+    <string name="tab_actions">Actions</string>
+    <string name="tab_more">More</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

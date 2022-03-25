@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabs"
+    app:startDestination="@id/tab_home">
+
+    <fragment
+        android:id="@+id/tab_home"
+        android:name="app.screenreader.tabs.HomeFragment"
+        android:layout="@layout/fragment_list"
+        android:label="@string/tab_home"
+        tools:layout="@layout/fragment_list"/>
+
+    <fragment
+        android:id="@+id/tab_gestures"
+        android:name="app.screenreader.tabs.GesturesFragment"
+        android:label="@string/tab_gestures"
+        tools:layout="@layout/fragment_list"/>
+
+    <fragment
+        android:id="@+id/tab_actions"
+        android:name="app.screenreader.tabs.ActionsFragment"
+        android:label="@string/tab_actions"
+        tools:layout="@layout/fragment_list"/>
+
+    <fragment
+        android:id="@+id/tab_more"
+        android:name="app.screenreader.tabs.MoreFragment"
+        android:label="@string/tab_more"
+        tools:layout="@layout/fragment_list" />
+</navigation>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">@color/background</color>
+    <color name="colorPrimaryDark">@color/background</color>
+    <color name="colorAccent">@color/primary</color>
+
     <color name="primary">#d023be</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="highlight">#80d023be</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+
+    <color name="foreground">#111</color>
+    <color name="background">#fff</color>
+    <color name="divider">#c6c6c6</color>
+    <color name="disabled">#757575</color>
 </resources>
