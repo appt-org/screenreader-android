@@ -24,6 +24,9 @@
         <item name="android:statusBarColor">@color/background</item>
         <item name="android:windowBackground">@color/background</item>
 
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
         <item name="alertDialogTheme">@style/Dialog</item>
         <item name="bottomNavigationStyle">@style/Widget.BottomNavigationView</item>
     </style>
@@ -68,7 +71,7 @@
     </style>
 
     <!-- Toolbar -->
-    <style name="Toolbar" parent="ThemeOverlay.AppCompat.DayNight.ActionBar">
+    <style name="Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
         <item name="fontPath">@string/font_bold</item>
         <item name="android:accessibilityHeading" tools:targetApi="p">true</item>
 
@@ -140,14 +143,6 @@
         <item name="android:textSize">18sp</item>
         <item name="android:layout_marginStart">16dp</item>
         <item name="android:layout_marginEnd">16dp</item>
-    </style>
-
-    <style name="Widget.ViewPagerToolbar">
-        <item name="tabTextAppearance">@style/Toolbar.Title</item>
-        <item name="tabSelectedTextColor">@color/primary</item>
-        <item name="tabIndicatorColor">@color/primary</item>
-        <item name="tabTextColor">@color/foreground</item>
-        <item name="android:background">@color/background</item>
     </style>
 
     <style name="Widget.TextView.CheckBox">
