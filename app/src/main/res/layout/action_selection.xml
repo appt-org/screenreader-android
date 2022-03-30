@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Instructions -->
+        <TextView style="@style/Widget.TextView.Training"
+            android:id="@+id/textView1"
+            android:text="@string/talkback_action_select_instruction1" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:id="@+id/textView2"
+            android:text="@string/talkback_action_select_instruction2" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:id="@+id/textView3"
+            android:text="@string/talkback_action_select_instruction3" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:id="@+id/textView4"
+            android:text="@string/talkback_action_select_instruction4" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:id="@+id/textView5"
+            android:text="@string/talkback_action_select_instruction5" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:id="@+id/textView6"
+            android:text="@string/talkback_action_select_instruction6" />
+
+        <!-- Action -->
+        <app.screenreader.views.TrainingField
+            style="@style/Widget.TextView.Training.Bold"
+            android:id="@+id/trainingField"
+            android:padding="@dimen/margin_medium"
+            android:layout_margin="0dp"
+            android:text="@string/talkback_action_select_text"/>
+
+    </LinearLayout>
+</ScrollView>

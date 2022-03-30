@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerView"
+    style="@style/Widget.TextView.Bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:accessibilityHeading="true"
+    android:background="@color/background"
+    android:paddingStart="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_medium"
+    android:paddingEnd="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_small"
+    tools:text="Header" />

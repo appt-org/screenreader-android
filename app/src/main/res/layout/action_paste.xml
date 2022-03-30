@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Instructions -->
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/talkback_action_paste_instruction1" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/talkback_action_paste_instruction2" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/talkback_action_paste_instruction3" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/talkback_action_paste_instruction4" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/talkback_action_paste_instruction5" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/talkback_action_paste_instruction6" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/talkback_action_paste_instruction7" />
+
+        <!-- Action -->
+        <app.screenreader.views.TrainingField
+            style="@style/Widget.TextView.Training.Bold"
+            android:id="@+id/trainingField"
+            android:padding="@dimen/margin_medium"
+            android:layout_margin="0dp"
+            android:hint="@string/talkback_action_paste_text"/>
+    </LinearLayout>
+</ScrollView>

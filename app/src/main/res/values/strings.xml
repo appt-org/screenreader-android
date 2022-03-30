@@ -8,7 +8,266 @@
 
     <!-- Tabs -->
     <string name="tab_home">Home</string>
-    <string name="tab_gestures">Gestures</string>
-    <string name="tab_actions">Actions</string>
-    <string name="tab_more">More</string>
+    <string name="tab_gestures">Gebaren</string>
+    <string name="tab_actions">Acties</string>
+    <string name="tab_more">Meer</string>
+
+    <!-- Actions -->
+    <string name="loading">Aan het laden, even geduld</string>
+    <string name="action_ok">Oké</string>
+    <string name="action_confirm">Bevestigen</string>
+    <string name="action_cancel">Annuleren</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="action_info">Informatie</string>
+    <string name="action_share">Delen</string>
+    <string name="action_share_article">Deel artikel</string>
+    <string name="action_filter">Filteren</string>
+    <string name="action_apply">Toepassen</string>
+    <string name="action_practice">Oefenen</string>
+    <string name="action_activate">Activeren</string>
+    <string name="action_explanation">Uitleg</string>
+    <string name="action_stop">Stoppen</string>
+    <string name="action_continue">Doorgaan</string>
+    <string name="action_skip">Overslaan</string>
+
+    <!-- Training -->
+    <string name="training_accessibility_label">Afgerond. \'%1$s\'</string>
+
+    <!-- Courses -->
+    <string name="course_talkback_gestures_title">1. TalkBack gebaren</string>
+    <string name="course_talkback_enable_title">2. TalkBack aanzetten</string>
+    <string name="course_talkback_actions_title">3. TalkBack acties</string>
+
+    <!-- Topic -->
+    <string name="topic_terms_title">Algemene Voorwaarden</string>
+    <string name="topic_privacy_title">Privacybeleid</string>
+    <string name="topic_accessibility_title">Toegankelijkheidsverklaring</string>
+    <string name="topic_source_title">Broncode</string>
+    <string name="topic_sponsor_title">SIDN Fonds</string>
+    <string name="topic_profile_title">Mijn profiel</string>
+    <string name="topic_contact_title">Contact</string>
+
+    <!-- TalkBack -->
+    <string name="talkback_enable_title">TalkBack aanzetten</string>
+    <string name="talkback_enable_text">Voordat je TalkBack aanzet is het verstandig om eerst de gebaren te leren.\n\nJe kunt TalkBack op twee manieren aanzetten.\n\nManier 1:\n1. Open de Instellingen-app\n2. Scroll naar onderen, tik op Toegankelijkheid\n3. Tik op TalkBack\n4. Zet de schakelaar aan\n\nManier 2:\n1. Open de Instellingen-app\n2. Scroll naar onderen, tik op Toegankelijkheid\n3. Tik op Sneltoets via volumeknop\n4. Zet de schakelaar aan\n5. Tik op Service van sneltoets\n6. Tik op TalkBack\n7. Tik op Toestaan in het dialoogvenster\n8. Houd beide volumeknoppen drie seconden ingedrukt\n\nLet op: de tweede manier werkt alleen op toestellen met Android versie 8 of hoger.</string>
+
+    <string name="talkback_disabled_title">TalkBack staat uit</string>
+    <string name="talkback_disabled_explanation">Je moet TalkBack aanzetten om deze training te volgen.</string>
+
+    <!-- One finger swipe -->
+    <string name="gesture_one_finger_touch_title">Het scherm verkennen</string>
+    <string name="gesture_one_finger_touch_description">Raak het scherm met 1 vinger aan.</string>
+    <string name="gesture_one_finger_touch_explanation">Wanneer je het scherm aanraakt wordt de inhoud onder in je vinger voorgelezen. Dit is een handige manier om te ontdekken hoe een scherm precies in elkaar zit.</string>
+
+    <string name="gesture_one_finger_swipe_up_title">Instelling omhoog aanpassen</string>
+    <string name="gesture_one_finger_swipe_up_description">Veeg met 1 vinger omhoog.</string>
+    <string name="gesture_one_finger_swipe_up_explanation">Door omhoog te vegen ga je naar de vorige instelling. Zo stel je bijvoorbeeld in om te navigeren via links. Of je kunt de waarde van een schuifregelaar ophogen.</string>
+
+    <string name="gesture_one_finger_swipe_down_title">Instelling omlaag aanpassen</string>
+    <string name="gesture_one_finger_swipe_down_description">Veeg met 1 vinger omlaag.</string>
+    <string name="gesture_one_finger_swipe_down_explanation">Door omlaag te vegen ga je naar de volgende instelling. Zo stel je bijvoorbeeld in om te navigeren via koppen. Of je kunt de waarde van een schuifregelaar verlagen.</string>
+
+    <string name="gesture_one_finger_swipe_right_title">Naar het volgende onderdeel gaan</string>
+    <string name="gesture_one_finger_swipe_right_description">Veeg met 1 vinger naar rechts.</string>
+    <string name="gesture_one_finger_swipe_right_explanation">Door naar rechts te vegen verken je het scherm van links naar rechts en daarna van boven naar beneden.</string>
+
+    <string name="gesture_one_finger_swipe_left_title">Naar het vorige onderdeel gaan</string>
+    <string name="gesture_one_finger_swipe_left_description">Veeg met 1 vinger naar links.</string>
+    <string name="gesture_one_finger_swipe_left_explanation">Door naar links te vegen verken je het scherm van rechts naar links en daarna van beneden naar boven.</string>
+
+    <!-- Two finger swipe -->
+    <string name="gesture_two_finger_swipe_up_title">Omhoog scrollen</string>
+    <string name="gesture_two_finger_swipe_up_description">Veeg met 2 vingers omhoog.</string>
+    <string name="gesture_two_finger_swipe_up_explanation">In lijsten kun je met dit gebaar omhoog scrollen.</string>
+
+    <string name="gesture_two_finger_swipe_down_title">Omlaag scrollen</string>
+    <string name="gesture_two_finger_swipe_down_description">Veeg met 2 vingers omlaag.</string>
+    <string name="gesture_two_finger_swipe_down_explanation">In lijsten kun je met dit gebaar omlaag scrollen.</string>
+
+    <string name="gesture_two_finger_swipe_right_title">Naar rechts scrollen</string>
+    <string name="gesture_two_finger_swipe_right_description">Veeg met 2 vingers naar rechts.</string>
+    <string name="gesture_two_finger_swipe_right_explanation">In lijsten kun je met dit gebaar naar rechts scrollen. Soms kun je ook naar het volgende scherm navigeren met dit gebaar.</string>
+
+    <string name="gesture_two_finger_swipe_left_title">Naar links scrollen</string>
+    <string name="gesture_two_finger_swipe_left_description">Veeg met 2 vingers naar links.</string>
+    <string name="gesture_two_finger_swipe_left_explanation">In lijsten kun je met dit gebaar naar links scrollen. Soms kun je ook naar het vorige scherm navigeren met dit gebaar.</string>
+
+    <!-- Three finger swipe -->
+    <string name="gesture_three_finger_swipe_up_title">Naar de vorige leesinstelling gaan</string>
+    <string name="gesture_three_finger_swipe_up_description">Veeg met 3 vingers omhoog.</string>
+    <string name="gesture_three_finger_swipe_up_explanation">Door dit gebaar te gebruiken verspring je naar de vorige leesinstelling, bijvoorbeeld van \'Koppen\' naar \'Links\'.</string>
+
+    <string name="gesture_three_finger_swipe_down_title">Naar de volgende leesinstelling gaan</string>
+    <string name="gesture_three_finger_swipe_down_description">Veeg met 3 vingers omlaag.</string>
+    <string name="gesture_three_finger_swipe_down_explanation">Door dit gebaar te gebruiken verspring je naar de vorige leesinstelling, bijvoorbeeld van \'Links\' naar \'Koppen\'.</string>
+
+    <!-- One finger tap -->
+    <string name="gesture_one_finger_double_tap_title">Het geselecteerde onderdeel activeren</string>
+    <string name="gesture_one_finger_double_tap_description">Tik met 1 vinger 2 keer op het scherm.</string>
+    <string name="gesture_one_finger_double_tap_explanation">Door twee keer op het scherm te tikken kun je bijvoorbeeld een knop activeren.</string>
+
+    <string name="gesture_one_finger_double_tap_hold_title">Het geselecteerde onderdeel lang indrukken</string>
+    <string name="gesture_one_finger_double_tap_hold_description">Tik met 1 vinger 2 keer en houd vast.</string>
+    <string name="gesture_one_finger_double_tap_hold_explanation">In veel apps verschijnt er een menu met opties wanneer je dit gebaar gebruikt. In een lijst kun je op deze manier meestal acties uitvoeren op het geselecteerde onderdeel.</string>
+
+    <string name="gesture_one_finger_triple_tap_hold_title">Dubbeltikken op het geselecteerde onderdeel</string>
+    <string name="gesture_one_finger_triple_tap_hold_description">Tik met 1 vinger 3 keer op het scherm</string>
+    <string name="gesture_one_finger_triple_tap_hold_explanation">In sommige apps is het nodig om te dubbeltikken om bepaalde handelingen uit te voeren.</string>
+
+    <!-- Two finger tap -->
+    <string name="gesture_two_finger_tap_title">Spraak pauzeren of hervatten</string>
+    <string name="gesture_two_finger_tap_description">Tik met 2 vingers op het scherm.</string>
+    <string name="gesture_two_finger_tap_explanation">Met dit gebaar kun je de spraak van TalkBack pauzeren of hervatten.</string>
+
+    <string name="gesture_two_finger_double_tap_title">Huidige handeling starten of stoppen</string>
+    <string name="gesture_two_finger_double_tap_description">Tik met 2 vingers 2 keer op het scherm.</string>
+    <string name="gesture_two_finger_double_tap_explanation">Je kunt handelingen zoals telefoongesprekken en media starten of stoppen. Een telefoongesprek kan je opnemen of ophangen. Een video kan je pauzeren of afspelen.</string>
+
+    <string name="gesture_two_finger_double_tap_hold_title">Selectiemodus starten of beëindigen</string>
+    <string name="gesture_two_finger_double_tap_hold_description">Tik met 2 vingers 2 keer en houd vast.</string>
+    <string name="gesture_two_finger_double_tap_hold_explanation">Dit gebaar kun je gebruik als je snel tekst wilt selecteren of deselecteren.</string>
+
+    <string name="gesture_two_finger_triple_tap_title">Vanaf volgende lezen</string>
+    <string name="gesture_two_finger_triple_tap_description">Tik met 2 vingers 3 keer op het scherm.</string>
+    <string name="gesture_two_finger_triple_tap_explanation">Door dit gebaar te gebruiken wordt alle inhoud op het scherm voorgelezen vanaf het onderdeel dat je hebt geselecteerd.</string>
+
+    <!-- Three finger tap -->
+    <string name="gesture_three_finger_tap_title">TalkBack-menu openen</string>
+    <string name="gesture_three_finger_tap_description">Tik met 3 vingers 1 keer op het scherm.</string>
+    <string name="gesture_three_finger_tap_explanation">Via het TalkBack-menu kun je acties op het geselecteerde element uitvoeren.</string>
+
+    <string name="gesture_three_finger_double_tap_title">Tekst kopiëren</string>
+    <string name="gesture_three_finger_double_tap_description">Tik met 3 vingers 2 keer op het scherm.</string>
+    <string name="gesture_three_finger_double_tap_explanation">Dit gebaar is de snelste manier om tekst te kopiëren.</string>
+
+    <string name="gesture_three_finger_double_tap_hold_title">Tekst knippen</string>
+    <string name="gesture_three_finger_double_tap_hold_description">Tik met 3 vingers 2 keer en houd vast.</string>
+    <string name="gesture_three_finger_double_tap_hold_explanation">Dit gebaar is de snelste manier om tekst te knippen.</string>
+
+    <string name="gesture_three_finger_triple_tap_title">Tekst plakken</string>
+    <string name="gesture_three_finger_triple_tap_description">Tik met 3 vingers 3 keer op het scherm.</string>
+    <string name="gesture_three_finger_triple_tap_explanation">Dit gebaar is de snelste manier om tekst te plakken.</string>
+
+    <!-- Four finger tap -->
+    <string name="gesture_four_finger_tap_title">Oefenmodus voor gebaren</string>
+    <string name="gesture_four_finger_tap_description">Tik met 4 vingers 1 keer op het scherm.</string>
+    <string name="gesture_four_finger_tap_explanation">Nadat je dit gebaar gebruikt wordt de oefenmodus voor TalkBack gebaren geopend.</string>
+
+    <string name="gesture_four_finger_double_tap_title">Hulp bij gebruiken van TalkBack</string>
+    <string name="gesture_four_finger_double_tap_description">Tik met 4 vingers 2 keer op het scherm.</string>
+    <string name="gesture_four_finger_double_tap_explanation">Nadat je dit gebaar gebruikt verschijnt informatie die je helpt bij het gebruiken van TalkBack.</string>
+
+    <string name="gesture_four_finger_double_tap_hold_title">Aanrakingen direct doorgeven</string>
+    <string name="gesture_four_finger_double_tap_hold_description">Tik met 4 vingers 2 keer en houd vast.</string>
+    <string name="gesture_four_finger_double_tap_hold_explanation">Nadat je dit gebaar te gebruikt worden alle aanrakingen direct aan de app doorgegeven. Hierdoor is het bijvoorbeeld mogelijk om je handtekening te zetten.</string>
+
+    <!-- Shortcuts -->
+    <string name="gesture_one_finger_swipe_down_then_up_title">Naar het laatste onderdeel gaan</string>
+    <string name="gesture_one_finger_swipe_down_then_up_description">Veeg met 1 vinger omlaag en dan omhoog.</string>
+    <string name="gesture_one_finger_swipe_down_then_up_explanation">Met dit gebaar kun je direct naar het laatste element op het scherm verspringen. Dit is vaak een knop waarmee je een actie kunt uitvoeren.</string>
+
+    <string name="gesture_one_finger_swipe_up_then_down_title">Naar het eerste onderdeel gaan</string>
+    <string name="gesture_one_finger_swipe_up_then_down_description">Veeg met 1 vinger omhoog en dan omlaag.</string>
+    <string name="gesture_one_finger_swipe_up_then_down_explanation">Met dit gebaar kun je direct naar het eerste element op het scherm verspringen. Dit is vaak een knop om naar het vorige scherm te gaan.</string>
+
+    <string name="gesture_one_finger_swipe_right_then_left_title">Vooruit scrollen</string>
+    <string name="gesture_one_finger_swipe_right_then_left_description">Veeg met 1 vinger naar rechts en dan naar links.</string>
+    <string name="gesture_one_finger_swipe_right_then_left_explanation">Met dit gebaar kun je een klein stukje naar voren scrollen. Je kan dit ook doen door met twee vingers naar onder te vegen.</string>
+
+    <string name="gesture_one_finger_swipe_left_then_right_title">Terug scrollen</string>
+    <string name="gesture_one_finger_swipe_left_then_right_description">Veeg met 1 vinger naar links en dan naar rechts.</string>
+    <string name="gesture_one_finger_swipe_left_then_right_explanation">Met dit gebaar kun je een klein stukje terug scrollen. Je kan dit ook doen door met twee vingers omhoog te vegen.</string>
+
+    <string name="gesture_one_finger_swipe_down_then_left_title">Terug</string>
+    <string name="gesture_one_finger_swipe_down_then_left_description">Veeg met 1 vinger omlaag en dan naar links.</string>
+    <string name="gesture_one_finger_swipe_down_then_left_explanation">Dit gebaar is belangrijk om te onthouden! Je kunt met dit gebaar in bijna elke app naar het vorige scherm navigeren. Daarnaast kun je ook meldingen en popups sluiten.</string>
+
+    <string name="gesture_one_finger_swipe_up_then_left_title">Thuis</string>
+    <string name="gesture_one_finger_swipe_up_then_left_description">Veeg met 1 vinger omhoog en dan naar links.</string>
+    <string name="gesture_one_finger_swipe_up_then_left_explanation">Dit is de snelste manier om naar het thuisscherm te gaan.</string>
+
+    <string name="gesture_one_finger_swipe_left_then_up_title">Overzicht</string>
+    <string name="gesture_one_finger_swipe_left_then_up_description">Veeg met 1 vinger naar links en dan omhoog.</string>
+    <string name="gesture_one_finger_swipe_left_then_up_explanation">Dit is de snelste manier om je recente apps te bekijken.</string>
+
+    <string name="gesture_one_finger_swipe_right_then_down_title">Meldingen</string>
+    <string name="gesture_one_finger_swipe_right_then_down_description">Veeg met 1 vinger naar rechts en dan omlaag.</string>
+    <string name="gesture_one_finger_swipe_right_then_down_explanation">Dit is de snelste manier om je meldingen te bekijken. Je kunt ook met twee vingers bovenaan het scherm naar onder vegen.</string>
+
+    <string name="gesture_one_finger_swipe_left_then_down_title">Zoeken</string>
+    <string name="gesture_one_finger_swipe_left_then_down_description">Veeg met 1 vinger naar links en dan omlaag</string>
+    <string name="gesture_one_finger_swipe_left_then_down_explanation">Dit is een belangrijk gebaar om te onthouden. Nadat je dit gebaar uitvoert verschijnt er een zoekvenster. Typ waar je naar op zoek bent. Onder het zoekveld verschijnt een lijst met zoekresultaten. Veeg naar rechts tot je het gewenste zoekresultaat hebt geselecteerd. Dubbeltik om de focus te laten verspringen naar dit zoekresultaat.</string>
+
+    <string name="gesture_one_finger_swipe_up_then_right_title">Lokaal contextmenu</string>
+    <string name="gesture_one_finger_swipe_up_then_right_description">Veeg met 1 vinger omhoog en dan naar rechts.</string>
+    <string name="gesture_one_finger_swipe_up_then_right_explanation">Er verschijnt een menu met lokale acties nadat je dit gebaar gebruikt. Zo kun je bijvoorbeeld tekst uit het geselecteerde element kopiëren of plakken.</string>
+
+    <string name="gesture_one_finger_swipe_down_then_right_title">Algemeen contextmenu</string>
+    <string name="gesture_one_finger_swipe_down_then_right_description">Veeg met 1 vinger omlaag en dan naar rechts.</string>
+    <string name="gesture_one_finger_swipe_down_then_right_explanation">Er verschijnt een menu met algemene acties nadat je dit gebaar gebruikt. Je kunt bijvoorbeeld het scherm laten voorlezen of de laatste uiting naar het klembord kopiëren.</string>
+
+    <!-- TalkBack actions -->
+    <string name="talkback_action_headings_title">Navigeren via koppen</string>
+    <string name="talkback_action_links_title">Navigeren via links</string>
+    <string name="talkback_action_selection_title">Tekst selecteren</string>
+    <string name="talkback_action_copy_title">Kopiëren</string>
+    <string name="talkback_action_paste_title">Plakken</string>
+
+    <!-- TalkBack headings -->
+    <string name="talkback_action_headings_instruction1">Met TalkBack kun je via koppen navigeren. Dit is handig bij lange pagina\'s of websites. Zo navigeer je via koppen:</string>
+    <string name="talkback_action_headings_instruction2">1. Zet de navigatie-instelling op \'Koppen\' door met één vinger omlaag of omhoog te vegen.</string>
+    <string name="talkback_action_headings_instruction3">2. Veeg naar links om naar de vorige kop te navigeren, veeg naar rechts om naar de volgende kop te navigeren.</string>
+    <string name="talkback_action_headings_instruction4">Navigeer drie keer via koppen om de training af te ronden.</string>
+    <string name="talkback_action_headings_heading1">Kop 1</string>
+    <string name="talkback_action_headings_heading2">Kop 2</string>
+    <string name="talkback_action_headings_heading3">Kop 3</string>
+    <string name="talkback_action_headings_skip">Deze tekst sla je over wanneer je via kopregels navigeert.</string>
+
+    <!-- TalkBack links -->
+    <string name="talkback_action_links_instruction1">Met TalkBack kun je via links navigeren. Dit is handig om bijvoorbeeld websites en telefoonnummers te vinden. Zo navigeer je via links:</string>
+    <string name="talkback_action_links_instruction2">1. Zet de navigatie-instelling op \'Links\' door met één vinger omlaag of omhoog te vegen.</string>
+    <string name="talkback_action_links_instruction3">2. Veeg met één vinger naar rechts om naar de volgende link te navigeren.</string>
+    <string name="talkback_action_links_instruction4">Navigeer drie keer via links om de training af te ronden.</string>
+    <string name="talkback_action_links_heading1">Link 1: www.appt.nl</string>
+    <string name="talkback_action_links_heading2">Link 2: info@appt.nl</string>
+    <string name="talkback_action_links_heading3">Link 3: +31612345678</string>
+    <string name="talkback_action_links_skip">Deze tekst sla je over wanneer je via links navigeert.</string>
+
+    <!-- TalkBack select -->
+    <string name="talkback_action_select_instruction1">Zo selecteer je tekst:</string>
+    <string name="talkback_action_select_instruction2">1. Markeer het veld waar je tekst wilt selecteren.</string>
+    <string name="talkback_action_select_instruction3">2. Veeg omhoog en dan naar rechts om het lokale contextmenu te openen.</string>
+    <string name="talkback_action_select_instruction4">3. Kies de optie \'Opties bewerken\'.</string>
+    <string name="talkback_action_select_instruction5">4. Kies de optie \'Alles selecteren\'.</string>
+    <string name="talkback_action_select_instruction6">Selecteer alle tekst in het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="talkback_action_select_text">Selecteer deze tekst</string>
+
+    <!-- TalkBack copy -->
+    <string name="talkback_action_copy_instruction1">Zo kopieer je tekst:</string>
+    <string name="talkback_action_copy_instruction2">1. Selecteer de tekst die je wilt kopiëren. Weet je niet hoe dit moet? Volg dan eerst de training om tekst te selecteren.</string>
+    <string name="talkback_action_copy_instruction3">2. Veeg omhoog en dan naar rechts om het lokale contextmenu te openen.</string>
+    <string name="talkback_action_copy_instruction4">3. Kies de optie \'Opties bewerken\'.</string>
+    <string name="talkback_action_copy_instruction5">4. Kies de optie \'Kopiëren\'.</string>
+    <string name="talkback_action_copy_instruction6">Kopieer tekst uit het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="talkback_action_copy_text">Kopieer deze tekst</string>
+
+    <!-- TalkBack paste -->
+    <string name="talkback_action_paste_instruction1">Zo plak je tekst:</string>
+    <string name="talkback_action_paste_instruction2">1. Markeer het veld waar je tekst wilt plakken.</string>
+    <string name="talkback_action_paste_instruction3">2. Dubbeltik en houd vast om te starten met bewerken.</string>
+    <string name="talkback_action_paste_instruction4">3. Veeg omhoog en dan naar rechts om het lokale contextmenu te openen.</string>
+    <string name="talkback_action_paste_instruction5">4. Kies de optie \'Opties bewerken\'.</string>
+    <string name="talkback_action_paste_instruction6">5. Kies de optie \'Plakken\'.</string>
+    <string name="talkback_action_paste_instruction7">Plak tekst in het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="talkback_action_paste_text">Plak hier vanuit je klembord</string>
+
+    <!-- Service -->
+    <string name="service_label">ScreenReader</string>
+    <string name="service_summary">Herkennen van gebaren</string>
+    <string name="service_description">Om gebaren te herkennen is het noodzakelijk dat je deze service aanzet.\n\nDe gebaren training wordt automatisch gestart wanneer je de service aanzet.\n\nDe service wordt automatisch uitgeschakeld wanneer je de training stopt of wisselt naar een andere app.\n\nEr worden geen gegevens opgeslagen.</string>
+    <string name="service_killed">De ScreenReader service is automatisch uitgezet</string>
+    <string name="service_inactive">De ScreenReader service staat uit. Om gebaren te herkennen is het noodzakelijk dat je deze service aanzet.</string>
+    <string name="service_enable_title">ScreenReader service aanzetten</string>
+    <string name="service_reason_message">Wegens technische beperkingen kun je alleen gebruik maken van de optie \'Oefenen\' wanneer TalkBack aan staat.</string>
+    <string name="service_enable_message">Je moet eerst de ScreenReader service aanzetten zodat gebaren herkend kunnen worden wanneer TalkBack geactiveerd is.\n\nDat doe je als volgt:\n\n1. Navigeer naar de \'Activeren\' knop. Dubbeltik om de toegankelijkheidsinstellingen te openen.\n2. Navigeer naar geïnstalleerde service met de naam \'ScreenReader\'. Dubbeltik om het instellingenscherm te openen.\n3. Navigeer naar de schakelaar. Dubbeltik om de service toe te staan.\n4. Navigeer naar \'Toestaan\'. Dubbeltik om de service te activeren.\n5. Je hebt het activatieproces succesvol doorlopen. De gebaren training wordt automatisch gestart.\n\nNavigeer nu naar de \'Activeren\' knop om het activatieproces te starten.</string>
 </resources>

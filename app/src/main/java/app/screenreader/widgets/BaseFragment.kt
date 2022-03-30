@@ -7,12 +7,19 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import app.screenreader.R
 
-open class BaseFragment: Fragment() {
+abstract class BaseFragment: Fragment() {
+
+    abstract fun getLayoutId(): Int
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return LayoutInflater.from(context).inflate(R.layout.fragment_list, null, false)
+        return inflater.inflate(getLayoutId(), container, false)
+    }
+
+    open fun willShow() {
+        // Can be overridden
     }
 }
