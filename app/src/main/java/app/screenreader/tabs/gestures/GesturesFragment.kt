@@ -15,6 +15,7 @@ import app.screenreader.extensions.setGestures
 import app.screenreader.extensions.setInstructions
 import app.screenreader.extensions.showError
 import app.screenreader.model.Gesture
+import app.screenreader.model.Header
 import app.screenreader.services.ScreenReaderService
 import app.screenreader.widgets.ListFragment
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
@@ -25,38 +26,38 @@ class GesturesFragment : ListFragment() {
 
     override fun getItems(): List<Any> {
         return listOf(
-            "Vegen met 1 vinger",
+            Header(R.string.gestures_one_finger_swipe),
             Gesture.ONE_FINGER_TOUCH,
             Gesture.ONE_FINGER_SWIPE_RIGHT,
             Gesture.ONE_FINGER_SWIPE_LEFT,
             Gesture.ONE_FINGER_SWIPE_UP,
             Gesture.ONE_FINGER_SWIPE_DOWN,
-            "Vegen met 2 vingers",
+            Header(R.string.gestures_two_fingers_swipe),
             Gesture.TWO_FINGER_SWIPE_UP,
             Gesture.TWO_FINGER_SWIPE_DOWN,
             Gesture.TWO_FINGER_SWIPE_RIGHT,
             Gesture.TWO_FINGER_SWIPE_LEFT,
-            "Vegen met 3 vingers",
+            Header(R.string.gestures_three_fingers_swipe),
             Gesture.THREE_FINGER_SWIPE_UP,
             Gesture.THREE_FINGER_SWIPE_DOWN,
-            "Tikken met 1 vinger",
+            Header(R.string.gestures_one_finger_tap),
             Gesture.ONE_FINGER_DOUBLE_TAP,
             Gesture.ONE_FINGER_DOUBLE_TAP_HOLD,
-            "Tikken met 2 vingers",
+            Header( R.string.gestures_two_fingers_tap),
             Gesture.TWO_FINGER_TAP,
             Gesture.TWO_FINGER_DOUBLE_TAP,
             Gesture.TWO_FINGER_DOUBLE_TAP_HOLD,
             Gesture.TWO_FINGER_TRIPLE_TAP,
-            "Tikken met 3 vingers",
+            Header(R.string.gestures_three_fingers_tap),
             Gesture.THREE_FINGER_TAP,
             Gesture.THREE_FINGER_DOUBLE_TAP,
             Gesture.THREE_FINGER_DOUBLE_TAP_HOLD,
             Gesture.THREE_FINGER_TRIPLE_TAP,
-            "Tikken met 4 vingers",
+            Header(R.string.gestures_four_fingers_tap),
             Gesture.FOUR_FINGER_TAP,
             Gesture.FOUR_FINGER_DOUBLE_TAP,
             Gesture.FOUR_FINGER_DOUBLE_TAP_HOLD,
-            "Snelkoppelingen",
+            Header(R.string.gestures_shortcuts),
             Gesture.ONE_FINGER_SWIPE_UP_THEN_DOWN,
             Gesture.ONE_FINGER_SWIPE_DOWN_THEN_UP,
             Gesture.ONE_FINGER_SWIPE_RIGHT_THEN_LEFT,

@@ -21,7 +21,7 @@ enum class Action: Training, Serializable {
     PASTE;
 
     private fun getString(context: Context, property: String): String {
-        return context.getString("talkback_action_${identifier}_${property}")
+        return context.getString("action_${identifier}_${property}")
     }
 
     override fun title(context: Context): String {

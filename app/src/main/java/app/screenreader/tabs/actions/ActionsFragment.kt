@@ -2,10 +2,12 @@ package app.screenreader.tabs.actions
 
 import android.app.Activity
 import android.content.Intent
+import app.screenreader.R
 import app.screenreader.adapters.headerAdapterDelegate
 import app.screenreader.adapters.trainingAdapterDelegate
 import app.screenreader.extensions.setAction2
 import app.screenreader.model.Action
+import app.screenreader.model.Header
 import app.screenreader.widgets.ListFragment
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 
@@ -13,10 +15,10 @@ class ActionsFragment: ListFragment() {
 
     override fun getItems(): List<Any> {
         return listOf(
-            "Navigeren",
+            Header(R.string.actions_navigation),
             Action.HEADINGS,
             Action.LINKS,
-            "Bewerken",
+            Header(R.string.actions_text),
             Action.SELECTION,
             Action.COPY,
             Action.PASTE

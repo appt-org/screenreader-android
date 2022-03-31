@@ -11,17 +11,24 @@ import app.screenreader.R
 import app.screenreader.model.Item
 import app.screenreader.model.Training
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegate
-import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegateViewBinding
 import app.screenreader.extensions.setVisible
+import app.screenreader.model.Header
 import nl.appt.accessibility.view.accessibility
 
-fun headerAdapterDelegate() = adapterDelegate<String, Any>(R.layout.view_header) {
+fun headerAdapterDelegate() = adapterDelegate<Header, Any>(R.layout.view_header) {
     val header: TextView = findViewById(R.id.headerView)
 
     bind {
-        header.text = item
-
+        header.text = item.title(context)
         setAccessibilityHeading(header)
+    }
+}
+
+fun textAdapterDelegate() = adapterDelegate<String, Any>(R.layout.view_text) {
+    val textView: TextView = findViewById(R.id.textView)
+
+    bind {
+        textView.text = item
     }
 }
 

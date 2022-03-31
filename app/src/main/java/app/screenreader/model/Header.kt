@@ -8,10 +8,10 @@ import java.io.Serializable
  * Copyright 2020 Stichting Appt
  */
 data class Header(
-    val title: String
+    val textId: Int
 ): Item, Serializable {
 
     override fun title(context: Context): String {
-        return title
+        return context.getString(textId)
     }
 }
