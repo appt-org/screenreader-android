@@ -23,5 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".tabs.gestures.GestureActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name=".tabs.actions.ActionActivity"
+            android:configChanges="orientation|screenSize" />
     </application>
 </manifest>

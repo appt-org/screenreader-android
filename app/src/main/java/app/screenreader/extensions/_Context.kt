@@ -6,6 +6,41 @@ import app.screenreader.R
 import java.util.*
 import kotlin.concurrent.schedule
 
+/** Dialog **/
+
+fun Context.showDialog(title: String, message: String?, callback: (() -> Unit)? = null) {
+    val builder = AlertDialog.Builder(this, R.style.Dialog)
+
+    builder.setTitle(title)
+    builder.setMessage(message)
+
+    builder.setPositiveButton(R.string.action_ok) { _, _ ->
+        // Ignored, handled by on dismiss listener.
+    }
+
+    builder.setOnDismissListener {
+        callback?.let {
+            it()
+        }
+    }
+
+    builder.create().show()
+}
+
+fun Context.showDialog(titleId: Int, messageId: Int?, callback: (() -> Unit)? = null) {
+    val title = getString(titleId)
+    val message = if (messageId != null) getString(messageId) else null
+    showDialog(title, message, callback)
+}
+
+fun Context.showError(messageId: Int, callback: (() -> Unit)? = null) {
+    showDialog(R.string.error, messageId, callback)
+}
+
+fun Context.showError(message: String, callback: (() -> Unit)? = null) {
+    showDialog(getString(R.string.error), message, callback)
+}
+
 /** Toast **/
 fun toast(
     context: Context?,

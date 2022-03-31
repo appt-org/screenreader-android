@@ -12,8 +12,11 @@
     <string name="tab_actions">Acties</string>
     <string name="tab_more">Meer</string>
 
-    <!-- Actions -->
+    <!-- General -->
+    <string name="error">Foutmelding</string>
     <string name="loading">Aan het laden, even geduld</string>
+
+    <!-- Actions -->
     <string name="action_ok">Oké</string>
     <string name="action_confirm">Bevestigen</string>
     <string name="action_cancel">Annuleren</string>

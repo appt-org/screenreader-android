@@ -7,26 +7,26 @@
 
     <fragment
         android:id="@+id/tab_home"
-        android:name="app.screenreader.tabs.HomeFragment"
+        android:name="app.screenreader.tabs.home.HomeFragment"
         android:layout="@layout/fragment_list"
         android:label="@string/tab_home"
         tools:layout="@layout/fragment_list"/>
 
     <fragment
         android:id="@+id/tab_gestures"
-        android:name="app.screenreader.tabs.GesturesFragment"
+        android:name="app.screenreader.tabs.gestures.GesturesFragment"
         android:label="@string/tab_gestures"
         tools:layout="@layout/fragment_list"/>
 
     <fragment
         android:id="@+id/tab_actions"
-        android:name="app.screenreader.tabs.ActionsFragment"
+        android:name="app.screenreader.tabs.actions.ActionsFragment"
         android:label="@string/tab_actions"
         tools:layout="@layout/fragment_list"/>
 
     <fragment
         android:id="@+id/tab_more"
-        android:name="app.screenreader.tabs.MoreFragment"
+        android:name="app.screenreader.tabs.more.MoreFragment"
         android:label="@string/tab_more"
         tools:layout="@layout/fragment_list" />
 </navigation>

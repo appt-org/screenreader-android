@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:focusable="false"
+            android:clickable="false">
+
+            <TextView style="@style/Widget.TextView.Bold"
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Titel" />
+
+            <TextView style="@style/Widget.TextView"
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="Uitleg"/>
+
+            <TextView style="@style/Widget.TextView.SemiBold"
+                android:id="@+id/feedbackTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:text="Feedback"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/gestureImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/gesture_one_finger_double_tap"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

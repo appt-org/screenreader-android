@@ -25,14 +25,14 @@ import java.io.Serializable
 /**
  * This is where the magic happens.
  * Running an AccessibilityService makes gestures "bypass" other services such as TalkBack and Voice Assistant.
- * The ApptService hooks into accessibility events and gestures.
+ * The ScreenReaderService hooks into accessibility events and gestures.
  *
  * Created by Jan Jaap de Groot on 09/10/2020
  * Copyright 2020 Stichting Appt
  */
 class ScreenReaderService: AccessibilityService() {
 
-    private val TAG = "ApptService"
+    private val TAG = "ScreenReaderService"
     private val GESTURE_TRAINING_CLASS_NAME = MainActivity::class.java.name
 
     override fun onCreate() {
@@ -163,7 +163,7 @@ class ScreenReaderService: AccessibilityService() {
             }
         }
 
-        // Touch Exploration capability should be granted to at least two services: ApptService and TalkBack/VoiceAssistant/other.
+        // Touch Exploration capability should be granted to at least two services: ScreenReaderService and TalkBack/VoiceAssistant/other.
         return count >= 2
     }
 

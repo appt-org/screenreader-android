@@ -1,5 +1,7 @@
 package app.screenreader.widgets
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,5 +23,13 @@ abstract class BaseFragment: Fragment() {
 
     open fun willShow() {
         // Can be overridden
+    }
+
+    inline fun <reified T : Activity> startActivity(requestCode: Int = -1, options: Bundle? = null, noinline init: Intent.() -> Unit = {}) {
+        context?.let { context ->
+            val intent = Intent(context, T::class.java)
+            intent.init()
+            startActivityForResult(intent, requestCode, options)
+        }
     }
 }

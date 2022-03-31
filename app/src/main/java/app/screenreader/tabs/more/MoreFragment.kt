@@ -1,4 +1,4 @@
-package app.screenreader.tabs
+package app.screenreader.tabs.more
 
 import app.screenreader.adapters.headerAdapterDelegate
 import app.screenreader.widgets.ListFragment
