@@ -13,16 +13,13 @@ abstract class ListFragment: BaseFragment() {
         return R.layout.view_list
     }
 
-    abstract fun getItems(): List<Any>
-
-    abstract fun getAdapter(): ListDelegationAdapter<List<Any>>
+    abstract val items: List<Any>
+    abstract val adapter: ListDelegationAdapter<List<Any>>
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = getAdapter()
-        adapter.items = getItems()
-
+        adapter.items = items
         recyclerView.adapter = adapter
         recyclerView.addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
     }

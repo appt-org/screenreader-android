@@ -25,6 +25,9 @@ class MainActivity : BaseActivity() {
         bottomNavigationView.setupWithNavController(navController)
 
         // Setup Toolbar
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.tab_home,
@@ -33,7 +36,6 @@ class MainActivity : BaseActivity() {
                 R.id.tab_more
             )
         )
-        val toolbar = findViewById<Toolbar>(R.id.toolbar)
         toolbar.setupWithNavController(navController, appBarConfiguration)
     }
 }

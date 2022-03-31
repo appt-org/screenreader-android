@@ -1,11 +1,9 @@
 package app.screenreader.tabs.gestures
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
-import android.view.View
+import android.view.*
 import androidx.appcompat.app.AlertDialog
 import app.screenreader.R
 import app.screenreader.adapters.headerAdapterDelegate
@@ -24,62 +22,58 @@ import nl.appt.accessibility.isTalkBackEnabled
 
 class GesturesFragment : ListFragment() {
 
-    override fun getItems(): List<Any> {
-        return listOf(
-            Header(R.string.gestures_one_finger_swipe),
-            Gesture.ONE_FINGER_TOUCH,
-            Gesture.ONE_FINGER_SWIPE_RIGHT,
-            Gesture.ONE_FINGER_SWIPE_LEFT,
-            Gesture.ONE_FINGER_SWIPE_UP,
-            Gesture.ONE_FINGER_SWIPE_DOWN,
-            Header(R.string.gestures_two_fingers_swipe),
-            Gesture.TWO_FINGER_SWIPE_UP,
-            Gesture.TWO_FINGER_SWIPE_DOWN,
-            Gesture.TWO_FINGER_SWIPE_RIGHT,
-            Gesture.TWO_FINGER_SWIPE_LEFT,
-            Header(R.string.gestures_three_fingers_swipe),
-            Gesture.THREE_FINGER_SWIPE_UP,
-            Gesture.THREE_FINGER_SWIPE_DOWN,
-            Header(R.string.gestures_one_finger_tap),
-            Gesture.ONE_FINGER_DOUBLE_TAP,
-            Gesture.ONE_FINGER_DOUBLE_TAP_HOLD,
-            Header( R.string.gestures_two_fingers_tap),
-            Gesture.TWO_FINGER_TAP,
-            Gesture.TWO_FINGER_DOUBLE_TAP,
-            Gesture.TWO_FINGER_DOUBLE_TAP_HOLD,
-            Gesture.TWO_FINGER_TRIPLE_TAP,
-            Header(R.string.gestures_three_fingers_tap),
-            Gesture.THREE_FINGER_TAP,
-            Gesture.THREE_FINGER_DOUBLE_TAP,
-            Gesture.THREE_FINGER_DOUBLE_TAP_HOLD,
-            Gesture.THREE_FINGER_TRIPLE_TAP,
-            Header(R.string.gestures_four_fingers_tap),
-            Gesture.FOUR_FINGER_TAP,
-            Gesture.FOUR_FINGER_DOUBLE_TAP,
-            Gesture.FOUR_FINGER_DOUBLE_TAP_HOLD,
-            Header(R.string.gestures_shortcuts),
-            Gesture.ONE_FINGER_SWIPE_UP_THEN_DOWN,
-            Gesture.ONE_FINGER_SWIPE_DOWN_THEN_UP,
-            Gesture.ONE_FINGER_SWIPE_RIGHT_THEN_LEFT,
-            Gesture.ONE_FINGER_SWIPE_LEFT_THEN_RIGHT,
-            Gesture.ONE_FINGER_SWIPE_DOWN_THEN_LEFT,
-            Gesture.ONE_FINGER_SWIPE_UP_THEN_LEFT,
-            Gesture.ONE_FINGER_SWIPE_LEFT_THEN_UP,
-            Gesture.ONE_FINGER_SWIPE_RIGHT_THEN_DOWN,
-            Gesture.ONE_FINGER_SWIPE_LEFT_THEN_DOWN,
-            Gesture.ONE_FINGER_SWIPE_UP_THEN_RIGHT,
-            Gesture.ONE_FINGER_SWIPE_DOWN_THEN_RIGHT,
-        )
-    }
+    override val items = listOf(
+        Header(R.string.gestures_one_finger_swipe),
+        Gesture.ONE_FINGER_TOUCH,
+        Gesture.ONE_FINGER_SWIPE_RIGHT,
+        Gesture.ONE_FINGER_SWIPE_LEFT,
+        Gesture.ONE_FINGER_SWIPE_UP,
+        Gesture.ONE_FINGER_SWIPE_DOWN,
+        Header(R.string.gestures_two_fingers_swipe),
+        Gesture.TWO_FINGER_SWIPE_UP,
+        Gesture.TWO_FINGER_SWIPE_DOWN,
+        Gesture.TWO_FINGER_SWIPE_RIGHT,
+        Gesture.TWO_FINGER_SWIPE_LEFT,
+        Header(R.string.gestures_three_fingers_swipe),
+        Gesture.THREE_FINGER_SWIPE_UP,
+        Gesture.THREE_FINGER_SWIPE_DOWN,
+        Header(R.string.gestures_one_finger_tap),
+        Gesture.ONE_FINGER_DOUBLE_TAP,
+        Gesture.ONE_FINGER_DOUBLE_TAP_HOLD,
+        Header( R.string.gestures_two_fingers_tap),
+        Gesture.TWO_FINGER_TAP,
+        Gesture.TWO_FINGER_DOUBLE_TAP,
+        Gesture.TWO_FINGER_DOUBLE_TAP_HOLD,
+        Gesture.TWO_FINGER_TRIPLE_TAP,
+        Header(R.string.gestures_three_fingers_tap),
+        Gesture.THREE_FINGER_TAP,
+        Gesture.THREE_FINGER_DOUBLE_TAP,
+        Gesture.THREE_FINGER_DOUBLE_TAP_HOLD,
+        Gesture.THREE_FINGER_TRIPLE_TAP,
+        Header(R.string.gestures_four_fingers_tap),
+        Gesture.FOUR_FINGER_TAP,
+        Gesture.FOUR_FINGER_DOUBLE_TAP,
+        Gesture.FOUR_FINGER_DOUBLE_TAP_HOLD,
+        Header(R.string.gestures_shortcuts),
+        Gesture.ONE_FINGER_SWIPE_UP_THEN_DOWN,
+        Gesture.ONE_FINGER_SWIPE_DOWN_THEN_UP,
+        Gesture.ONE_FINGER_SWIPE_RIGHT_THEN_LEFT,
+        Gesture.ONE_FINGER_SWIPE_LEFT_THEN_RIGHT,
+        Gesture.ONE_FINGER_SWIPE_DOWN_THEN_LEFT,
+        Gesture.ONE_FINGER_SWIPE_UP_THEN_LEFT,
+        Gesture.ONE_FINGER_SWIPE_LEFT_THEN_UP,
+        Gesture.ONE_FINGER_SWIPE_RIGHT_THEN_DOWN,
+        Gesture.ONE_FINGER_SWIPE_LEFT_THEN_DOWN,
+        Gesture.ONE_FINGER_SWIPE_UP_THEN_RIGHT,
+        Gesture.ONE_FINGER_SWIPE_DOWN_THEN_RIGHT,
+    )
 
-    override fun getAdapter(): ListDelegationAdapter<List<Any>> {
-        return ListDelegationAdapter(
-            headerAdapterDelegate(),
-            trainingAdapterDelegate<Gesture> { gesture ->
-                onGestureClicked(gesture)
-            }
-        )
-    }
+    override val adapter = ListDelegationAdapter(
+        headerAdapterDelegate(),
+        trainingAdapterDelegate<Gesture> { gesture ->
+            onGestureClicked(gesture)
+        }
+    )
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -100,7 +94,10 @@ class GesturesFragment : ListFragment() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        getAdapter().notifyDataSetChanged()
+
+        if (resultCode == Activity.RESULT_OK) {
+            adapter.notifyDataSetChanged()
+        }
     }
 
     private fun onGestureClicked(gesture: Gesture) {
@@ -116,15 +113,16 @@ class GesturesFragment : ListFragment() {
 
     private fun onPracticeClicked() {
         AlertDialog.Builder(requireContext())
-            .setMessage("Wil je oefenen met of zonder instructies?")
-            .setPositiveButton("Met instructies") { _, _ ->
+            .setTitle(R.string.gestures_practice_title)
+            .setMessage(R.string.gestures_practice_message)
+            .setPositiveButton(R.string.gestures_practice_with_instructions) { _, _ ->
                 startPractice(true)
             }
-            .setNeutralButton("Zonder instructies") { _, _ ->
+            .setNegativeButton(R.string.gestures_practice_without_instructions) { _, _ ->
                 startPractice(false)
             }
-            .setNegativeButton("Annuleren") { _, _ ->
-                // Ignored
+            .setNeutralButton(R.string.action_cancel) { _, _ ->
+                // Cancels dialog
             }
             .show()
     }

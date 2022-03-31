@@ -57,6 +57,12 @@
     <string name="talkback_disabled_title">TalkBack staat uit</string>
     <string name="talkback_disabled_explanation">Je moet TalkBack aanzetten om deze training te volgen.</string>
 
+    <!-- Gestures: practice -->
+    <string name="gestures_practice_title">Gebaren oefenen</string>
+    <string name="gestures_practice_message">Wil je oefenen met of zonder instructies?</string>
+    <string name="gestures_practice_with_instructions">Met instructies</string>
+    <string name="gestures_practice_without_instructions">Zonder instructies</string>
+
     <!-- Gestures: one finger swipe -->
     <string name="gestures_one_finger_swipe">Vegen met 1 vinger</string>
 
@@ -121,9 +127,9 @@
     <string name="gesture_one_finger_double_tap_hold_description">Tik met 1 vinger 2 keer en houd vast.</string>
     <string name="gesture_one_finger_double_tap_hold_explanation">In veel apps verschijnt er een menu met opties wanneer je dit gebaar gebruikt. In een lijst kun je op deze manier meestal acties uitvoeren op het geselecteerde onderdeel.</string>
 
-    <string name="gesture_one_finger_triple_tap_hold_title">Dubbeltikken op het geselecteerde onderdeel</string>
-    <string name="gesture_one_finger_triple_tap_hold_description">Tik met 1 vinger 3 keer op het scherm</string>
-    <string name="gesture_one_finger_triple_tap_hold_explanation">In sommige apps is het nodig om te dubbeltikken om bepaalde handelingen uit te voeren.</string>
+    <string name="gesture_one_finger_triple_tap_title">Dubbeltikken op het geselecteerde onderdeel</string>
+    <string name="gesture_one_finger_triple_tap_description">Tik met 1 vinger 3 keer op het scherm</string>
+    <string name="gesture_one_finger_triple_tap_explanation">In sommige apps is het nodig om te dubbeltikken om bepaalde handelingen uit te voeren.</string>
 
     <!-- Gestures: two finger tap -->
     <string name="gestures_two_fingers_tap">Tikken met 2 vingers</string>

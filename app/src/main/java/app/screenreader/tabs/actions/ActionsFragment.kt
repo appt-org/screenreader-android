@@ -13,26 +13,22 @@ import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 
 class ActionsFragment: ListFragment() {
 
-    override fun getItems(): List<Any> {
-        return listOf(
-            Header(R.string.actions_navigation),
-            Action.HEADINGS,
-            Action.LINKS,
-            Header(R.string.actions_text),
-            Action.SELECTION,
-            Action.COPY,
-            Action.PASTE
-        )
-    }
+    override val items = listOf(
+        Header(R.string.actions_navigation),
+        Action.HEADINGS,
+        Action.LINKS,
+        Header(R.string.actions_text),
+        Action.SELECTION,
+        Action.COPY,
+        Action.PASTE
+    )
 
-    override fun getAdapter(): ListDelegationAdapter<List<Any>> {
-        return ListDelegationAdapter(
-            headerAdapterDelegate(),
-            trainingAdapterDelegate<Action> { action ->
-                onActionClicked(action)
-            }
-        )
-    }
+    override val adapter = ListDelegationAdapter(
+        headerAdapterDelegate(),
+        trainingAdapterDelegate<Action> { action ->
+            onActionClicked(action)
+        }
+    )
 
     private fun onActionClicked(action: Action) {
         startActivity<ActionActivity>(REQUEST_CODE) {
@@ -44,7 +40,7 @@ class ActionsFragment: ListFragment() {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (resultCode == Activity.RESULT_OK) {
-            getAdapter().notifyDataSetChanged()
+            adapter.notifyDataSetChanged()
         }
     }
 

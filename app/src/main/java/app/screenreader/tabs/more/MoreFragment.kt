@@ -7,14 +7,10 @@ import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 
 class MoreFragment: ListFragment() {
 
-    override fun getAdapter(): ListDelegationAdapter<List<Any>> {
-        return ListDelegationAdapter(
-            textAdapterDelegate(),
-            headerAdapterDelegate()
-        )
-    }
+    override val adapter = ListDelegationAdapter(
+        textAdapterDelegate(),
+        headerAdapterDelegate()
+    )
 
-    override fun getItems(): List<Any> {
-        return listOf("Informatie over het Meer-tabblad")
-    }
+    override val items = listOf("Informatie over het Meer-tabblad")
 }

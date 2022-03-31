@@ -7,13 +7,10 @@ import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 
 class HomeFragment: ListFragment() {
 
-    override fun getAdapter(): ListDelegationAdapter<List<Any>> {
-        return ListDelegationAdapter(
-            textAdapterDelegate(),
-            headerAdapterDelegate()
-        )
-    }
-    override fun getItems(): List<Any> {
-        return listOf("Informatie over het Home-tabblad")
-    }
+    override val adapter = ListDelegationAdapter(
+        textAdapterDelegate(),
+        headerAdapterDelegate()
+    )
+
+    override val items = listOf("Informatie over het Home-tabblad")
 }
