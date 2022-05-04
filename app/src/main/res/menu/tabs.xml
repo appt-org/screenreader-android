@@ -3,20 +3,20 @@
     <item
         android:id="@+id/tab_home"
         android:icon="@drawable/tab_home"
-        android:title="@string/tab_home" />
+        android:title="@string/home_tab" />
 
     <item
         android:id="@+id/tab_gestures"
         android:icon="@drawable/tab_gestures"
-        android:title="@string/tab_gestures" />
+        android:title="@string/gestures_tab" />
 
     <item
         android:id="@+id/tab_actions"
         android:icon="@drawable/tab_actions"
-        android:title="@string/tab_actions" />
+        android:title="@string/actions_tab" />
 
     <item
         android:id="@+id/tab_more"
         android:icon="@drawable/tab_more"
-        android:title="@string/tab_more" />
+        android:title="@string/more_tab" />
 </menu>

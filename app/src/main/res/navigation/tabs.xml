@@ -9,24 +9,24 @@
         android:id="@+id/tab_home"
         android:name="app.screenreader.tabs.home.HomeFragment"
         android:layout="@layout/fragment_list"
-        android:label="@string/tab_home"
+        android:label="@string/home_title"
         tools:layout="@layout/fragment_list"/>
 
     <fragment
         android:id="@+id/tab_gestures"
         android:name="app.screenreader.tabs.gestures.GesturesFragment"
-        android:label="@string/tab_gestures"
+        android:label="@string/gestures_title"
         tools:layout="@layout/fragment_list"/>
 
     <fragment
         android:id="@+id/tab_actions"
         android:name="app.screenreader.tabs.actions.ActionsFragment"
-        android:label="@string/tab_actions"
+        android:label="@string/actions_title"
         tools:layout="@layout/fragment_list"/>
 
     <fragment
         android:id="@+id/tab_more"
         android:name="app.screenreader.tabs.more.MoreFragment"
-        android:label="@string/tab_more"
+        android:label="@string/more_title"
         tools:layout="@layout/fragment_list" />
 </navigation>

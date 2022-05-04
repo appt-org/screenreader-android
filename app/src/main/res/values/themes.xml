@@ -58,7 +58,7 @@
     </style>
 
     <style name="Dialog.Button" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
-        <item name="fontPath">@string/font_bold</item>
+        <item name="fontPath">@string/font_semibold</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/foreground</item>
         <item name="android:textSize">18sp</item>
@@ -104,16 +104,17 @@
         <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="Widget.TextView.EditTextLabel">
-        <item name="android:textSize">12sp</item>
+    <style name="Widget.TextView.SemiBold">
+        <item name="fontPath">@string/font_semibold</item>
     </style>
 
     <style name="Widget.TextView.Bold">
         <item name="fontPath">@string/font_bold</item>
     </style>
 
-    <style name="Widget.TextView.SemiBold">
-        <item name="fontPath">@string/font_semibold</item>
+    <style name="Widget.TextView.Header" parent="Widget.TextView.Bold">
+        <item name="android:textSize">20sp</item>
+        <item name="android:accessibilityHeading">true</item>
     </style>
 
     <style name="Widget.TextView.Training">

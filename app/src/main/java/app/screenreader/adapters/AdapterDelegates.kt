@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.core.view.AccessibilityDelegateCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
+import androidx.core.view.setPadding
 import app.screenreader.R
 import app.screenreader.model.Item
 import app.screenreader.model.Training
@@ -29,6 +30,22 @@ fun textAdapterDelegate() = adapterDelegate<String, Any>(R.layout.view_text) {
 
     bind {
         textView.text = item
+    }
+}
+
+fun textResourceAdapterDelegate() = adapterDelegate<Int, Any>(R.layout.view_text) {
+    val textView: TextView = findViewById(R.id.textView)
+    val marginMedium = context.resources.getDimension(R.dimen.margin_medium).toInt()
+    val marginSmall = context.resources.getDimension(R.dimen.margin_small).toInt()
+
+    bind {
+        textView.setText(item)
+
+        if (adapterPosition == 0) {
+            textView.setPadding(marginMedium, marginMedium, marginMedium, marginSmall)
+        } else {
+            textView.setPadding(marginMedium, 0, marginMedium, marginSmall)
+        }
     }
 }
 

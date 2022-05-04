@@ -7,6 +7,7 @@ import android.view.*
 import androidx.appcompat.app.AlertDialog
 import app.screenreader.R
 import app.screenreader.adapters.headerAdapterDelegate
+import app.screenreader.adapters.textResourceAdapterDelegate
 import app.screenreader.adapters.trainingAdapterDelegate
 import app.screenreader.extensions.setGesture
 import app.screenreader.extensions.setGestures
@@ -23,6 +24,7 @@ import nl.appt.accessibility.isTalkBackEnabled
 class GesturesFragment : ListFragment() {
 
     override val items = listOf(
+        R.string.gestures_description,
         Header(R.string.gestures_one_finger_swipe),
         Gesture.ONE_FINGER_TOUCH,
         Gesture.ONE_FINGER_SWIPE_RIGHT,
@@ -69,6 +71,7 @@ class GesturesFragment : ListFragment() {
     )
 
     override val adapter = ListDelegationAdapter(
+        textResourceAdapterDelegate(),
         headerAdapterDelegate(),
         trainingAdapterDelegate<Gesture> { gesture ->
             onGestureClicked(gesture)

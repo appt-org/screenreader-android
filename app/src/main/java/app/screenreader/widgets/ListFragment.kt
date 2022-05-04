@@ -16,11 +16,16 @@ abstract class ListFragment: BaseFragment() {
     abstract val items: List<Any>
     abstract val adapter: ListDelegationAdapter<List<Any>>
 
+    open var decoration: Boolean = true
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         adapter.items = items
         recyclerView.adapter = adapter
-        recyclerView.addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
+
+        if (decoration) {
+            recyclerView.addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
+        }
     }
 }

@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import app.screenreader.R
 import app.screenreader.adapters.headerAdapterDelegate
+import app.screenreader.adapters.textResourceAdapterDelegate
 import app.screenreader.adapters.trainingAdapterDelegate
 import app.screenreader.extensions.setAction2
 import app.screenreader.model.Action
@@ -14,6 +15,7 @@ import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 class ActionsFragment: ListFragment() {
 
     override val items = listOf(
+        R.string.actions_description,
         Header(R.string.actions_navigation),
         Action.HEADINGS,
         Action.LINKS,
@@ -24,6 +26,7 @@ class ActionsFragment: ListFragment() {
     )
 
     override val adapter = ListDelegationAdapter(
+        textResourceAdapterDelegate(),
         headerAdapterDelegate(),
         trainingAdapterDelegate<Action> { action ->
             onActionClicked(action)
