@@ -1,6 +1,9 @@
 package app.screenreader
 
+import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
+import androidx.navigation.NavController
+import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
@@ -37,5 +40,17 @@ class MainActivity : BaseActivity() {
             )
         )
         toolbar.setupWithNavController(navController, appBarConfiguration)
+
+        // Set title on destination change
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            val titleId = when (destination.id) {
+                R.id.tab_home -> R.string.home_title
+                R.id.tab_gestures -> R.string.gestures_title
+                R.id.tab_actions -> R.string.actions_title
+                R.id.tab_more -> R.string.more_title
+                else -> R.string.app_name
+            }
+            setTitle(titleId)
+        }
     }
 }
