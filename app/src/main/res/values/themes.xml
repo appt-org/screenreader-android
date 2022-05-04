@@ -73,17 +73,16 @@
     <!-- Toolbar -->
     <style name="Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
         <item name="fontPath">@string/font_bold</item>
-        <item name="android:accessibilityHeading" tools:targetApi="p">true</item>
 
         <item name="android:background">@color/background</item>
         <item name="android:textColor">@color/foreground</item>
+
         <item name="colorControlNormal">@color/primary</item>
         <item name="colorControlHighlight">@color/primary</item>
     </style>
 
     <style name="Toolbar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="fontPath">@string/font_bold</item>
-        <item name="android:textSize">20sp</item>
     </style>
 
     <!-- Menu -->
@@ -113,8 +112,8 @@
     </style>
 
     <style name="Widget.TextView.Header" parent="Widget.TextView.Bold">
-        <item name="android:textSize">20sp</item>
-        <item name="android:accessibilityHeading">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:accessibilityHeading" tools:targetApi="p">true</item>
     </style>
 
     <style name="Widget.TextView.Training">

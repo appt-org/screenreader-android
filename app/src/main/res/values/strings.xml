@@ -57,13 +57,26 @@
     <!-- More -->
     <string name="more_title">Meer informatie</string>
     <string name="more_tab">Meer</string>
+    <string name="more_description">De ScreenReader app is een initiatief van Stichting Appt. De app is ontwikkeld door Abra. De app is mede mogelijk gemaakt door het SIDN fonds.</string>
+    <string name="more_partners">Partners</string>
 
-    <string name="topic_rating_title">Beoordeel de app</string>
-    <string name="topic_share_title">Deel de app</string>
-    <string name="topic_website_title">Bezoek de website</string>
-    <string name="topic_appt">Stichting Appt</string>
-    <string name="topic_abra">Abra</string>
-    <string name="topic_sidn">SIDN fonds</string>
+    <string name="topic_rating_title">App beoordelen</string>
+    <string name="topic_rating_url">https://play.google.com/store/apps/details?id=app.screenreader</string>
+
+    <string name="topic_share_title">App delen</string>
+    <string name="topic_share_url">Download de gratis ScreenReader app op https://screenreader.app om te leren hoe je de schermlezer gebruikt!</string>
+
+    <string name="topic_website_title">Website bekijken</string>
+    <string name="topic_website_url">https://ontoegankelijk.nl/</string>
+
+    <string name="topic_stichting_appt_title">Stichting Appt</string>
+    <string name="topic_stichting_appt_url">https://appt.nl/</string>
+
+    <string name="topic_abra_title">Abra</string>
+    <string name="topic_abra_url">https://abra.nl/</string>
+
+    <string name="topic_sidn_fonds_title">SIDN fonds</string>
+    <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/</string>
 
     <!-- TalkBack -->
     <string name="talkback_disabled_title">TalkBack staat uit</string>

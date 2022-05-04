@@ -1,8 +1,14 @@
 package app.screenreader.extensions
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
+import androidx.browser.customtabs.CustomTabColorSchemeParams
+import androidx.browser.customtabs.CustomTabsIntent
 import app.screenreader.R
+import java.net.URL
 import java.util.*
 import kotlin.concurrent.schedule
 
@@ -87,4 +93,44 @@ fun Context.getString(name: String): String {
     } else {
         name
     }
+}
+
+/** Browser **/
+
+fun Context.openWebsite(url: Int) {
+    openWebsite(getString(url))
+}
+
+fun Context.openWebsite(url: String) {
+    openWebsite(Uri.parse(url))
+}
+
+fun Context.openWebsite(uri: Uri) {
+    val darkBackground = resources.getColor(R.color.black, null)
+    val lightBackground = resources.getColor(R.color.white, null)
+
+    val dark = CustomTabColorSchemeParams.Builder()
+        .setToolbarColor(darkBackground)
+        .setNavigationBarColor(darkBackground)
+        .setNavigationBarDividerColor(darkBackground)
+        .setSecondaryToolbarColor(darkBackground)
+        .build()
+
+    val light = CustomTabColorSchemeParams.Builder()
+        .setToolbarColor(lightBackground)
+        .setNavigationBarColor(lightBackground)
+        .setNavigationBarDividerColor(lightBackground)
+        .setSecondaryToolbarColor(lightBackground)
+        .build()
+
+    val intent = CustomTabsIntent.Builder()
+        .setShareState(CustomTabsIntent.SHARE_STATE_ON)
+        .setUrlBarHidingEnabled(false)
+        .setInstantAppsEnabled(false)
+        .setColorScheme(CustomTabsIntent.COLOR_SCHEME_SYSTEM)
+        .setColorSchemeParams(CustomTabsIntent.COLOR_SCHEME_DARK, dark)
+        .setColorSchemeParams(CustomTabsIntent.COLOR_SCHEME_LIGHT, light)
+        .build()
+
+    intent.launchUrl(this, uri)
 }
