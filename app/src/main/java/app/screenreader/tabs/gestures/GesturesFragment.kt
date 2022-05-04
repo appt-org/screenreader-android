@@ -13,13 +13,12 @@ import app.screenreader.extensions.setGesture
 import app.screenreader.extensions.setGestures
 import app.screenreader.extensions.setInstructions
 import app.screenreader.extensions.showError
+import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Gesture
 import app.screenreader.model.Header
 import app.screenreader.services.ScreenReaderService
 import app.screenreader.widgets.ListFragment
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
-import nl.appt.accessibility.Accessibility
-import nl.appt.accessibility.isTalkBackEnabled
 
 class GesturesFragment : ListFragment() {
 
@@ -104,8 +103,8 @@ class GesturesFragment : ListFragment() {
     }
 
     private fun onGestureClicked(gesture: Gesture) {
-        if (Accessibility.isTalkBackEnabled(context)) {
-            context?.showError(R.string.service_reason_message)
+        if (Accessibility.screenReader(context)) {
+            context?.showError(R.string.gestures_talkback_error)
             return
         }
 
@@ -115,6 +114,11 @@ class GesturesFragment : ListFragment() {
     }
 
     private fun onPracticeClicked() {
+        if (Accessibility.screenReader(context)) {
+            context?.showError(R.string.gestures_talkback_error)
+            return
+        }
+
         AlertDialog.Builder(requireContext())
             .setTitle(R.string.gestures_practice_title)
             .setMessage(R.string.gestures_practice_message)
@@ -133,7 +137,7 @@ class GesturesFragment : ListFragment() {
     private fun startPractice(instructions: Boolean) {
         val context = this.context ?: return
 
-        if (Accessibility.isTalkBackEnabled(context)) {
+        if (Accessibility.screenReader(context)) {
             if (!ScreenReaderService.isEnabled(context)) {
                 ScreenReaderService.enable(context, instructions)
                 return

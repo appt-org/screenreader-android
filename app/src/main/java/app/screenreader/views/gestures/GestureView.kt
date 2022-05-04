@@ -11,10 +11,9 @@ import android.view.accessibility.AccessibilityEvent
 import androidx.core.content.ContextCompat
 import app.screenreader.R
 import app.screenreader.extensions.isStart
+import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Gesture
 import app.screenreader.model.Touch
-import nl.appt.accessibility.Accessibility
-import nl.appt.accessibility.isTalkBackEnabled
 import kotlin.math.atan2
 
 interface GestureViewCallback {
@@ -206,7 +205,7 @@ abstract class GestureView(val gesture: Gesture, context: Context) : View(contex
     override fun onHoverEvent(event: MotionEvent?): Boolean {
         Log.d(TAG, "onHoverEvent: $event")
 
-        if (Accessibility.isTalkBackEnabled(context) && event != null) {
+        if (Accessibility.screenReader(context) && event != null) {
             when (event.action) {
                 MotionEvent.ACTION_HOVER_ENTER -> {
                     event.action = MotionEvent.ACTION_DOWN

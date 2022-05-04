@@ -39,17 +39,6 @@ abstract class BaseActivity : AppCompatActivity() {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase))
     }
 
-    override fun onPostCreate(savedInstanceState: Bundle?) {
-        super.onPostCreate(savedInstanceState)
-
-        // Improve accessibility of Toolbar
-        findViewById<Toolbar>(R.id.toolbar).children.firstOrNull {
-            it is TextView
-        }?.let { titleView ->
-            ViewCompat.setAccessibilityHeading(titleView, true)
-        }
-    }
-
     override fun onSupportNavigateUp(): Boolean {
         this.onBackPressed()
         return super.onSupportNavigateUp()

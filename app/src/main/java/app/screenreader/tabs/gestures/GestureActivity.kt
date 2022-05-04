@@ -10,6 +10,7 @@ import android.view.View
 import androidx.appcompat.app.AlertDialog
 import app.screenreader.R
 import app.screenreader.extensions.*
+import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Constants
 import app.screenreader.model.Gesture
 import app.screenreader.services.ScreenReaderService
@@ -17,11 +18,6 @@ import app.screenreader.views.gestures.GestureView
 import app.screenreader.views.gestures.GestureViewCallback
 import app.screenreader.widgets.ToolbarActivity
 import kotlinx.android.synthetic.main.activity_gesture.*
-import nl.appt.accessibility.Accessibility
-import nl.appt.accessibility.activity.accessibility
-import nl.appt.accessibility.isTalkBackEnabled
-import nl.appt.accessibility.setFocus
-import nl.appt.accessibility.view.accessibility
 import java.util.*
 import kotlin.concurrent.schedule
 
@@ -84,7 +80,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         gestureView = gesture.view(this)
         gestureView.callback = this
         container.addView(gestureView)
-        accessibility.elements = arrayOf(gestureView)
+        Accessibility.setTraversalOrder(gestureView)
 
         // Setup other views
         titleTextView.text = gesture.title(this)
@@ -93,11 +89,11 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
 
         // Setup instructions
         if (instructions) {
-            gestureView.accessibility.label = String.format("%s: %s", titleTextView.text, descriptionTextView.text)
+            Accessibility.label(gestureView, String.format("%s: %s", titleTextView.text, descriptionTextView.text))
         } else {
             descriptionTextView.setVisible(false)
             gestureImageView.setVisible(false)
-            gestureView.accessibility.label = titleTextView.text
+            Accessibility.label(gestureView, titleTextView.text)
         }
 
         // Listen to events from ScreenReaderService
@@ -130,11 +126,11 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
     override fun onResume() {
         super.onResume()
 
-        if (Accessibility.isTalkBackEnabled(this)) {
+        if (Accessibility.screenReader(this)) {
             if (ScreenReaderService.isEnabled(this)) {
                 Timer().schedule(500) {
                     runOnUiThread {
-                        Accessibility.setFocus(gestureView)
+                        Accessibility.focus(gestureView)
                     }
                 }
             } else {
@@ -205,7 +201,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         // Show option dialog
         var message = "Je hebt het gebaar $errorCount keer fout uitgevoerd."
 
-        message += if (Accessibility.isTalkBackEnabled(this)) {
+        message += if (Accessibility.screenReader(this)) {
             if (isPracticing) {
                 "\n\nVeeg naar links om te stoppen.\n\nVeeg omlaag om over te slaan.\n\nVeeg naar rechts om door te gaan."
             } else {

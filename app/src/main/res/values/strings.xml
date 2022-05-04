@@ -86,6 +86,7 @@
     <string name="gestures_title">Gebaren leren</string>
     <string name="gestures_tab">Gebaren</string>
     <string name="gestures_description">Op dit scherm kun je alle TalkBack gebaren leren. Je kunt de gebaren oefenen via de knop rechtsbovenaan.</string>
+    <string name="gestures_talkback_error">Wegens technische beperkingen kun je op dit moment nog niet gebaren oefenen wanneer TalkBack aan staat.</string>
 
     <!-- Gestures: practice -->
     <string name="gestures_practice_title">Gebaren oefenen</string>

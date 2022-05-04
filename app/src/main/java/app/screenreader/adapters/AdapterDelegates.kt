@@ -13,8 +13,8 @@ import app.screenreader.model.Item
 import app.screenreader.model.Training
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegate
 import app.screenreader.extensions.setVisible
+import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Header
-import nl.appt.accessibility.view.accessibility
 
 fun headerAdapterDelegate() = adapterDelegate<Header, Any>(R.layout.view_header) {
     val header: TextView = findViewById(R.id.headerView)
@@ -80,15 +80,13 @@ inline fun <reified T : Training> trainingAdapterDelegate(crossinline callback: 
 
             if (completed) {
                 imageView.setVisible(true)
-                itemView.accessibility.label =
-                    getString(R.string.training_accessibility_label, title)
+                Accessibility.label(itemView, getString(R.string.training_accessibility_label, title))
             } else {
                 imageView.setVisible(false)
-                itemView.accessibility.label = title
+                Accessibility.label(itemView, title)
             }
         }
     }
-
 
 private fun setAccessibilityButtonDelegate(view: View) {
     ViewCompat.setAccessibilityDelegate(view, object : AccessibilityDelegateCompat() {

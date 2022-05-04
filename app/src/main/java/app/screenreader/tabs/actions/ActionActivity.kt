@@ -4,12 +4,11 @@ import android.content.Intent
 import app.screenreader.R
 import app.screenreader.extensions.getAction2
 import app.screenreader.extensions.showDialog
+import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Action
 import app.screenreader.views.actions.ActionViewCallback
 import app.screenreader.widgets.ToolbarActivity
 import kotlinx.android.synthetic.main.activity_action.*
-import nl.appt.accessibility.Accessibility
-import nl.appt.accessibility.isTalkBackEnabled
 
 /**
  * Created by Jan Jaap de Groot on 16/11/2020
@@ -34,7 +33,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
         view.callback = this
         scrollView.addView(view)
 
-        if (!Accessibility.isTalkBackEnabled(this)) {
+        if (!Accessibility.screenReader(this)) {
             showDialog(R.string.talkback_disabled_title, R.string.talkback_disabled_explanation) {
                 finish()
             }
