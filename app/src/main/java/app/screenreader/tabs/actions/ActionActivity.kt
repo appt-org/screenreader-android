@@ -2,7 +2,7 @@ package app.screenreader.tabs.actions
 
 import android.content.Intent
 import app.screenreader.R
-import app.screenreader.extensions.getAction2
+import app.screenreader.extensions.doGetAction
 import app.screenreader.extensions.showDialog
 import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Action
@@ -19,7 +19,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
     private val startTime = System.currentTimeMillis()
 
     private val action: Action by lazy {
-        intent.getAction2() ?: Action.SELECTION
+        intent.doGetAction() ?: Action.SELECTION
     }
 
     override fun getLayoutId() = R.layout.activity_action

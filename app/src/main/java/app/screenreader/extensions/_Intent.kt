@@ -41,5 +41,5 @@ fun Intent.setText(text: String) = putExtra(KEY_TEXT, text)
 
 /** Action **/
 private const val KEY_ACTION = "action"
-fun Intent.getAction2() = getSerializableExtra(KEY_ACTION) as? Action
-fun Intent.setAction2(action: Action) = putExtra(KEY_ACTION, action)
+fun Intent.doGetAction() = getSerializableExtra(KEY_ACTION) as? Action
+fun Intent.doSetAction(action: Action) = putExtra(KEY_ACTION, action)

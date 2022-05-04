@@ -6,7 +6,9 @@ import app.screenreader.R
 import app.screenreader.adapters.headerAdapterDelegate
 import app.screenreader.adapters.textResourceAdapterDelegate
 import app.screenreader.adapters.trainingAdapterDelegate
-import app.screenreader.extensions.setAction2
+import app.screenreader.extensions.doSetAction
+import app.screenreader.extensions.showDialog
+import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Action
 import app.screenreader.model.Header
 import app.screenreader.widgets.ListFragment
@@ -34,8 +36,15 @@ class ActionsFragment: ListFragment() {
     )
 
     private fun onActionClicked(action: Action) {
-        startActivity<ActionActivity>(REQUEST_CODE) {
-            setAction2(action)
+        context?.let { context ->
+            if (!Accessibility.screenReader(context)) {
+                context.showDialog(R.string.talkback_disabled_title, R.string.talkback_disabled_explanation)
+                return
+            }
+
+            startActivity<ActionActivity>(REQUEST_CODE) {
+                doSetAction(action)
+            }
         }
     }
 
