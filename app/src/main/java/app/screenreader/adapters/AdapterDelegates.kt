@@ -8,6 +8,7 @@ import androidx.core.view.AccessibilityDelegateCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 import androidx.core.view.setPadding
+import androidx.recyclerview.widget.RecyclerView
 import app.screenreader.R
 import app.screenreader.model.Item
 import app.screenreader.model.Training
@@ -43,8 +44,10 @@ fun textResourceAdapterDelegate() = adapterDelegate<Int, Any>(R.layout.view_text
 
         if (adapterPosition == 0) {
             textView.setPadding(marginMedium)
+        } else if (adapterPosition == -1) { // TODO: Replace -1 with last index
+            textView.setPadding(marginMedium)
         } else {
-            textView.setPadding(marginMedium, 0, marginMedium, marginMedium)
+            textView.setPadding(marginMedium, 0, marginMedium, marginSmall)
         }
     }
 }
