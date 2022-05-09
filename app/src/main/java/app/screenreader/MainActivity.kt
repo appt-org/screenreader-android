@@ -33,7 +33,7 @@ class MainActivity : BaseActivity() {
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.tab_home,
+                R.id.tab_talkback,
                 R.id.tab_gestures,
                 R.id.tab_actions,
                 R.id.tab_more
@@ -44,7 +44,7 @@ class MainActivity : BaseActivity() {
         // Set title on destination change
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val titleId = when (destination.id) {
-                R.id.tab_home -> R.string.home_title
+                R.id.tab_talkback -> R.string.talkback_title
                 R.id.tab_gestures -> R.string.gestures_title
                 R.id.tab_actions -> R.string.actions_title
                 R.id.tab_more -> R.string.more_title

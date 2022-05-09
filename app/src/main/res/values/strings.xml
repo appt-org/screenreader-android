@@ -28,28 +28,28 @@
     <string name="action_skip">Overslaan</string>
 
     <!-- Home -->
-    <string name="home_title">TalkBack leren</string>
-    <string name="home_tab">TalkBack</string>
+    <string name="talkback_title">TalkBack leren</string>
+    <string name="talkback_tab">TalkBack</string>
 
-    <string name="home_description">De ScreenReader app helpt je bij het leren van TalkBack.</string>
-    <string name="home_section_1">Wat is TalkBack?</string>
-    <string name="home_section_1_paragraph_1">TalkBack is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen.</string>
-    <string name="home_section_1_paragraph_2">Door middel van gebaren kun je navigeren tussen de elementen op het scherm. Elk element wordt voorgelezen zodra het is geselecteerd.</string>
-    <string name="home_section_1_paragraph_3">Het is hierdoor mogelijk om je toestel volledig te bedienen zonder zicht.</string>
-    <string name="home_section_2">TalkBack leren</string>
-    <string name="home_section_2_paragraph_1">De ScreenReader app helpt je bij het leren van alle TalkBack gebaren. Daarnaast kun je een aantal veelvoorkomende acties leren.</string>
-    <string name="home_section_2_paragraph_2">Ben je afhankelijk van de schermlezer? Dan is deze app erg handig om je vaardigheden te verbeteren.</string>
-    <string name="home_section_2_paragraph_3">Ben je betrokken bij het ontwikkelen van apps? Gebruik de schermlezer dan om de toegankelijkheid te verbeteren.</string>
-    <string name="home_section_3">TalkBack inschakelen</string>
-    <string name="home_section_3_paragraph_1">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\' en zet de schakelaar aan.</string>
-    <string name="home_section_3_paragraph_2">Let op: vanaf dit moment moet je vegen om te navigeren en dubbeltikken om te activeren.</string>
-    <string name="home_section_3_paragraph_3">Kloppen deze stappen niet voor jouw toestel? Zoek dan op \'TalkBack\' om naar het juiste scherm te springen.</string>
-    <string name="home_section_4">TalkBack uitschakelen</string>
-    <string name="home_section_4_paragraph_1">Open de Instellingen app, selecteer Toegankelijkheid, selecteer TalkBack en zet de schakelaar uit. Of zoek op \'TalkBack\' om naar dit scherm te verspringen.</string>
-    <string name="home_section_5">TalkBack snelkoppeling</string>
-    <string name="home_section_5_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uit te schakelen.</string>
-    <string name="home_section_5_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en kies voor \'TalkBack\'.</string>
-    <string name="home_section_5_paragraph_3">Houd de volume omhoog en omlaag knoppen drie seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
+    <string name="talkback_description">De ScreenReader app helpt je bij het leren van TalkBack.</string>
+    <string name="talkback_section_1">Wat is TalkBack?</string>
+    <string name="talkback_section_1_paragraph_1">TalkBack is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen.</string>
+    <string name="talkback_section_1_paragraph_2">Door middel van gebaren kun je navigeren tussen de elementen op het scherm. Elk element wordt voorgelezen zodra het is geselecteerd.</string>
+    <string name="talkback_section_1_paragraph_3">Het is hierdoor mogelijk om je toestel volledig te bedienen zonder zicht.</string>
+    <string name="talkback_section_2">TalkBack leren</string>
+    <string name="talkback_section_2_paragraph_1">De ScreenReader app helpt je bij het leren van alle TalkBack gebaren. Daarnaast kun je een aantal veelvoorkomende acties leren.</string>
+    <string name="talkback_section_2_paragraph_2">Ben je afhankelijk van de schermlezer? Dan is deze app erg handig om je vaardigheden te verbeteren.</string>
+    <string name="talkback_section_2_paragraph_3">Ben je betrokken bij het ontwikkelen van apps? Gebruik de schermlezer dan om de toegankelijkheid te verbeteren.</string>
+    <string name="talkback_section_3">TalkBack inschakelen</string>
+    <string name="talkback_section_3_paragraph_1">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\' en zet de schakelaar aan.</string>
+    <string name="talkback_section_3_paragraph_2">Let op: vanaf dit moment moet je vegen om te navigeren en dubbeltikken om te activeren.</string>
+    <string name="talkback_section_3_paragraph_3">Kloppen deze stappen niet voor jouw toestel? Zoek dan op \'TalkBack\' om naar het juiste scherm te springen.</string>
+    <string name="talkback_section_4">TalkBack uitschakelen</string>
+    <string name="talkback_section_4_paragraph_1">Open de Instellingen app, selecteer Toegankelijkheid, selecteer TalkBack en zet de schakelaar uit. Of zoek op \'TalkBack\' om naar dit scherm te verspringen.</string>
+    <string name="talkback_section_5">TalkBack snelkoppeling</string>
+    <string name="talkback_section_5_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uit te schakelen.</string>
+    <string name="talkback_section_5_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en kies voor \'TalkBack\'.</string>
+    <string name="talkback_section_5_paragraph_3">Houd de volume omhoog en omlaag knoppen drie seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
 
     <!-- Training -->
     <string name="training_accessibility_label">Afgerond. \'%1$s\'</string>
@@ -58,6 +58,7 @@
     <string name="more_title">Meer informatie</string>
     <string name="more_tab">Meer</string>
     <string name="more_description">De ScreenReader app is een initiatief van Stichting Appt. De app is ontwikkeld door Abra. De app is mede mogelijk gemaakt door het SIDN fonds.</string>
+    <string name="more_actions">Acties</string>
     <string name="more_partners">Partners</string>
 
     <string name="topic_rating_title">App beoordelen</string>

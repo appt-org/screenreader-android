@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/tab_home"
-        android:icon="@drawable/tab_home"
-        android:title="@string/home_tab" />
+        android:id="@+id/tab_talkback"
+        android:icon="@drawable/tab_talkback"
+        android:title="@string/talkback_tab" />
 
     <item
         android:id="@+id/tab_gestures"

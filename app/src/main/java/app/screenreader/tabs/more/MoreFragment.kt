@@ -23,6 +23,7 @@ class MoreFragment: ListFragment() {
 
     override val items = listOf(
         R.string.more_description,
+        Header(R.string.more_actions),
         Topic.RATING,
         Topic.SHARE,
         Topic.WEBSITE,
