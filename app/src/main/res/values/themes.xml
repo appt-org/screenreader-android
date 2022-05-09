@@ -101,6 +101,7 @@
         <item name="android:focusable">true</item>
         <item name="android:textColor">@color/foreground</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:textColorLink">@color/primary</item>
     </style>
 
     <style name="Widget.TextView.SemiBold">

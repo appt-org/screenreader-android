@@ -49,7 +49,7 @@
     <string name="home_section_5">TalkBack snelkoppeling</string>
     <string name="home_section_5_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uit te schakelen.</string>
     <string name="home_section_5_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en kies voor \'TalkBack\'.</string>
-    <string name="home_section_5_paragraph_3">Houd de volume- omhoog en omlaag drie seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
+    <string name="home_section_5_paragraph_3">Houd de volume omhoog en omlaag knoppen drie seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
 
     <!-- Training -->
     <string name="training_accessibility_label">Afgerond. \'%1$s\'</string>
@@ -155,7 +155,7 @@
     <string name="gesture_one_finger_double_tap_explanation">Door twee keer op het scherm te tikken kun je bijvoorbeeld een knop activeren.</string>
 
     <string name="gesture_one_finger_double_tap_hold_title">Het geselecteerde onderdeel lang indrukken</string>
-    <string name="gesture_one_finger_double_tap_hold_description">Tik met 1 vinger 2 keer en houd vast.</string>
+    <string name="gesture_one_finger_double_tap_hold_description">Tik met 1 vinger 2 keer en hou je vinger 3 seconden vast.</string>
     <string name="gesture_one_finger_double_tap_hold_explanation">In veel apps verschijnt er een menu met opties wanneer je dit gebaar gebruikt. In een lijst kun je op deze manier meestal acties uitvoeren op het geselecteerde onderdeel.</string>
 
     <string name="gesture_one_finger_triple_tap_title">Dubbeltikken op het geselecteerde onderdeel</string>
@@ -174,7 +174,7 @@
     <string name="gesture_two_finger_double_tap_explanation">Je kunt handelingen zoals telefoongesprekken en media starten of stoppen. Een telefoongesprek kan je opnemen of ophangen. Een video kan je pauzeren of afspelen.</string>
 
     <string name="gesture_two_finger_double_tap_hold_title">Selectiemodus starten of beëindigen</string>
-    <string name="gesture_two_finger_double_tap_hold_description">Tik met 2 vingers 2 keer en houd vast.</string>
+    <string name="gesture_two_finger_double_tap_hold_description">Tik met 2 vingers 2 keer en hou je vinger 3 seconden vast.</string>
     <string name="gesture_two_finger_double_tap_hold_explanation">Dit gebaar kun je gebruik als je snel tekst wilt selecteren of deselecteren.</string>
 
     <string name="gesture_two_finger_triple_tap_title">Vanaf volgende lezen</string>
@@ -193,7 +193,7 @@
     <string name="gesture_three_finger_double_tap_explanation">Dit gebaar is de snelste manier om tekst te kopiëren.</string>
 
     <string name="gesture_three_finger_double_tap_hold_title">Tekst knippen</string>
-    <string name="gesture_three_finger_double_tap_hold_description">Tik met 3 vingers 2 keer en houd vast.</string>
+    <string name="gesture_three_finger_double_tap_hold_description">Tik met 3 vingers 2 keer en hou je vinger 3 seconden vast.</string>
     <string name="gesture_three_finger_double_tap_hold_explanation">Dit gebaar is de snelste manier om tekst te knippen.</string>
 
     <string name="gesture_three_finger_triple_tap_title">Tekst plakken</string>
@@ -212,7 +212,7 @@
     <string name="gesture_four_finger_double_tap_explanation">Nadat je dit gebaar gebruikt verschijnt informatie die je helpt bij het gebruiken van TalkBack.</string>
 
     <string name="gesture_four_finger_double_tap_hold_title">Aanrakingen direct doorgeven</string>
-    <string name="gesture_four_finger_double_tap_hold_description">Tik met 4 vingers 2 keer en houd vast.</string>
+    <string name="gesture_four_finger_double_tap_hold_description">Tik met 4 vingers 2 keer en hou je vinger 3 seconden vast</string>
     <string name="gesture_four_finger_double_tap_hold_explanation">Nadat je dit gebaar te gebruikt worden alle aanrakingen direct aan de app doorgegeven. Hierdoor is het bijvoorbeeld mogelijk om je handtekening te zetten.</string>
 
     <!-- Gestures: shortcuts -->
@@ -275,55 +275,63 @@
     <!-- Actions: text -->
     <string name="actions_text">Tekst bewerken</string>
     <string name="action_selection_title">Tekst selecteren</string>
-    <string name="action_copy_title">Kopiëren</string>
-    <string name="action_paste_title">Plakken</string>
+    <string name="action_copy_title">Tekst kopiëren</string>
+    <string name="action_paste_title">Tekst plakken</string>
 
     <!-- Action: headings -->
-    <string name="action_headings_instruction1">Met TalkBack kun je via koppen navigeren. Dit is handig bij lange pagina\'s of websites. Zo navigeer je via koppen:</string>
-    <string name="action_headings_instruction2">1. Zet de navigatie-instelling op \'Koppen\' door met één vinger omlaag of omhoog te vegen.</string>
-    <string name="action_headings_instruction3">2. Veeg naar links om naar de vorige kop te navigeren, veeg naar rechts om naar de volgende kop te navigeren.</string>
-    <string name="action_headings_instruction4">Navigeer drie keer via koppen om de training af te ronden.</string>
-    <string name="action_headings_heading1">Kop 1</string>
-    <string name="action_headings_heading2">Kop 2</string>
-    <string name="action_headings_heading3">Kop 3</string>
+    <string name="action_headings_instruction_1">Met TalkBack kun je via koppen navigeren. Dit is handig bij lange pagina\'s of websites.</string>
+    <string name="action_headings_instruction_2">Zo navigeer je via koppen:</string>
+    <string name="action_headings_instruction_3">1. Zet de navigatie-instelling op \'Koppen\' door met drie vingers naar rechts te vegen.</string>
+    <string name="action_headings_instruction_4">2. Veeg met één vinger omlaag om naar de volgende kop te navigeren. Of veeg met één vinger omhoog om naar de vorige kop te navigeren.</string>
+    <string name="action_headings_instruction_5">Navigeer drie keer via koppen om de training af te ronden.</string>
+    <string name="action_headings_heading_1">Kop 1</string>
+    <string name="action_headings_heading_2">Kop 2</string>
+    <string name="action_headings_heading_3">Kop 3</string>
     <string name="action_headings_skip">Deze tekst sla je over wanneer je via kopregels navigeert.</string>
 
     <!-- Action: links -->
-    <string name="action_links_instruction1">Met TalkBack kun je via links navigeren. Dit is handig om bijvoorbeeld websites en telefoonnummers te vinden. Zo navigeer je via links:</string>
-    <string name="action_links_instruction2">1. Zet de navigatie-instelling op \'Links\' door met één vinger omlaag of omhoog te vegen.</string>
-    <string name="action_links_instruction3">2. Veeg met één vinger naar rechts om naar de volgende link te navigeren.</string>
-    <string name="action_links_instruction4">Navigeer drie keer via links om de training af te ronden.</string>
-    <string name="action_links_heading1">Link 1: www.appt.nl</string>
-    <string name="action_links_heading2">Link 2: info@appt.nl</string>
-    <string name="action_links_heading3">Link 3: +31612345678</string>
+    <string name="action_links_instruction_1">Met TalkBack kun je via links navigeren. Dit is handig om bijvoorbeeld websites en telefoonnummers te vinden.</string>
+    <string name="action_links_instruction_2">Zo navigeer je via links:</string>
+    <string name="action_links_instruction_3">1. Zet de navigatie-instelling op \'Links\' door met drie vingers naar rechts te vegen.</string>
+    <string name="action_links_instruction_4">2. Veeg met één vinger omlaag om naar de volgende link te navigeren. Of veeg met één vinger omhoog om naar de vorige link te navigeren.</string>
+    <string name="action_links_instruction_5">Navigeer drie keer via links om de training af te ronden.</string>
+    <string name="action_links_heading_1">Link 1: www.appt.nl</string>
+    <string name="action_links_heading_2">Link 2: info@appt.nl</string>
+    <string name="action_links_heading_3">Link 3: +31612345678</string>
     <string name="action_links_skip">Deze tekst sla je over wanneer je via links navigeert.</string>
 
     <!-- Action: select -->
-    <string name="action_select_instruction1">Zo selecteer je tekst:</string>
-    <string name="action_select_instruction2">1. Markeer het veld waar je tekst wilt selecteren.</string>
-    <string name="action_select_instruction3">2. Veeg omhoog en dan naar rechts om het lokale contextmenu te openen.</string>
-    <string name="action_select_instruction4">3. Kies de optie \'Opties bewerken\'.</string>
-    <string name="action_select_instruction5">4. Kies de optie \'Alles selecteren\'.</string>
-    <string name="action_select_instruction6">Selecteer alle tekst in het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="action_select_instruction_1">Met TalkBack kun je tekst selecteren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
+    <string name="action_select_instruction_2">Zo selecteer je tekst:</string>
+    <string name="action_select_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
+    <string name="action_select_instruction_4">2. Veeg met één vinger omhoog en dan naar rechts om het contextmenu te openen.</string>
+    <string name="action_select_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
+    <string name="action_select_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
+    <string name="action_select_instruction_7">Selecteer alle tekst in het onderstaande tekstveld om de training af te ronden.</string>
     <string name="action_select_text">Selecteer deze tekst</string>
 
     <!-- Action: copy -->
-    <string name="action_copy_instruction1">Zo kopieer je tekst:</string>
-    <string name="action_copy_instruction2">1. Selecteer de tekst die je wilt kopiëren. Weet je niet hoe dit moet? Volg dan eerst de training om tekst te selecteren.</string>
-    <string name="action_copy_instruction3">2. Veeg omhoog en dan naar rechts om het lokale contextmenu te openen.</string>
-    <string name="action_copy_instruction4">3. Kies de optie \'Opties bewerken\'.</string>
-    <string name="action_copy_instruction5">4. Kies de optie \'Kopiëren\'.</string>
-    <string name="action_copy_instruction6">Kopieer tekst uit het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="action_copy_instruction_1">Met TalkBack kun je tekst kopiëren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
+    <string name="action_copy_instruction_2">Zo kopieer je tekst:</string>
+    <string name="action_copy_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
+    <string name="action_copy_instruction_4">2. Veeg met één vinger omhoog en dan naar rechts om het contextmenu te openen.</string>
+    <string name="action_copy_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
+    <string name="action_copy_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
+    <string name="action_copy_instruction_7">5. Veeg nogmaals met één vinger omhoog en dan naar rechts om het contextmenu te openen.</string>
+    <string name="action_copy_instruction_8">6. Kies de optie \'Bewerkingopties\'.</string>
+    <string name="action_copy_instruction_9">7. Kies de optie \'Kopiëren\'.</string>
+    <string name="action_copy_instruction_10">Kopieer alle tekst uit het onderstaande tekstveld om de training af te ronden.</string>
     <string name="action_copy_text">Kopieer deze tekst</string>
 
     <!-- Action: paste -->
-    <string name="action_paste_instruction1">Zo plak je tekst:</string>
-    <string name="action_paste_instruction2">1. Markeer het veld waar je tekst wilt plakken.</string>
-    <string name="action_paste_instruction3">2. Dubbeltik en houd vast om te starten met bewerken.</string>
-    <string name="action_paste_instruction4">3. Veeg omhoog en dan naar rechts om het lokale contextmenu te openen.</string>
-    <string name="action_paste_instruction5">4. Kies de optie \'Opties bewerken\'.</string>
-    <string name="action_paste_instruction6">5. Kies de optie \'Plakken\'.</string>
-    <string name="action_paste_instruction7">Plak tekst in het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="action_paste_instruction_1">Met TalkBack kun je tekst plakken. Je kunt hiervoor gebruik maken van het contextmenu.</string>
+    <string name="action_paste_instruction_2">Zo plak je tekst:</string>
+    <string name="action_paste_instruction_3">1. Markeer het veld waar je tekst wilt plakken.</string>
+    <string name="action_paste_instruction_4">2. Dubbeltik met één vinger en houd het scherm 3 seconden vast. Laat je vinger daarna los om te starten met bewerken.</string>
+    <string name="action_paste_instruction_5">3. Veeg met één vinger omhoog en dan naar rechts om het contextmenu te openen.</string>
+    <string name="action_paste_instruction_6">4. Kies de optie \'Bewerkingopties\'.</string>
+    <string name="action_paste_instruction_7">5. Kies de optie \'Plakken\'.</string>
+    <string name="action_paste_instruction_8">Plak tekst in het onderstaande tekstveld om de training af te ronden.</string>
     <string name="action_paste_text">Plak hier vanuit je klembord</string>
 
     <!-- ScreenReaderService -->

@@ -12,27 +12,31 @@
         <!-- Instructions -->
         <TextView style="@style/Widget.TextView.Training"
             android:id="@+id/textView1"
-            android:text="@string/action_select_instruction1" />
+            android:text="@string/action_select_instruction_1" />
 
         <TextView style="@style/Widget.TextView.Training"
             android:id="@+id/textView2"
-            android:text="@string/action_select_instruction2" />
+            android:text="@string/action_select_instruction_2" />
 
         <TextView style="@style/Widget.TextView.Training"
             android:id="@+id/textView3"
-            android:text="@string/action_select_instruction3" />
+            android:text="@string/action_select_instruction_3" />
 
         <TextView style="@style/Widget.TextView.Training"
             android:id="@+id/textView4"
-            android:text="@string/action_select_instruction4" />
+            android:text="@string/action_select_instruction_4" />
 
         <TextView style="@style/Widget.TextView.Training"
             android:id="@+id/textView5"
-            android:text="@string/action_select_instruction5" />
+            android:text="@string/action_select_instruction_5" />
 
         <TextView style="@style/Widget.TextView.Training"
             android:id="@+id/textView6"
-            android:text="@string/action_select_instruction6" />
+            android:text="@string/action_select_instruction_6" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:id="@+id/textView7"
+            android:text="@string/action_select_instruction_7" />
 
         <!-- Action -->
         <app.screenreader.views.TrainingField

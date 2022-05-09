@@ -11,22 +11,34 @@
 
         <!-- Instructions -->
         <TextView style="@style/Widget.TextView.Training"
-            android:text="@string/action_copy_instruction1" />
+            android:text="@string/action_copy_instruction_1" />
 
         <TextView style="@style/Widget.TextView.Training"
-            android:text="@string/action_copy_instruction2" />
+            android:text="@string/action_copy_instruction_2" />
 
         <TextView style="@style/Widget.TextView.Training"
-            android:text="@string/action_copy_instruction3" />
+            android:text="@string/action_copy_instruction_3" />
 
         <TextView style="@style/Widget.TextView.Training"
-            android:text="@string/action_copy_instruction4" />
+            android:text="@string/action_copy_instruction_4" />
 
         <TextView style="@style/Widget.TextView.Training"
-            android:text="@string/action_copy_instruction5" />
+            android:text="@string/action_copy_instruction_5" />
 
         <TextView style="@style/Widget.TextView.Training"
-            android:text="@string/action_copy_instruction6" />
+            android:text="@string/action_copy_instruction_6" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/action_copy_instruction_7" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/action_copy_instruction_8" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/action_copy_instruction_9" />
+
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/action_copy_instruction_10" />
 
         <!-- Action -->
         <app.screenreader.views.TrainingField
