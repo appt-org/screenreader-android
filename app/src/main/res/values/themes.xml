@@ -112,7 +112,6 @@
     </style>
 
     <style name="Widget.TextView.Header" parent="Widget.TextView.Bold">
-        <item name="android:textSize">18sp</item>
         <item name="android:accessibilityHeading" tools:targetApi="p">true</item>
     </style>
 

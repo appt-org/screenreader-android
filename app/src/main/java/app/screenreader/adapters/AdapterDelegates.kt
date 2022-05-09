@@ -44,7 +44,7 @@ fun textResourceAdapterDelegate() = adapterDelegate<Int, Any>(R.layout.view_text
         if (adapterPosition == 0) {
             textView.setPadding(marginMedium)
         } else {
-            textView.setPadding(marginMedium, 0, marginMedium, marginSmall)
+            textView.setPadding(marginMedium, 0, marginMedium, marginMedium)
         }
     }
 }

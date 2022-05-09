@@ -8,6 +8,6 @@
     android:background="@color/background"
     android:paddingStart="@dimen/margin_medium"
     android:paddingEnd="@dimen/margin_medium"
-    android:paddingTop="@dimen/margin_large"
+    android:paddingTop="@dimen/margin_medium"
     android:paddingBottom="@dimen/margin_small"
     tools:text="Header" />

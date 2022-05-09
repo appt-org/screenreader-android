@@ -31,25 +31,25 @@
     <string name="home_title">TalkBack leren</string>
     <string name="home_tab">TalkBack</string>
 
-    <string name="home_description">De ScreenReader app helpt je om TalkBack te leren.</string>
+    <string name="home_description">De ScreenReader app helpt je bij het leren van TalkBack.</string>
     <string name="home_section_1">Wat is TalkBack?</string>
-    <string name="home_section_1_paragraph_1">TalkBack is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen. Door middel van gebaren kun je navigeren tussen elementen op het scherm. Elk element wordt voorgelezen zodra het is geselecteerd. Zelfs als je het scherm niet kunt zien kun je hierdoor alsnog je toestel bedienen.</string>
+    <string name="home_section_1_paragraph_1">TalkBack is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen.</string>
+    <string name="home_section_1_paragraph_2">Door middel van gebaren kun je navigeren tussen de elementen op het scherm. Elk element wordt voorgelezen zodra het is geselecteerd.</string>
+    <string name="home_section_1_paragraph_3">Het is hierdoor mogelijk om je toestel volledig te bedienen zonder zicht.</string>
     <string name="home_section_2">TalkBack leren</string>
-    <string name="home_section_2_paragraph_1">De ScreenReader app helpt je om alle gebaren en veelvoorkomende acties te leren. Ben je afhankelijk van de schermlezer? Dan is deze app erg handig om je vaardigheden te verbeteren. Ben je betrokken bij het ontwikkelen van apps? Gebruik de schermlezer dan om de toegankelijkheid te verbeteren.</string>
-    <string name="home_section_3">Gebaren leren</string>
-    <string name="home_section_3_paragraph_1">Open het tabblad \'Gebaren\' om gebaren te leren. Er zijn drie simpele gebaren om je apparaat te besturen.</string>
-    <string name="home_section_3_paragraph_2">1. Veeg naar links om naar het vorige element te gaan.</string>
-    <string name="home_section_3_paragraph_3">2. Veeg naar rechts om naar het volgende element te gaan.</string>
-    <string name="home_section_3_paragraph_4">3. Dubbeltik om het geselecteerde item te activeren.</string>
-    <string name="home_section_4">Acties leren</string>
-    <string name="home_section_4_paragraph_1">Open het tabblad \'Acties\' om acties te leren. Je kunt leren hoe je beter kunt navigeren en hoe je tekst kunt bewerken. Om deze acties goed uit te voeren raden we aan om eerst alle gebaren te leren.</string>
-    <string name="home_section_5">TalkBack inschakelen</string>
-    <string name="home_section_5_paragraph_1">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\' en zet de schakelaar aan. Let op: vanaf dit moment moet je vegen om te navigeren en dubbeltikken om te activeren.</string>
-    <string name="home_section_5_paragraph_2">Kloppen deze stappen niet voor jouw toestel? Zoek dan op \'TalkBack\' om naar het juiste scherm te springen.</string>
-    <string name="home_section_6">TalkBack uitschakelen</string>
-    <string name="home_section_6_paragraph_1">Open de Instellingen app, selecteer Toegankelijkheid, selecteer TalkBack en zet de schakelaar uit. Of zoek op \'TalkBack\' om naar het juiste scherm te verspringen.</string>
-    <string name="home_section_7">TalkBack snelkoppeling</string>
-    <string name="home_section_7_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uitschakelen. Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en kies voor \'TalkBack\'. Houd de volume- omhoog en omlaag drie seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
+    <string name="home_section_2_paragraph_1">De ScreenReader app helpt je bij het leren van alle TalkBack gebaren. Daarnaast kun je een aantal veelvoorkomende acties leren.</string>
+    <string name="home_section_2_paragraph_2">Ben je afhankelijk van de schermlezer? Dan is deze app erg handig om je vaardigheden te verbeteren.</string>
+    <string name="home_section_2_paragraph_3">Ben je betrokken bij het ontwikkelen van apps? Gebruik de schermlezer dan om de toegankelijkheid te verbeteren.</string>
+    <string name="home_section_3">TalkBack inschakelen</string>
+    <string name="home_section_3_paragraph_1">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\' en zet de schakelaar aan.</string>
+    <string name="home_section_3_paragraph_2">Let op: vanaf dit moment moet je vegen om te navigeren en dubbeltikken om te activeren.</string>
+    <string name="home_section_3_paragraph_3">Kloppen deze stappen niet voor jouw toestel? Zoek dan op \'TalkBack\' om naar het juiste scherm te springen.</string>
+    <string name="home_section_4">TalkBack uitschakelen</string>
+    <string name="home_section_4_paragraph_1">Open de Instellingen app, selecteer Toegankelijkheid, selecteer TalkBack en zet de schakelaar uit. Of zoek op \'TalkBack\' om naar dit scherm te verspringen.</string>
+    <string name="home_section_5">TalkBack snelkoppeling</string>
+    <string name="home_section_5_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uit te schakelen.</string>
+    <string name="home_section_5_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en kies voor \'TalkBack\'.</string>
+    <string name="home_section_5_paragraph_3">Houd de volume- omhoog en omlaag drie seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
 
     <!-- Training -->
     <string name="training_accessibility_label">Afgerond. \'%1$s\'</string>
@@ -85,7 +85,7 @@
     <!-- Gestures -->
     <string name="gestures_title">Gebaren leren</string>
     <string name="gestures_tab">Gebaren</string>
-    <string name="gestures_description">Op dit scherm kun je alle TalkBack gebaren leren. Je kunt de gebaren oefenen via de knop rechtsbovenaan.</string>
+    <string name="gestures_description">Op dit scherm kun je alle TalkBack gebaren leren. Selecteer een gebaar om te leren hoe je deze uitvoert. Via de \'Oefenen\'-knop kun je gebaren oefenen.</string>
     <string name="gestures_talkback_error">Wegens technische beperkingen kun je op dit moment nog niet gebaren oefenen wanneer TalkBack aan staat.</string>
 
     <!-- Gestures: practice -->
@@ -265,7 +265,7 @@
     <!-- Actions -->
     <string name="actions_title">Acties leren</string>
     <string name="actions_tab">Acties</string>
-    <string name="actions_description">Op dit scherm kun je een aantal VoiceOver acties leren. Door deze acties te leren kun je apps beter bedienen.</string>
+    <string name="actions_description">Op dit scherm kun je een aantal TalkBack acties leren. We raden je aan om eerst alle gebaren te leren zodat je deze acties goed kunt uitvoeren.</string>
 
     <!-- Actions: navigation -->
     <string name="actions_navigation">Navigeren</string>
