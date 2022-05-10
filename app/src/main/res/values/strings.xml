@@ -80,8 +80,8 @@
     <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/</string>
 
     <!-- TalkBack -->
-    <string name="talkback_disabled_title">TalkBack staat uit</string>
-    <string name="talkback_disabled_explanation">Je moet TalkBack aanzetten om deze training te volgen.</string>
+    <string name="talkback_disabled_title">TalkBack is uitgeschakeld</string>
+    <string name="talkback_disabled_explanation">TalkBack moet ingeschakeld zijn voor deze training.</string>
 
     <!-- Gestures -->
     <string name="gestures_title">Gebaren leren</string>

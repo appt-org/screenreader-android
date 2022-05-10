@@ -1,5 +1,6 @@
 package app.screenreader.tabs.actions
 
+import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Intent
 import app.screenreader.R
 import app.screenreader.extensions.doGetAction
@@ -33,9 +34,14 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
         view.callback = this
         scrollView.addView(view)
 
-        if (!Accessibility.screenReader(this)) {
-            showDialog(R.string.talkback_disabled_title, R.string.talkback_disabled_explanation) {
-                finish()
+        // Listen to accessibility state changes
+        Accessibility.accessibilityManager(this)?.let { manager ->
+            manager.addAccessibilityStateChangeListener {
+                if (manager.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_SPOKEN).isEmpty()) {
+                    showDialog(R.string.talkback_disabled_title, R.string.talkback_disabled_explanation) {
+                        finish()
+                    }
+                }
             }
         }
     }
