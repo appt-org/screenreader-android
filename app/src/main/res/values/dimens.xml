@@ -3,5 +3,5 @@
     <dimen name="margin_medium">16dp</dimen>
     <dimen name="margin_large">24dp</dimen>
 
-    <dimen name="stroke_width">10dp</dimen>
+    <dimen name="stroke_width">10sp</dimen>
 </resources>

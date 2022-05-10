@@ -23,6 +23,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_medium"
         android:scaleType="center"
         android:src="@drawable/icon_check"
         android:focusable="false"

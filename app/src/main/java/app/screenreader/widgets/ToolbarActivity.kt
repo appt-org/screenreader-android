@@ -22,6 +22,7 @@ abstract class ToolbarActivity : BaseActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setHomeActionContentDescription(R.string.action_cancel)
 
         title = getToolbarTitle()
     }

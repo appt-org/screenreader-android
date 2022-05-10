@@ -12,14 +12,8 @@
 
     <!-- Actions -->
     <string name="action_ok">Oké</string>
-    <string name="action_confirm">Bevestigen</string>
+    <string name="action_back">Terug</string>
     <string name="action_cancel">Annuleren</string>
-    <string name="action_settings">Instellingen</string>
-    <string name="action_info">Informatie</string>
-    <string name="action_share">Delen</string>
-    <string name="action_share_article">Deel artikel</string>
-    <string name="action_filter">Filteren</string>
-    <string name="action_apply">Toepassen</string>
     <string name="action_practice">Oefenen</string>
     <string name="action_activate">Activeren</string>
     <string name="action_explanation">Uitleg</string>
