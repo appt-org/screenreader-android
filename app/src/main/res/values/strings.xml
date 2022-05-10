@@ -86,7 +86,7 @@
     <!-- Gestures -->
     <string name="gestures_title">Gebaren leren</string>
     <string name="gestures_tab">Gebaren</string>
-    <string name="gestures_description">Op dit scherm kun je alle TalkBack gebaren leren. Selecteer een gebaar om te leren hoe je deze uitvoert. Via de \'Oefenen\'-knop kun je gebaren oefenen.</string>
+    <string name="gestures_description">Op dit scherm kun je alle TalkBack gebaren leren. Selecteer een gebaar om te leren hoe je deze uitvoert. Via de \'Oefenen\'-knop kun je gebaren in een willekeurige volgorde oefenen.</string>
     <string name="gestures_talkback_error">Wegens technische beperkingen kun je op dit moment nog niet gebaren oefenen wanneer TalkBack aan staat.</string>
 
     <!-- Gestures: practice -->
@@ -220,48 +220,44 @@
     <string name="gestures_shortcuts">Snelkoppelingen</string>
 
     <string name="gesture_one_finger_swipe_down_then_up_title">Naar het laatste onderdeel gaan</string>
-    <string name="gesture_one_finger_swipe_down_then_up_description">Veeg met 1 vinger omlaag en dan omhoog.</string>
+    <string name="gesture_one_finger_swipe_down_then_up_description">Veeg met 1 vinger in een vloeiende beweging omlaag en dan omhoog.</string>
     <string name="gesture_one_finger_swipe_down_then_up_explanation">Met dit gebaar kun je direct naar het laatste element op het scherm verspringen. Dit is vaak een knop waarmee je een actie kunt uitvoeren.</string>
 
     <string name="gesture_one_finger_swipe_up_then_down_title">Naar het eerste onderdeel gaan</string>
-    <string name="gesture_one_finger_swipe_up_then_down_description">Veeg met 1 vinger omhoog en dan omlaag.</string>
+    <string name="gesture_one_finger_swipe_up_then_down_description">Veeg met 1 vinger in een vloeiende beweging omhoog en dan omlaag.</string>
     <string name="gesture_one_finger_swipe_up_then_down_explanation">Met dit gebaar kun je direct naar het eerste element op het scherm verspringen. Dit is vaak een knop om naar het vorige scherm te gaan.</string>
 
     <string name="gesture_one_finger_swipe_right_then_left_title">Vooruit scrollen</string>
-    <string name="gesture_one_finger_swipe_right_then_left_description">Veeg met 1 vinger naar rechts en dan naar links.</string>
+    <string name="gesture_one_finger_swipe_right_then_left_description">Veeg met 1 vinger in een vloeiende beweging naar rechts en dan naar links.</string>
     <string name="gesture_one_finger_swipe_right_then_left_explanation">Met dit gebaar kun je een klein stukje naar voren scrollen. Je kan dit ook doen door met twee vingers naar onder te vegen.</string>
 
     <string name="gesture_one_finger_swipe_left_then_right_title">Terug scrollen</string>
-    <string name="gesture_one_finger_swipe_left_then_right_description">Veeg met 1 vinger naar links en dan naar rechts.</string>
+    <string name="gesture_one_finger_swipe_left_then_right_description">Veeg met 1 vinger in een vloeiende beweging naar links en dan naar rechts.</string>
     <string name="gesture_one_finger_swipe_left_then_right_explanation">Met dit gebaar kun je een klein stukje terug scrollen. Je kan dit ook doen door met twee vingers omhoog te vegen.</string>
 
-    <string name="gesture_one_finger_swipe_down_then_left_title">Terug</string>
-    <string name="gesture_one_finger_swipe_down_then_left_description">Veeg met 1 vinger omlaag en dan naar links.</string>
+    <string name="gesture_one_finger_swipe_down_then_left_title">Naar vorige scherm gaan</string>
+    <string name="gesture_one_finger_swipe_down_then_left_description">Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar links.</string>
     <string name="gesture_one_finger_swipe_down_then_left_explanation">Dit gebaar is belangrijk om te onthouden! Je kunt met dit gebaar in bijna elke app naar het vorige scherm navigeren. Daarnaast kun je ook meldingen en popups sluiten.</string>
 
-    <string name="gesture_one_finger_swipe_up_then_left_title">Thuis</string>
-    <string name="gesture_one_finger_swipe_up_then_left_description">Veeg met 1 vinger omhoog en dan naar links.</string>
+    <string name="gesture_one_finger_swipe_up_then_left_title">Naar startscherm gaan</string>
+    <string name="gesture_one_finger_swipe_up_then_left_description">Veeg met 1 vinger in een vloeiende beweging omhoog en dan naar links.</string>
     <string name="gesture_one_finger_swipe_up_then_left_explanation">Dit is de snelste manier om naar het thuisscherm te gaan.</string>
 
-    <string name="gesture_one_finger_swipe_left_then_up_title">Overzicht</string>
-    <string name="gesture_one_finger_swipe_left_then_up_description">Veeg met 1 vinger naar links en dan omhoog.</string>
+    <string name="gesture_one_finger_swipe_left_then_up_title">App overzicht tonen</string>
+    <string name="gesture_one_finger_swipe_left_then_up_description">Veeg met 1 vinger in een vloeiende beweging naar links en dan omhoog.</string>
     <string name="gesture_one_finger_swipe_left_then_up_explanation">Dit is de snelste manier om je recente apps te bekijken.</string>
 
-    <string name="gesture_one_finger_swipe_right_then_down_title">Meldingen</string>
-    <string name="gesture_one_finger_swipe_right_then_down_description">Veeg met 1 vinger naar rechts en dan omlaag.</string>
+    <string name="gesture_one_finger_swipe_right_then_down_title">Meldingen tonen</string>
+    <string name="gesture_one_finger_swipe_right_then_down_description">Veeg met 1 vinger in een vloeiende beweging naar rechts en dan omlaag.</string>
     <string name="gesture_one_finger_swipe_right_then_down_explanation">Dit is de snelste manier om je meldingen te bekijken. Je kunt ook met twee vingers bovenaan het scherm naar onder vegen.</string>
 
-    <string name="gesture_one_finger_swipe_left_then_down_title">Zoeken</string>
-    <string name="gesture_one_finger_swipe_left_then_down_description">Veeg met 1 vinger naar links en dan omlaag</string>
+    <string name="gesture_one_finger_swipe_left_then_down_title">Zoekfunctie openen</string>
+    <string name="gesture_one_finger_swipe_left_then_down_description">Veeg met 1 vinger in een vloeiende beweging naar links en dan omlaag</string>
     <string name="gesture_one_finger_swipe_left_then_down_explanation">Dit is een belangrijk gebaar om te onthouden. Nadat je dit gebaar uitvoert verschijnt er een zoekvenster. Typ waar je naar op zoek bent. Onder het zoekveld verschijnt een lijst met zoekresultaten. Veeg naar rechts tot je het gewenste zoekresultaat hebt geselecteerd. Dubbeltik om de focus te laten verspringen naar dit zoekresultaat.</string>
 
-    <string name="gesture_one_finger_swipe_up_then_right_title">Lokaal contextmenu</string>
-    <string name="gesture_one_finger_swipe_up_then_right_description">Veeg met 1 vinger omhoog en dan naar rechts.</string>
-    <string name="gesture_one_finger_swipe_up_then_right_explanation">Er verschijnt een menu met lokale acties nadat je dit gebaar gebruikt. Zo kun je bijvoorbeeld tekst uit het geselecteerde element kopiëren of plakken.</string>
-
-    <string name="gesture_one_finger_swipe_down_then_right_title">Algemeen contextmenu</string>
-    <string name="gesture_one_finger_swipe_down_then_right_description">Veeg met 1 vinger omlaag en dan naar rechts.</string>
-    <string name="gesture_one_finger_swipe_down_then_right_explanation">Er verschijnt een menu met algemene acties nadat je dit gebaar gebruikt. Je kunt bijvoorbeeld het scherm laten voorlezen of de laatste uiting naar het klembord kopiëren.</string>
+    <string name="gesture_one_finger_swipe_down_then_right_title">Contextmenu openen</string>
+    <string name="gesture_one_finger_swipe_down_then_right_description">Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts.</string>
+    <string name="gesture_one_finger_swipe_down_then_right_explanation">Er verschijnt een menu met acties nadat je dit gebaar gebruikt. Je kunt bijvoorbeeld het scherm laten voorlezen of de laatste uiting naar het klembord kopiëren.</string>
 
     <!-- Actions -->
     <string name="actions_title">Acties leren</string>
@@ -305,7 +301,7 @@
     <string name="action_select_instruction_1">Met TalkBack kun je tekst selecteren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_select_instruction_2">Zo selecteer je tekst:</string>
     <string name="action_select_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
-    <string name="action_select_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omhoog en dan naar rechts om het contextmenu te openen.</string>
+    <string name="action_select_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
     <string name="action_select_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
     <string name="action_select_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
     <string name="action_select_instruction_7">Selecteer alle tekst in het onderstaande tekstveld om de training af te ronden.</string>
@@ -315,10 +311,10 @@
     <string name="action_copy_instruction_1">Met TalkBack kun je tekst kopiëren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_copy_instruction_2">Zo kopieer je tekst:</string>
     <string name="action_copy_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
-    <string name="action_copy_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omhoog en dan naar rechts om het contextmenu te openen.</string>
+    <string name="action_copy_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
     <string name="action_copy_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
     <string name="action_copy_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
-    <string name="action_copy_instruction_7">5. Veeg nogmaals met 1 vinger in een vloeiende beweging omhoog en dan naar rechts om het contextmenu te openen.</string>
+    <string name="action_copy_instruction_7">5. Veeg nogmaals met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
     <string name="action_copy_instruction_8">6. Kies de optie \'Bewerkingopties\'.</string>
     <string name="action_copy_instruction_9">7. Kies de optie \'Kopiëren\'.</string>
     <string name="action_copy_instruction_10">Kopieer alle tekst uit het onderstaande tekstveld om de training af te ronden.</string>
@@ -329,7 +325,7 @@
     <string name="action_paste_instruction_2">Zo plak je tekst:</string>
     <string name="action_paste_instruction_3">1. Markeer het veld waar je tekst wilt plakken.</string>
     <string name="action_paste_instruction_4">2. Dubbeltik met 1 vinger en houd het scherm 3 seconden vast. Laat je vinger daarna los om te starten met bewerken.</string>
-    <string name="action_paste_instruction_5">3. Veeg met 1 vinger in een vloeiende beweging omhoog en dan naar rechts om het contextmenu te openen.</string>
+    <string name="action_paste_instruction_5">3. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
     <string name="action_paste_instruction_6">4. Kies de optie \'Bewerkingopties\'.</string>
     <string name="action_paste_instruction_7">5. Kies de optie \'Plakken\'.</string>
     <string name="action_paste_instruction_8">Plak tekst in het onderstaande tekstveld om de training af te ronden.</string>

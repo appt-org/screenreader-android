@@ -56,17 +56,16 @@ class GesturesFragment : ListFragment() {
         Gesture.FOUR_FINGER_DOUBLE_TAP,
         Gesture.FOUR_FINGER_DOUBLE_TAP_HOLD,
         Header(R.string.gestures_shortcuts),
-        Gesture.ONE_FINGER_SWIPE_UP_THEN_DOWN,
-        Gesture.ONE_FINGER_SWIPE_DOWN_THEN_UP,
-        Gesture.ONE_FINGER_SWIPE_RIGHT_THEN_LEFT,
-        Gesture.ONE_FINGER_SWIPE_LEFT_THEN_RIGHT,
+        Gesture.ONE_FINGER_SWIPE_DOWN_THEN_RIGHT,
         Gesture.ONE_FINGER_SWIPE_DOWN_THEN_LEFT,
         Gesture.ONE_FINGER_SWIPE_UP_THEN_LEFT,
         Gesture.ONE_FINGER_SWIPE_LEFT_THEN_UP,
         Gesture.ONE_FINGER_SWIPE_RIGHT_THEN_DOWN,
         Gesture.ONE_FINGER_SWIPE_LEFT_THEN_DOWN,
-        Gesture.ONE_FINGER_SWIPE_UP_THEN_RIGHT,
-        Gesture.ONE_FINGER_SWIPE_DOWN_THEN_RIGHT,
+        Gesture.ONE_FINGER_SWIPE_RIGHT_THEN_LEFT,
+        Gesture.ONE_FINGER_SWIPE_LEFT_THEN_RIGHT,
+        Gesture.ONE_FINGER_SWIPE_UP_THEN_DOWN,
+        Gesture.ONE_FINGER_SWIPE_DOWN_THEN_UP,
     )
 
     override val adapter = ListDelegationAdapter(
