@@ -131,6 +131,16 @@
         <item name="fontPath">@string/font_bold</item>
     </style>
 
+    <style name="Widget.EditText" parent="Widget.TextView">
+
+    </style>
+
+    <style name="Widget.EditText.Training" parent="Widget.TextView.Training">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+        <item name="android:padding">@dimen/margin_medium</item>
+    </style>
+
     <style name="Widget.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
         <item name="fontPath">@string/font_semibold</item>
         <item name="android:fontFamily">@font/open_sans_semibold</item>

@@ -40,11 +40,8 @@
 
         <!-- Action -->
         <app.screenreader.views.TrainingField
-            style="@style/Widget.TextView.Training.Bold"
+            style="@style/Widget.EditText.Training"
             android:id="@+id/trainingField"
-            android:padding="@dimen/margin_medium"
-            android:layout_margin="0dp"
             android:text="@string/action_select_text"/>
-
     </LinearLayout>
 </ScrollView>
