@@ -9,10 +9,7 @@ import app.screenreader.R
 import app.screenreader.adapters.headerAdapterDelegate
 import app.screenreader.adapters.textResourceAdapterDelegate
 import app.screenreader.adapters.trainingAdapterDelegate
-import app.screenreader.extensions.setGesture
-import app.screenreader.extensions.setGestures
-import app.screenreader.extensions.setInstructions
-import app.screenreader.extensions.showError
+import app.screenreader.extensions.*
 import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Gesture
 import app.screenreader.model.Header
@@ -103,7 +100,7 @@ class GesturesFragment : ListFragment() {
 
     private fun onGestureClicked(gesture: Gesture) {
         if (Accessibility.screenReader(context)) {
-            context?.showError(R.string.gestures_talkback_error)
+            context?.showDialog(R.string.gestures_talkback_enabled_title, R.string.gestures_talkback_enabled_message)
             return
         }
 
@@ -114,7 +111,7 @@ class GesturesFragment : ListFragment() {
 
     private fun onPracticeClicked() {
         if (Accessibility.screenReader(context)) {
-            context?.showError(R.string.gestures_talkback_error)
+            context?.showDialog(R.string.gestures_talkback_enabled_title, R.string.gestures_talkback_enabled_message)
             return
         }
 

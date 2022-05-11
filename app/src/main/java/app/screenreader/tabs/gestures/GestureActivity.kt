@@ -149,7 +149,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         gesture.completed(baseContext, true)
         setResult(RESULT_OK)
 
-        toast("Gebaar correct uitgevoerd!") {
+        toast(R.string.gesture_completed_message) {
             if (isPracticing) {
                 next()
             }

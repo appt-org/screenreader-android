@@ -27,7 +27,7 @@ class CopyActionView(context: Context): ActionView(
                     if (trainingField.text.toString().contains(text, false)) {
                         correct()
                     } else {
-                        incorrect("Kopieer tekst uit het tekstveld.")
+                        incorrect(R.string.action_copy_incorrect)
                     }
                 }
             }

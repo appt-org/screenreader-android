@@ -18,10 +18,10 @@ class ActionsFragment: ListFragment() {
 
     override val items = listOf(
         R.string.actions_description,
-        Header(R.string.actions_navigation),
+        Header(R.string.actions_header_navigation),
         Action.HEADINGS,
         Action.LINKS,
-        Header(R.string.actions_text),
+        Header(R.string.actions_header_text),
         Action.SELECTION,
         Action.COPY,
         Action.PASTE
@@ -38,7 +38,7 @@ class ActionsFragment: ListFragment() {
     private fun onActionClicked(action: Action) {
         context?.let { context ->
             if (!Accessibility.screenReader(context)) {
-                context.showDialog(R.string.talkback_disabled_title, R.string.talkback_disabled_explanation)
+                context.showDialog(R.string.actions_talkback_disabled_title, R.string.actions_talkback_disabled_message)
                 return
             }
 

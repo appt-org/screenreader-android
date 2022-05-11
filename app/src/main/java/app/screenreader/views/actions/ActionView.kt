@@ -65,7 +65,7 @@ abstract class ActionView(context: Context, private val action: Action, layoutId
         callback?.correct(action)
     }
 
-    open fun incorrect(feedback: String = "Geen feedback") {
-        callback?.incorrect(action, feedback)
+    open fun incorrect(feedback: Int) {
+        callback?.incorrect(action, context.getString(feedback))
     }
 }

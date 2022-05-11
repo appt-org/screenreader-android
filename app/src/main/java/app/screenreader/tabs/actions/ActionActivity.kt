@@ -38,7 +38,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
         Accessibility.accessibilityManager(this)?.let { manager ->
             manager.addAccessibilityStateChangeListener {
                 if (manager.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_SPOKEN).isEmpty()) {
-                    showDialog(R.string.talkback_disabled_title, R.string.talkback_disabled_explanation) {
+                    showDialog(R.string.actions_talkback_disabled_title, R.string.actions_talkback_disabled_message) {
                         finish()
                     }
                 }
@@ -53,7 +53,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
         action.completed(this, true)
         setResult(RESULT_OK)
 
-        toast(R.string.actions_completed_message) {
+        toast(R.string.action_completed_message) {
             finish()
         }
     }

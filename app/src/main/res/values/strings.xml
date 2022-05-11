@@ -76,10 +76,6 @@
     <string name="topic_sidn_fonds_title">SIDN fonds</string>
     <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/</string>
 
-    <!-- TalkBack -->
-    <string name="talkback_disabled_title">TalkBack is uitgeschakeld</string>
-    <string name="talkback_disabled_explanation">TalkBack moet ingeschakeld zijn voor deze training.</string>
-
     <!-- Directions -->
     <string name="direction_up">omhoog</string>
     <string name="direction_top_right">schuin omhoog naar rechts</string>
@@ -95,7 +91,10 @@
     <string name="gestures_title">Gebaren leren</string>
     <string name="gestures_tab">Gebaren</string>
     <string name="gestures_description">Op dit scherm kun je alle TalkBack gebaren leren. Selecteer een gebaar om te leren hoe je deze uitvoert. Via de \'Oefenen\'-knop kun je gebaren in een willekeurige volgorde oefenen.</string>
-    <string name="gestures_talkback_error">Wegens technische beperkingen kun je op dit moment nog niet gebaren oefenen wanneer TalkBack aan staat.</string>
+
+    <!-- Gestures: TalkBack -->
+    <string name="gestures_talkback_enabled_title">TalkBack staat aan</string>
+    <string name="gestures_talkback_enabled_message">Wegens technische beperkingen kun je op dit moment nog niet gebaren oefenen wanneer TalkBack aan staat.</string>
 
     <!-- Gestures: practice -->
     <string name="gestures_practice_title">Gebaren oefenen</string>
@@ -283,20 +282,19 @@
     <string name="actions_title">Acties leren</string>
     <string name="actions_tab">Acties</string>
     <string name="actions_description">Op dit scherm kun je een aantal TalkBack acties leren. We raden je aan om eerst alle gebaren te leren zodat je deze acties goed kunt uitvoeren.</string>
-    <string name="actions_completed_message">Je hebt de training succesvol afgerond!</string>
 
-    <!-- Actions: navigation -->
-    <string name="actions_navigation">Navigeren</string>
-    <string name="action_headings_title">Navigeren via koppen</string>
-    <string name="action_links_title">Navigeren via links</string>
+    <string name="actions_header_navigation">Navigeren</string>
+    <string name="actions_header_text">Tekst bewerken</string>
 
-    <!-- Actions: text -->
-    <string name="actions_text">Tekst bewerken</string>
-    <string name="action_selection_title">Tekst selecteren</string>
-    <string name="action_copy_title">Tekst kopiëren</string>
-    <string name="action_paste_title">Tekst plakken</string>
+    <string name="gesture_completed_message">Je hebt het gebaar correct uitgevoerd!</string>
+    <string name="action_completed_message">Je hebt de training succesvol afgerond!</string>
+
+    <!-- Actions: TalkBack -->
+    <string name="actions_talkback_disabled_title">TalkBack is uitgeschakeld</string>
+    <string name="actions_talkback_disabled_message">TalkBack moet ingeschakeld zijn voor deze training.</string>
 
     <!-- Action: headings -->
+    <string name="action_headings_title">Navigeren via koppen</string>
     <string name="action_headings_instruction_1">Met TalkBack kun je via koppen navigeren. Dit is handig bij lange pagina\'s of websites.</string>
     <string name="action_headings_instruction_2">Zo navigeer je via koppen:</string>
     <string name="action_headings_instruction_3">1. Zet de navigatie-instelling op \'Koppen\' door met 1 vinger in een vloeiende beweging omhoog en omlaag te vegen. Doe dit een aantal keer tot je \'Koppen\' hoort.</string>
@@ -308,6 +306,7 @@
     <string name="action_headings_skip">Deze tekst sla je over wanneer je via koppen navigeert.</string>
 
     <!-- Action: links -->
+    <string name="action_links_title">Navigeren via links</string>
     <string name="action_links_instruction_1">Met TalkBack kun je via links navigeren. Dit is handig om bijvoorbeeld websites en telefoonnummers te vinden.</string>
     <string name="action_links_instruction_2">Zo navigeer je via links:</string>
     <string name="action_links_instruction_3">1. Zet de navigatie-instelling op \'Links\' door met 1 vinger in een vloeiende beweging omhoog en omlaag te vegen. Doe dit een aantal keer tot je \'Links\' hoort.</string>
@@ -319,6 +318,7 @@
     <string name="action_links_skip">Deze tekst sla je over wanneer je via links navigeert.</string>
 
     <!-- Action: select -->
+    <string name="action_select_title">Tekst selecteren</string>
     <string name="action_select_instruction_1">Met TalkBack kun je tekst selecteren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_select_instruction_2">Zo selecteer je tekst:</string>
     <string name="action_select_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
@@ -329,6 +329,7 @@
     <string name="action_select_text">Selecteer deze tekst</string>
 
     <!-- Action: copy -->
+    <string name="action_copy_title">Tekst kopiëren</string>
     <string name="action_copy_instruction_1">Met TalkBack kun je tekst kopiëren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_copy_instruction_2">Zo kopieer je tekst:</string>
     <string name="action_copy_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
@@ -340,8 +341,10 @@
     <string name="action_copy_instruction_9">7. Kies de optie \'Kopiëren\'.</string>
     <string name="action_copy_instruction_10">Kopieer alle tekst uit het onderstaande tekstveld om de training af te ronden.</string>
     <string name="action_copy_text">Kopieer deze tekst</string>
+    <string name="action_copy_incorrect">Kopieer tekst uit het tekstveld.</string>
 
     <!-- Action: paste -->
+    <string name="action_paste_title">Tekst plakken</string>
     <string name="action_paste_instruction_1">Met TalkBack kun je tekst plakken. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_paste_instruction_2">Zo plak je tekst:</string>
     <string name="action_paste_instruction_3">1. Markeer het veld waar je tekst wilt plakken.</string>
