@@ -2,6 +2,7 @@ package app.screenreader.views.gestures
 
 import android.content.Context
 import android.view.MotionEvent
+import app.screenreader.R
 import app.screenreader.extensions.isStart
 import app.screenreader.model.Gesture
 
@@ -31,7 +32,7 @@ class TouchGestureView(
         if (gesture == gesture) {
             correct()
         } else {
-            incorrect("Raak het scherm aan in plaats van te vegen.")
+            incorrect(R.string.gestures_feedback_touch)
         }
     }
 }

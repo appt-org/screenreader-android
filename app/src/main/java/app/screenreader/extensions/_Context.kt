@@ -1,5 +1,6 @@
 package app.screenreader.extensions
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -15,6 +16,10 @@ import kotlin.concurrent.schedule
 /** Dialog **/
 
 fun Context.showDialog(title: String, message: String?, callback: (() -> Unit)? = null) {
+    if (this is Activity && this.isFinishing) {
+        return
+    }
+
     val builder = AlertDialog.Builder(this, R.style.Dialog)
 
     builder.setTitle(title)

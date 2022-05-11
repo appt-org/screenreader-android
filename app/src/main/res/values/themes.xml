@@ -95,7 +95,7 @@
 
     <!-- Widgets -->
     <style name="Widget">
-        <!-- Empty -->
+        <item name="android:textColorHighlight">@color/highlight</item>
     </style>
 
     <style name="Widget.TextView">

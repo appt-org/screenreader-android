@@ -8,6 +8,7 @@ import app.screenreader.extensions.isStart
 import app.screenreader.model.Gesture
 import app.screenreader.model.Touch
 import app.screenreader.services.ScreenReaderService
+import app.screenreader.R
 
 /**
  * Created by Jan Jaap de Groot on 22/10/2020
@@ -41,16 +42,17 @@ class TapGestureView(
 
         when {
             fingers != gesture.fingers -> {
-                incorrect("Tik met ${gesture.fingers} vingers. Je tikte met $fingers vingers.")
+
+                incorrect(R.string.gestures_feedback_tap_fingers, gesture.fingers, fingers)
             }
             taps != gesture.taps -> {
-                incorrect("Tik ${gesture.taps} keer. Je tikte $taps keer.")
+                incorrect(R.string.gestures_feedback_tap_amount, gesture.taps, taps)
             }
             hold != gesture.hold -> {
                 if (hold) {
-                    incorrect("Houd het scherm korter ingedrukt na het tikken.")
+                    incorrect(R.string.gestures_feedback_hold_shorter)
                 } else {
-                    incorrect("Houd het scherm langer ingedrukt na het tikken.")
+                    incorrect(R.string.gestures_feedback_hold_longer)
                 }
             }
             else -> {
@@ -161,7 +163,7 @@ class TapGestureView(
         } else if (event?.isEnd() == true && !tapped) {
             postDelayed({
                 if (!tapped) {
-                    incorrect("Je veegde op het scherm. Tik op het scherm.")
+                    incorrect(R.string.gestures_feedback_tap)
                 }
             }, 500)
         }
@@ -172,7 +174,7 @@ class TapGestureView(
         if (this.gesture == gesture) {
             correct()
         } else {
-            incorrect("Je veegde op het scherm. Tik op het scherm.")
+            incorrect(R.string.gestures_feedback_tap)
         }
     }
 

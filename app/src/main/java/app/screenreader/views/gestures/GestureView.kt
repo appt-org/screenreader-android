@@ -288,11 +288,12 @@ abstract class GestureView(val gesture: Gesture, context: Context) : View(contex
         }
     }
 
-    open fun incorrect(feedback: String = "Geen feedback") {
-        Log.d(TAG, "Incorrect: $feedback")
-
+    open fun incorrect(feedback: Int, vararg arguments: Any) {
         if (!correct) {
-            callback?.incorrect(gesture, feedback)
+            val message = context.getString(feedback, *arguments)
+            Log.d(TAG, "Incorrect: $message")
+
+            callback?.incorrect(gesture, message)
         }
     }
 }

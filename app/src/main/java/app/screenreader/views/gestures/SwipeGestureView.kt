@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import android.view.GestureDetector
 import android.view.MotionEvent
+import app.screenreader.R
 import app.screenreader.extensions.isEnd
 import app.screenreader.extensions.isStart
 import app.screenreader.model.Direction
@@ -30,7 +31,7 @@ open class SwipeGestureView(
             swiped = false
         } else if (event?.isEnd() == true) {
             if (!swiped) {
-                incorrect("Maak een grotere veegbeweging.")
+                incorrect(R.string.gestures_feedback_swipe_larger)
             }
         }
 
@@ -38,12 +39,16 @@ open class SwipeGestureView(
     }
 
     override fun onAccessibilityGesture(gesture: Gesture) {
-        if (this.gesture == gesture) {
-            correct()
-        } else if (gesture.directions.isNotEmpty()) {
-            onSwipe(gesture.directions)
-        } else {
-            incorrect("Maak een veegbeweging.")
+        when {
+            this.gesture == gesture -> {
+                correct()
+            }
+            gesture.directions.isNotEmpty() -> {
+                onSwipe(gesture.directions)
+            }
+            else -> {
+                incorrect(R.string.gestures_feedback_swipe)
+            }
         }
     }
 
@@ -55,13 +60,13 @@ open class SwipeGestureView(
 
         when {
             fingers != gesture.fingers -> {
-                incorrect("Gebruik ${gesture.fingers} vingers in plaats van $fingers vingers.")
+                incorrect(R.string.gestures_feedback_fingers, gesture.fingers, fingers)
             }
             directions.contentEquals(gesture.directions) -> {
                 correct()
             }
             else -> {
-                incorrect("Je veegde ${Direction.feedback(directions)}.")
+                incorrect(R.string.gestures_feedback_swipe_directions, Direction.feedback(context, directions))
             }
         }
     }

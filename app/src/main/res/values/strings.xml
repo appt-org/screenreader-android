@@ -80,6 +80,17 @@
     <string name="talkback_disabled_title">TalkBack is uitgeschakeld</string>
     <string name="talkback_disabled_explanation">TalkBack moet ingeschakeld zijn voor deze training.</string>
 
+    <!-- Directions -->
+    <string name="direction_up">omhoog</string>
+    <string name="direction_top_right">schuin omhoog naar rechts</string>
+    <string name="direction_right">naar rechts</string>
+    <string name="direction_bottom_right">schuin omlaag naar rechts</string>
+    <string name="direction_down">omlaag</string>
+    <string name="direction_bottom_left">schuin omlaag naar links</string>
+    <string name="direction_left">naar links</string>
+    <string name="direction_top_left">schuin omhoog naar links</string>
+    <string name="direction_unknown">onbekend</string>
+
     <!-- Gestures -->
     <string name="gestures_title">Gebaren leren</string>
     <string name="gestures_tab">Gebaren</string>
@@ -91,6 +102,18 @@
     <string name="gestures_practice_message">Wil je oefenen met of zonder instructies?</string>
     <string name="gestures_practice_with_instructions">Met instructies</string>
     <string name="gestures_practice_without_instructions">Zonder instructies</string>
+
+    <!-- Gestures: feedback -->
+    <string name="gestures_feedback_touch">Raak het scherm aan in plaats van te vegen.</string>
+    <string name="gestures_feedback_swipe">Maak een veegbeweging.</string>
+    <string name="gestures_feedback_swipe_larger">Maak een grotere veegbeweging.</string>
+    <string name="gestures_feedback_swipe_directions">Je veegde %s.</string>
+    <string name="gestures_feedback_fingers">Gebruik %d vingers in plaats van %d vingers.</string>
+    <string name="gestures_feedback_tap">Je veegde op het scherm. Tik op het scherm.</string>
+    <string name="gestures_feedback_tap_fingers">Tik met %d vingers. Je tikte met %d vingers.</string>
+    <string name="gestures_feedback_tap_amount">Tik %d keer. Je tikte %d keer.</string>
+    <string name="gestures_feedback_hold_longer">Houd het scherm langer ingedrukt na het tikken.</string>
+    <string name="gestures_feedback_hold_shorter">Houd het scherm korter ingedrukt na het tikken.</string>
 
     <!-- Gestures: one finger swipe -->
     <string name="gestures_one_finger_swipe">Vegen met 1 vinger</string>
@@ -260,6 +283,7 @@
     <string name="actions_title">Acties leren</string>
     <string name="actions_tab">Acties</string>
     <string name="actions_description">Op dit scherm kun je een aantal TalkBack acties leren. We raden je aan om eerst alle gebaren te leren zodat je deze acties goed kunt uitvoeren.</string>
+    <string name="actions_completed_message">Je hebt de training succesvol afgerond!</string>
 
     <!-- Actions: navigation -->
     <string name="actions_navigation">Navigeren</string>

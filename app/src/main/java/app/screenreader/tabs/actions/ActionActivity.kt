@@ -53,7 +53,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
         action.completed(this, true)
         setResult(RESULT_OK)
 
-        toast("Training afgerond!") {
+        toast(R.string.actions_completed_message) {
             finish()
         }
     }
