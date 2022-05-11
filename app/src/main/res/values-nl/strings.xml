@@ -1,83 +1,78 @@
 <resources>
-    <!-- Fonts -->
-    <string name="font_regular" translatable="false">fonts/open_sans_regular.ttf</string>
-    <string name="font_semibold" translatable="false">fonts/open_sans_semibold.ttf</string>
-    <string name="font_bold" translatable="false">fonts/open_sans_bold.ttf</string>
-
     <!-- App -->
     <string name="app_name">ScreenReader</string>
-    <string name="app_language">en-US</string>
+    <string name="app_language">nl-NL</string>
 
     <!-- General -->
-    <string name="error">Error</string>
-    <string name="loading">Loading, please wait</string>
+    <string name="error">Foutmelding</string>
+    <string name="loading">Aan het laden, even geduld</string>
 
     <!-- Actions -->
-    <string name="action_ok">Ok</string>
-    <string name="action_back">Back</string>
-    <string name="action_cancel">Cancel</string>
-    <string name="action_practice">Practice</string>
-    <string name="action_activate">Activate</string>
-    <string name="action_explanation">Explanation</string>
-    <string name="action_stop">Stop</string>
-    <string name="action_continue">Continue</string>
-    <string name="action_skip">Skip</string>
+    <string name="action_ok">Oké</string>
+    <string name="action_back">Terug</string>
+    <string name="action_cancel">Annuleren</string>
+    <string name="action_practice">Oefenen</string>
+    <string name="action_activate">Activeren</string>
+    <string name="action_explanation">Uitleg</string>
+    <string name="action_stop">Stoppen</string>
+    <string name="action_continue">Doorgaan</string>
+    <string name="action_skip">Overslaan</string>
 
-    <!-- Home -->
-    <string name="talkback_title">Learn TalkBack</string>
+    <!-- TalkBack -->
+    <string name="talkback_title">TalkBack leren</string>
     <string name="talkback_tab">TalkBack</string>
-    <string name="talkback_description">The ScreenReader app helps you with learning TalkBack.</string>
+    <string name="talkback_description">De ScreenReader app helpt je bij het leren van TalkBack.</string>
 
-    <string name="talkback_section_1">What is TalkBack?</string>
-    <string name="talkback_section_1_paragraph_1">TalkBack is an essential accessibility feature for visually impaired and blind people to control their devices.</string>
-    <string name="talkback_section_1_paragraph_2">By using gestures you can navigate between elements on the screen. Each element is announced as it is selected.</string>
-    <string name="talkback_section_1_paragraph_3">This allows you to control your device even if you can\'t see the screen.</string>
-    <string name="talkback_section_2">Learning TalkBack</string>
-    <string name="talkback_section_2_paragraph_1">The ScreenReader app helps you learn all TalkBack gestures. In addition, you can learn some common actions.</string>
-    <string name="talkback_section_2_paragraph_2">Are you dependent on the screen reader? This app can help you to improve your skills.</string>
-    <string name="talkback_section_2_paragraph_3">Are you an app dveloper? Use the learnings to improve the accessibility of your apps.</string>
-    <string name="talkback_section_3">Turning on TalkBack</string>
-    <string name="talkback_section_3_paragraph_1">Open the \'Settings\' app, select \'Accessibility\', select \'TalkBack\' and turn on the switch.</string>
-    <string name="talkback_section_3_paragraph_2">Note: from this point on, you need to swipe to navigate and double tap to activate.</string>
-    <string name="talkback_section_3_paragraph_3">Are these steps not correct for your device? Search for  \'TalkBack\' to jump to the correct screen.</string>
-    <string name="talkback_section_4">Turning off TalkBack</string>
-    <string name="talkback_section_4_paragraph_1">Open the \'Settings\' app, select \'Accessibility\', select \'TalkBack\' and turn off the switch. Or search for \'TalkBack\' to jump to this screen.</string>
-    <string name="talkback_section_5">TalkBack shortcut</string>
-    <string name="talkback_section_5_paragraph_1">It is possible add a shortcut to toggle TalkBack on or off.</string>
-    <string name="talkback_section_5_paragraph_2">Open the \'Settings\'-app, select \'Accessibility\', select \'Advanced settings\', select \'Volume up and down keys\' and choose \'TalkBack\'.</string>
-    <string name="talkback_section_5_paragraph_3">Press and hold the volume up and down buttons for three seconds to turn TalkBack on or off.</string>
+    <string name="talkback_section_1">Wat is TalkBack?</string>
+    <string name="talkback_section_1_paragraph_1">TalkBack is een essentieel hulpmiddel voor slechtzienden en blinden om hun toestel te bedienen.</string>
+    <string name="talkback_section_1_paragraph_2">Door middel van gebaren kun je navigeren tussen de elementen op het scherm. Elk element wordt voorgelezen zodra het is geselecteerd.</string>
+    <string name="talkback_section_1_paragraph_3">Het is hierdoor mogelijk om je toestel volledig te bedienen zonder zicht.</string>
+    <string name="talkback_section_2">TalkBack leren</string>
+    <string name="talkback_section_2_paragraph_1">De ScreenReader app helpt je bij het leren van alle TalkBack gebaren. Daarnaast kun je een aantal veelvoorkomende acties leren.</string>
+    <string name="talkback_section_2_paragraph_2">Ben je afhankelijk van de schermlezer? Dan is deze app erg handig om je vaardigheden te verbeteren.</string>
+    <string name="talkback_section_2_paragraph_3">Ben je betrokken bij het ontwikkelen van apps? Gebruik de schermlezer dan om de toegankelijkheid te verbeteren.</string>
+    <string name="talkback_section_3">TalkBack inschakelen</string>
+    <string name="talkback_section_3_paragraph_1">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\' en zet de schakelaar aan.</string>
+    <string name="talkback_section_3_paragraph_2">Let op: vanaf dit moment moet je vegen om te navigeren en dubbeltikken om te activeren.</string>
+    <string name="talkback_section_3_paragraph_3">Kloppen deze stappen niet voor jouw toestel? Zoek dan op \'TalkBack\' om naar het juiste scherm te springen.</string>
+    <string name="talkback_section_4">TalkBack uitschakelen</string>
+    <string name="talkback_section_4_paragraph_1">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\' en zet de schakelaar uit. Of zoek op \'TalkBack\' om naar dit scherm te verspringen.</string>
+    <string name="talkback_section_5">TalkBack snelkoppeling</string>
+    <string name="talkback_section_5_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uit te schakelen.</string>
+    <string name="talkback_section_5_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en kies voor \'TalkBack\'.</string>
+    <string name="talkback_section_5_paragraph_3">Houd de volume omhoog en omlaag knoppen drie seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
 
     <!-- Training -->
-    <string name="training_accessibility_label">Completed. \'%1$s\'</string>
+    <string name="training_accessibility_label">Afgerond. \'%1$s\'</string>
 
     <!-- More -->
-    <string name="more_title">More information</string>
-    <string name="more_tab">More</string>
-    <string name="more_description">The ScreenReader app is an initiative of the Appt Foundation. The app has been developed by Abra. The app was made possible by a contribution from the SIDN fund.</string>
+    <string name="more_title">Meer informatie</string>
+    <string name="more_tab">Meer</string>
+    <string name="more_description">De ScreenReader app is een initiatief van Stichting Appt. De app is ontwikkeld door Abra. De app is mede mogelijk gemaakt door het SIDN fonds.</string>
 
-    <string name="more_actions">Actions</string>
+    <string name="more_actions">Acties</string>
     <string name="more_partners">Partners</string>
 
-    <string name="topic_rating_title">Rate app</string>
+    <string name="topic_rating_title">App beoordelen</string>
     <string name="topic_rating_url">https://play.google.com/store/apps/details?id=app.screenreader</string>
 
-    <string name="topic_share_title">Share app</string>
-    <string name="topic_share_url">Download the free ScreenReader app at https://screenreader.app and learn how to use the screen reader!</string>
+    <string name="topic_share_title">App delen</string>
+    <string name="topic_share_url">Download de gratis ScreenReader app op https://screenreader.app om te leren hoe je de schermlezer gebruikt!</string>
 
-    <string name="topic_website_title">Visit website</string>
+    <string name="topic_website_title">Website bekijken</string>
     <string name="topic_website_url">https://screenreader.app</string>
 
-    <string name="topic_source_title">View source code</string>
+    <string name="topic_source_title">Broncode bekijken</string>
     <string name="topic_source_url">https://github.com/appt-org/screenreader-android</string>
 
-    <string name="topic_stichting_appt_title">Appt Foundation</string>
+    <string name="topic_stichting_appt_title">Stichting Appt</string>
     <string name="topic_stichting_appt_url">https://appt.org</string>
 
     <string name="topic_abra_title">Abra</string>
     <string name="topic_abra_url">https://abra.nl/</string>
 
-    <string name="topic_sidn_fonds_title">SIDN fund</string>
-    <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/</string>
+    <string name="topic_sidn_fonds_title">SIDN fonds</string>
+    <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl</string>
 
     <!-- Directions -->
     <string name="direction_up">omhoog</string>
@@ -91,9 +86,9 @@
     <string name="direction_unknown">onbekend</string>
 
     <!-- Gestures -->
-    <string name="gestures_title">Learn gestures</string>
-    <string name="gestures_tab">Gestures</string>
-    <string name="gestures_description">You can learn all TalkBack gestures on this screen. Select a gesture to learn how to perform it. You can practice gestures via the \'Practice\'-button.</string>
+    <string name="gestures_title">Gebaren leren</string>
+    <string name="gestures_tab">Gebaren</string>
+    <string name="gestures_description">Op dit scherm kun je alle TalkBack gebaren leren. Selecteer een gebaar om te leren hoe je deze uitvoert. Via de \'Oefenen\'-knop kun je gebaren in een willekeurige volgorde oefenen.</string>
 
     <!-- Gestures: TalkBack -->
     <string name="gestures_talkback_enabled_title">TalkBack staat aan</string>
@@ -282,9 +277,9 @@
     <string name="gesture_one_finger_swipe_down_then_right_explanation">Er verschijnt een menu met acties nadat je dit gebaar gebruikt. Je kunt bijvoorbeeld het scherm laten voorlezen of de laatste uiting naar het klembord kopiëren.</string>
 
     <!-- Actions -->
-    <string name="actions_title">Learn actions</string>
-    <string name="actions_tab">Actions</string>
-    <string name="actions_description">You can learn a couple of TalkBack actions on this screen. We recommend that you learn all the gestures first so that you can perform these actions properly.</string>
+    <string name="actions_title">Acties leren</string>
+    <string name="actions_tab">Acties</string>
+    <string name="actions_description">Op dit scherm kun je een aantal TalkBack acties leren. We raden je aan om eerst alle gebaren te leren zodat je deze acties goed kunt uitvoeren.</string>
 
     <string name="actions_header_navigation">Navigeren</string>
     <string name="actions_header_text">Tekst bewerken</string>
