@@ -2,7 +2,6 @@ package app.screenreader.views
 
 import android.content.Context
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.appcompat.widget.ActionMenuView
@@ -42,8 +41,6 @@ class AccessibilityToolbar @JvmOverloads constructor(
                 if (child is ActionMenuView) {
                     child.setOnHierarchyChangeListener(object : OnHierarchyChangeListener {
                         override fun onChildViewAdded(parent: View?, child: View?) {
-                            Log.d("Toolbar menu", "onChildViewAdded: $child")
-
                             // Mark menu items as button
                             if (child is ActionMenuItemView) {
                                 Accessibility.button(child)

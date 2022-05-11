@@ -27,6 +27,7 @@ class MoreFragment: ListFragment() {
         Topic.RATING,
         Topic.SHARE,
         Topic.WEBSITE,
+        Topic.SOURCE,
         Header(R.string.more_partners),
         Topic.STICHTING_APPT,
         Topic.ABRA,

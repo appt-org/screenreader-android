@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         jcenter()
     }
 }
-rootProject.name = "Screenreader"
+rootProject.name = "ScreenReader"
 include ':app'

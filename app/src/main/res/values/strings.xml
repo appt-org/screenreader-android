@@ -64,6 +64,9 @@
     <string name="topic_website_title">Website bekijken</string>
     <string name="topic_website_url">https://screenreader.app/</string>
 
+    <string name="topic_source_title">Broncode bekijken</string>
+    <string name="topic_source_url">https://github.com/appt-org/screenreader-android</string>
+
     <string name="topic_stichting_appt_title">Stichting Appt</string>
     <string name="topic_stichting_appt_url">https://appt.nl/</string>
 
