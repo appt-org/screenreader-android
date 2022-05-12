@@ -20,7 +20,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
     private val startTime = System.currentTimeMillis()
 
     private val action: Action by lazy {
-        intent.doGetAction() ?: Action.SELECTION
+        intent.doGetAction() ?: Action.SELECT
     }
 
     override fun getLayoutId() = R.layout.activity_action

@@ -12,7 +12,7 @@ import app.screenreader.views.TrainingField
  */
 class SelectionActionView(context: Context) : ActionView(
     context,
-    Action.SELECTION,
+    Action.SELECT,
     R.layout.action_selection
 ), TrainingField.OnSelectionChangedListener {
 

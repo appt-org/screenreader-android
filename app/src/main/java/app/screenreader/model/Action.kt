@@ -4,7 +4,6 @@ import android.content.Context
 import app.screenreader.extensions.getString
 import app.screenreader.extensions.identifier
 import app.screenreader.helpers.Preferences
-import app.screenreader.model.Training
 import app.screenreader.views.actions.*
 import java.io.Serializable
 
@@ -16,7 +15,7 @@ enum class Action: Training, Serializable {
 
     HEADINGS,
     LINKS,
-    SELECTION,
+    SELECT,
     COPY,
     PASTE;
 
@@ -32,7 +31,7 @@ enum class Action: Training, Serializable {
         return when (this) {
             HEADINGS -> HeadingsActionView(context)
             LINKS -> LinksActionView(context)
-            SELECTION -> SelectionActionView(context)
+            SELECT -> SelectionActionView(context)
             COPY -> CopyActionView(context)
             PASTE -> PasteActionView(context)
         }

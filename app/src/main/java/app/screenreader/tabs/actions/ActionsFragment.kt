@@ -22,7 +22,7 @@ class ActionsFragment: ListFragment() {
         Action.HEADINGS,
         Action.LINKS,
         Header(R.string.actions_header_text),
-        Action.SELECTION,
+        Action.SELECT,
         Action.COPY,
         Action.PASTE
     )

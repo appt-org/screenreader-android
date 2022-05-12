@@ -80,15 +80,15 @@
     <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/</string>
 
     <!-- Directions -->
-    <string name="direction_up">omhoog</string>
-    <string name="direction_top_right">schuin omhoog naar rechts</string>
-    <string name="direction_right">naar rechts</string>
-    <string name="direction_bottom_right">schuin omlaag naar rechts</string>
-    <string name="direction_down">omlaag</string>
-    <string name="direction_bottom_left">schuin omlaag naar links</string>
-    <string name="direction_left">naar links</string>
-    <string name="direction_top_left">schuin omhoog naar links</string>
-    <string name="direction_unknown">onbekend</string>
+    <string name="direction_up">up</string>
+    <string name="direction_top_right">diagonally up to the right</string>
+    <string name="direction_right">to the right</string>
+    <string name="direction_bottom_right">diagonally down to the right</string>
+    <string name="direction_down">down</string>
+    <string name="direction_bottom_left">diagonally down to the left</string>
+    <string name="direction_left">left</string>
+    <string name="direction_top_left">diagonally up to the left</string>
+    <string name="direction_unknown">unknown</string>
 
     <!-- Gestures -->
     <string name="gestures_title">Learn gestures</string>
@@ -96,29 +96,29 @@
     <string name="gestures_description">You can learn all TalkBack gestures on this screen. Select a gesture to learn how to perform it. You can practice gestures via the \'Practice\'-button.</string>
 
     <!-- Gestures: TalkBack -->
-    <string name="gestures_talkback_enabled_title">TalkBack staat aan</string>
-    <string name="gestures_talkback_enabled_message">Wegens technische beperkingen kun je op dit moment nog niet gebaren oefenen wanneer TalkBack aan staat.</string>
+    <string name="gestures_talkback_enabled_title">TalkBack is enabled</string>
+    <string name="gestures_talkback_enabled_message">Due to technical limitations, you can\'t practice gestures while TalkBack is on at this time.</string>
 
     <!-- Gestures: practice -->
-    <string name="gestures_practice_title">Gebaren oefenen</string>
-    <string name="gestures_practice_message">Wil je oefenen met of zonder instructies?</string>
-    <string name="gestures_practice_with_instructions">Met instructies</string>
-    <string name="gestures_practice_without_instructions">Zonder instructies</string>
+    <string name="gestures_practice_title">Practice gestures</string>
+    <string name="gestures_practice_message">Do you want to practice with or without instructions?</string>
+    <string name="gestures_practice_with_instructions">With instructions</string>
+    <string name="gestures_practice_without_instructions">Without instructions</string>
 
     <!-- Gestures: feedback -->
-    <string name="gestures_feedback_touch">Raak het scherm aan in plaats van te vegen.</string>
-    <string name="gestures_feedback_swipe">Maak een veegbeweging.</string>
-    <string name="gestures_feedback_swipe_larger">Maak een grotere veegbeweging.</string>
-    <string name="gestures_feedback_swipe_directions">Je veegde %s.</string>
-    <string name="gestures_feedback_fingers">Gebruik %d vingers in plaats van %d vingers.</string>
-    <string name="gestures_feedback_tap">Je veegde op het scherm. Tik op het scherm.</string>
-    <string name="gestures_feedback_tap_fingers">Tik met %d vingers. Je tikte met %d vingers.</string>
-    <string name="gestures_feedback_tap_amount">Tik %d keer. Je tikte %d keer.</string>
-    <string name="gestures_feedback_hold_longer">Houd het scherm langer ingedrukt na het tikken.</string>
-    <string name="gestures_feedback_hold_shorter">Houd het scherm korter ingedrukt na het tikken.</string>
+    <string name="gestures_feedback_touch">Touch the screen instead of swiping.</string>
+    <string name="gestures_feedback_swipe">Make a swipe motion.</string>
+    <string name="gestures_feedback_swipe_larger">Make a larger swipe motion</string>
+    <string name="gestures_feedback_swipe_directions">You swiped %s.</string>
+    <string name="gestures_feedback_fingers">Use %d fingers instead of %d fingers.</string>
+    <string name="gestures_feedback_tap">You swiped the screen instead of tapping.</string>
+    <string name="gestures_feedback_tap_fingers">Tap with %d fingers instead of %d fingers.</string>
+    <string name="gestures_feedback_tap_amount">Tap %d times instead of %d times.</string>
+    <string name="gestures_feedback_hold_longer">Press and hold the screen longer after tapping.</string>
+    <string name="gestures_feedback_hold_shorter">Press and hold the screen for a shorter time after tapping.</string>
 
     <!-- Gestures: one finger swipe -->
-    <string name="gestures_one_finger_swipe">Vegen met 1 vinger</string>
+    <string name="gestures_one_finger_swipe">Swiping with 1 finger</string>
 
     <string name="gesture_one_finger_touch_title">Het scherm verkennen</string>
     <string name="gesture_one_finger_touch_description">Raak het scherm met 1 vinger aan.</string>
@@ -141,7 +141,7 @@
     <string name="gesture_one_finger_swipe_left_explanation">Door naar links te vegen verken je het scherm van rechts naar links en daarna van beneden naar boven.</string>
 
     <!-- Gestures: two finger swipe -->
-    <string name="gestures_two_fingers_swipe">Vegen met 2 vingers</string>
+    <string name="gestures_two_fingers_swipe">Swiping with 2 fingers</string>
 
     <string name="gesture_two_finger_swipe_up_title">Omhoog scrollen</string>
     <string name="gesture_two_finger_swipe_up_description">Veeg met 2 vingers omhoog.</string>
@@ -160,7 +160,7 @@
     <string name="gesture_two_finger_swipe_left_explanation">In lijsten kun je met dit gebaar naar links scrollen. Soms kun je ook naar het vorige scherm navigeren met dit gebaar.</string>
 
     <!-- Three finger swipe -->
-    <string name="gestures_three_fingers_swipe">Vegen met 3 vingers</string>
+    <string name="gestures_three_fingers_swipe">Swiping with 3 fingers</string>
 
     <string name="gesture_three_finger_swipe_up_title">Naar de vorige leesinstelling gaan</string>
     <string name="gesture_three_finger_swipe_up_description">Veeg met 3 vingers omhoog.</string>
@@ -171,7 +171,7 @@
     <string name="gesture_three_finger_swipe_down_explanation">Door dit gebaar te gebruiken verspring je naar de vorige leesinstelling, bijvoorbeeld van \'Links\' naar \'Koppen\'.</string>
 
     <!-- Gestures: one finger tap -->
-    <string name="gestures_one_finger_tap">Tikken met 1 vinger</string>
+    <string name="gestures_one_finger_tap">Tapping with 1 finger</string>
 
     <string name="gesture_one_finger_double_tap_title">Het geselecteerde onderdeel activeren</string>
     <string name="gesture_one_finger_double_tap_description">Tik met 1 vinger 2 keer op het scherm.</string>
@@ -186,7 +186,7 @@
     <string name="gesture_one_finger_triple_tap_explanation">In sommige apps is het nodig om te dubbeltikken om bepaalde handelingen uit te voeren.</string>
 
     <!-- Gestures: two finger tap -->
-    <string name="gestures_two_fingers_tap">Tikken met 2 vingers</string>
+    <string name="gestures_two_fingers_tap">Tapping with 2 fingers</string>
 
     <string name="gesture_two_finger_tap_title">Spraak pauzeren of hervatten</string>
     <string name="gesture_two_finger_tap_description">Tik met 2 vingers op het scherm.</string>
@@ -205,7 +205,7 @@
     <string name="gesture_two_finger_triple_tap_explanation">Door dit gebaar te gebruiken wordt alle inhoud op het scherm voorgelezen vanaf het onderdeel dat je hebt geselecteerd.</string>
 
     <!-- Gestures: three finger tap -->
-    <string name="gestures_three_fingers_tap">Tikken met 3 vingers</string>
+    <string name="gestures_three_fingers_tap">Tapping with 3 fingers</string>
 
     <string name="gesture_three_finger_tap_title">TalkBack-menu openen</string>
     <string name="gesture_three_finger_tap_description">Tik met 3 vingers 1 keer op het scherm.</string>
@@ -224,7 +224,7 @@
     <string name="gesture_three_finger_triple_tap_explanation">Dit gebaar is de snelste manier om tekst te plakken.</string>
 
     <!-- Gestures: four finger tap -->
-    <string name="gestures_four_fingers_tap">Tikken met 4 vingers</string>
+    <string name="gestures_four_fingers_tap">Tapping with 4 fingers</string>
 
     <string name="gesture_four_finger_tap_title">Oefenmodus voor gebaren</string>
     <string name="gesture_four_finger_tap_description">Tik met 4 vingers 1 keer op het scherm.</string>
@@ -239,7 +239,7 @@
     <string name="gesture_four_finger_double_tap_hold_explanation">Nadat je dit gebaar te gebruikt worden alle aanrakingen direct aan de app doorgegeven. Hierdoor is het bijvoorbeeld mogelijk om je handtekening te zetten.</string>
 
     <!-- Gestures: shortcuts -->
-    <string name="gestures_shortcuts">Snelkoppelingen</string>
+    <string name="gestures_shortcuts">Shortcuts</string>
 
     <string name="gesture_one_finger_swipe_down_then_up_title">Naar het laatste onderdeel gaan</string>
     <string name="gesture_one_finger_swipe_down_then_up_description">Veeg met 1 vinger in een vloeiende beweging omlaag en dan omhoog.</string>
@@ -286,8 +286,8 @@
     <string name="actions_tab">Actions</string>
     <string name="actions_description">You can learn a couple of TalkBack actions on this screen. We recommend that you learn all the gestures first so that you can perform these actions properly.</string>
 
-    <string name="actions_header_navigation">Navigeren</string>
-    <string name="actions_header_text">Tekst bewerken</string>
+    <string name="actions_header_navigation">Navigation</string>
+    <string name="actions_header_text">Text editing</string>
 
     <string name="gesture_completed_message">Je hebt het gebaar correct uitgevoerd!</string>
     <string name="action_completed_message">Je hebt de training succesvol afgerond!</string>
@@ -297,7 +297,7 @@
     <string name="actions_talkback_disabled_message">TalkBack moet ingeschakeld zijn voor deze training.</string>
 
     <!-- Action: headings -->
-    <string name="action_headings_title">Navigeren via koppen</string>
+    <string name="action_headings_title">Navigate by headings</string>
     <string name="action_headings_instruction_1">Met TalkBack kun je via koppen navigeren. Dit is handig bij lange pagina\'s of websites.</string>
     <string name="action_headings_instruction_2">Zo navigeer je via koppen:</string>
     <string name="action_headings_instruction_3">1. Zet de navigatie-instelling op \'Koppen\' door met 1 vinger in een vloeiende beweging omhoog en omlaag te vegen. Doe dit een aantal keer tot je \'Koppen\' hoort.</string>
@@ -309,7 +309,7 @@
     <string name="action_headings_skip">Deze tekst sla je over wanneer je via koppen navigeert.</string>
 
     <!-- Action: links -->
-    <string name="action_links_title">Navigeren via links</string>
+    <string name="action_links_title">Navigate by links</string>
     <string name="action_links_instruction_1">Met TalkBack kun je via links navigeren. Dit is handig om bijvoorbeeld websites en telefoonnummers te vinden.</string>
     <string name="action_links_instruction_2">Zo navigeer je via links:</string>
     <string name="action_links_instruction_3">1. Zet de navigatie-instelling op \'Links\' door met 1 vinger in een vloeiende beweging omhoog en omlaag te vegen. Doe dit een aantal keer tot je \'Links\' hoort.</string>
@@ -321,7 +321,7 @@
     <string name="action_links_skip">Deze tekst sla je over wanneer je via links navigeert.</string>
 
     <!-- Action: select -->
-    <string name="action_select_title">Tekst selecteren</string>
+    <string name="action_select_title">Select text</string>
     <string name="action_select_instruction_1">Met TalkBack kun je tekst selecteren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_select_instruction_2">Zo selecteer je tekst:</string>
     <string name="action_select_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
@@ -332,7 +332,7 @@
     <string name="action_select_text">Selecteer deze tekst</string>
 
     <!-- Action: copy -->
-    <string name="action_copy_title">Tekst kopiëren</string>
+    <string name="action_copy_title">Copy text</string>
     <string name="action_copy_instruction_1">Met TalkBack kun je tekst kopiëren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_copy_instruction_2">Zo kopieer je tekst:</string>
     <string name="action_copy_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
@@ -347,7 +347,7 @@
     <string name="action_copy_incorrect">Kopieer tekst uit het tekstveld.</string>
 
     <!-- Action: paste -->
-    <string name="action_paste_title">Tekst plakken</string>
+    <string name="action_paste_title">Paste text</string>
     <string name="action_paste_instruction_1">Met TalkBack kun je tekst plakken. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_paste_instruction_2">Zo plak je tekst:</string>
     <string name="action_paste_instruction_3">1. Markeer het veld waar je tekst wilt plakken.</string>

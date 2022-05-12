@@ -106,9 +106,9 @@
     <string name="gestures_feedback_swipe_larger">Maak een grotere veegbeweging.</string>
     <string name="gestures_feedback_swipe_directions">Je veegde %s.</string>
     <string name="gestures_feedback_fingers">Gebruik %d vingers in plaats van %d vingers.</string>
-    <string name="gestures_feedback_tap">Je veegde op het scherm. Tik op het scherm.</string>
-    <string name="gestures_feedback_tap_fingers">Tik met %d vingers. Je tikte met %d vingers.</string>
-    <string name="gestures_feedback_tap_amount">Tik %d keer. Je tikte %d keer.</string>
+    <string name="gestures_feedback_tap">Je veegde op het scherm in plaats van te tikken.</string>
+    <string name="gestures_feedback_tap_fingers">Tik met %d vingers in plaats van met %d vingers.</string>
+    <string name="gestures_feedback_tap_amount">Tik %d keer in plaats van %d keer.</string>
     <string name="gestures_feedback_hold_longer">Houd het scherm langer ingedrukt na het tikken.</string>
     <string name="gestures_feedback_hold_shorter">Houd het scherm korter ingedrukt na het tikken.</string>
 
