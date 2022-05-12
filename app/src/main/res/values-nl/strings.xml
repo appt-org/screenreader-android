@@ -163,7 +163,7 @@
 
     <string name="gesture_three_finger_swipe_down_title">Naar de volgende leesinstelling gaan</string>
     <string name="gesture_three_finger_swipe_down_description">Veeg met 3 vingers omlaag.</string>
-    <string name="gesture_three_finger_swipe_down_explanation">Door dit gebaar te gebruiken verspring je naar de vorige leesinstelling, bijvoorbeeld van \'Links\' naar \'Koppen\'.</string>
+    <string name="gesture_three_finger_swipe_down_explanation">Door dit gebaar te gebruiken verspring je naar de volgende leesinstelling, bijvoorbeeld van \'Links\' naar \'Koppen\'.</string>
 
     <!-- Gestures: one finger tap -->
     <string name="gestures_one_finger_tap">Tikken met 1 vinger</string>

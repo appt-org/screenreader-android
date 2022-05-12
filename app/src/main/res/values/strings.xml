@@ -120,55 +120,55 @@
     <!-- Gestures: one finger swipe -->
     <string name="gestures_one_finger_swipe">Swiping with 1 finger</string>
 
-    <string name="gesture_one_finger_touch_title">Het scherm verkennen</string>
-    <string name="gesture_one_finger_touch_description">Raak het scherm met 1 vinger aan.</string>
-    <string name="gesture_one_finger_touch_explanation">Wanneer je het scherm aanraakt wordt de inhoud onder in je vinger voorgelezen. Dit is een handige manier om te ontdekken hoe een scherm precies in elkaar zit.</string>
+    <string name="gesture_one_finger_touch_title">Explore the screen</string>
+    <string name="gesture_one_finger_touch_description">Touch the screen with 1 finger.</string>
+    <string name="gesture_one_finger_touch_explanation">When you touch the screen, the content below your finger is read aloud. This is a handy way to discover how the screen is built.</string>
 
-    <string name="gesture_one_finger_swipe_up_title">Instelling omhoog aanpassen</string>
-    <string name="gesture_one_finger_swipe_up_description">Veeg met 1 vinger omhoog.</string>
-    <string name="gesture_one_finger_swipe_up_explanation">Door omhoog te vegen ga je naar de vorige instelling. Zo stel je bijvoorbeeld in om te navigeren via links. Of je kunt de waarde van een schuifregelaar ophogen.</string>
+    <string name="gesture_one_finger_swipe_up_title">Adjust setting up</string>
+    <string name="gesture_one_finger_swipe_up_description">Swipe up with 1 finger.</string>
+    <string name="gesture_one_finger_swipe_up_explanation">Swiping up takes you to the previous setting. For example, you can activate navigation by links. Or you can increase the value of a slider.</string>
 
-    <string name="gesture_one_finger_swipe_down_title">Instelling omlaag aanpassen</string>
-    <string name="gesture_one_finger_swipe_down_description">Veeg met 1 vinger omlaag.</string>
-    <string name="gesture_one_finger_swipe_down_explanation">Door omlaag te vegen ga je naar de volgende instelling. Zo stel je bijvoorbeeld in om te navigeren via koppen. Of je kunt de waarde van een schuifregelaar verlagen.</string>
+    <string name="gesture_one_finger_swipe_down_title">Adjust setting down</string>
+    <string name="gesture_one_finger_swipe_down_description">Swipe down with 1 finger.</string>
+    <string name="gesture_one_finger_swipe_down_explanation">Swiping down takes you to the next setting. For example, you can activate navigation via headings. Or you can decrease the value of a slider.</string>
 
-    <string name="gesture_one_finger_swipe_right_title">Naar het volgende onderdeel gaan</string>
-    <string name="gesture_one_finger_swipe_right_description">Veeg met 1 vinger naar rechts.</string>
-    <string name="gesture_one_finger_swipe_right_explanation">Door naar rechts te vegen verken je het scherm van links naar rechts en daarna van boven naar beneden.</string>
+    <string name="gesture_one_finger_swipe_right_title">Go to the next section</string>
+    <string name="gesture_one_finger_swipe_right_description">Swipe right with 1 finger.</string>
+    <string name="gesture_one_finger_swipe_right_explanation">By swiping to the right you explore the screen from left to right and then from top to bottom.</string>
 
-    <string name="gesture_one_finger_swipe_left_title">Naar het vorige onderdeel gaan</string>
-    <string name="gesture_one_finger_swipe_left_description">Veeg met 1 vinger naar links.</string>
-    <string name="gesture_one_finger_swipe_left_explanation">Door naar links te vegen verken je het scherm van rechts naar links en daarna van beneden naar boven.</string>
+    <string name="gesture_one_finger_swipe_left_title">Go to the previous section</string>
+    <string name="gesture_one_finger_swipe_left_description">Swipe left with 1 finger.</string>
+    <string name="gesture_one_finger_swipe_left_explanation">By swiping to the left you explore the screen from right to left and then from bottom to top.</string>
 
     <!-- Gestures: two finger swipe -->
     <string name="gestures_two_fingers_swipe">Swiping with 2 fingers</string>
 
-    <string name="gesture_two_finger_swipe_up_title">Omhoog scrollen</string>
-    <string name="gesture_two_finger_swipe_up_description">Veeg met 2 vingers omhoog.</string>
-    <string name="gesture_two_finger_swipe_up_explanation">In lijsten kun je met dit gebaar omhoog scrollen.</string>
+    <string name="gesture_two_finger_swipe_up_title">Scroll up</string>
+    <string name="gesture_two_finger_swipe_up_description">Swipe up with 2 fingers.</string>
+    <string name="gesture_two_finger_swipe_up_explanation">In lists, you can scroll up with this gesture.</string>
 
-    <string name="gesture_two_finger_swipe_down_title">Omlaag scrollen</string>
-    <string name="gesture_two_finger_swipe_down_description">Veeg met 2 vingers omlaag.</string>
-    <string name="gesture_two_finger_swipe_down_explanation">In lijsten kun je met dit gebaar omlaag scrollen.</string>
+    <string name="gesture_two_finger_swipe_down_title">Scroll down</string>
+    <string name="gesture_two_finger_swipe_down_description">Swipe down with 2 fingers.</string>
+    <string name="gesture_two_finger_swipe_down_explanation">In lists, you can scroll down with this gesture.</string>
 
-    <string name="gesture_two_finger_swipe_right_title">Naar rechts scrollen</string>
-    <string name="gesture_two_finger_swipe_right_description">Veeg met 2 vingers naar rechts.</string>
-    <string name="gesture_two_finger_swipe_right_explanation">In lijsten kun je met dit gebaar naar rechts scrollen. Soms kun je ook naar het volgende scherm navigeren met dit gebaar.</string>
+    <string name="gesture_two_finger_swipe_right_title">Scroll right</string>
+    <string name="gesture_two_finger_swipe_right_description">Swipe right with 2 fingers.</string>
+    <string name="gesture_two_finger_swipe_right_explanation">In lists, you can use this gesture to scroll to the right. Sometimes you can also navigate to the next screen with this gesture.</string>
 
-    <string name="gesture_two_finger_swipe_left_title">Naar links scrollen</string>
-    <string name="gesture_two_finger_swipe_left_description">Veeg met 2 vingers naar links.</string>
-    <string name="gesture_two_finger_swipe_left_explanation">In lijsten kun je met dit gebaar naar links scrollen. Soms kun je ook naar het vorige scherm navigeren met dit gebaar.</string>
+    <string name="gesture_two_finger_swipe_left_title">Scroll left</string>
+    <string name="gesture_two_finger_swipe_left_description">Swipe left with 2 fingers.</string>
+    <string name="gesture_two_finger_swipe_left_explanation">In lists, you can use this gesture to scroll left. Sometimes you can also navigate to the previous screen with this gesture.</string>
 
     <!-- Three finger swipe -->
     <string name="gestures_three_fingers_swipe">Swiping with 3 fingers</string>
 
-    <string name="gesture_three_finger_swipe_up_title">Naar de vorige leesinstelling gaan</string>
-    <string name="gesture_three_finger_swipe_up_description">Veeg met 3 vingers omhoog.</string>
-    <string name="gesture_three_finger_swipe_up_explanation">Door dit gebaar te gebruiken verspring je naar de vorige leesinstelling, bijvoorbeeld van \'Koppen\' naar \'Links\'.</string>
+    <string name="gesture_three_finger_swipe_up_title">Go to the previous reading setting</string>
+    <string name="gesture_three_finger_swipe_up_description">Swipe up with 3 fingers.</string>
+    <string name="gesture_three_finger_swipe_up_explanation">Use this gesture to jump to the previous reading setting, for example from \'Headings\' to \'Links\'.</string>
 
-    <string name="gesture_three_finger_swipe_down_title">Naar de volgende leesinstelling gaan</string>
-    <string name="gesture_three_finger_swipe_down_description">Veeg met 3 vingers omlaag.</string>
-    <string name="gesture_three_finger_swipe_down_explanation">Door dit gebaar te gebruiken verspring je naar de vorige leesinstelling, bijvoorbeeld van \'Links\' naar \'Koppen\'.</string>
+    <string name="gesture_three_finger_swipe_down_title">Go to the next reading setting</string>
+    <string name="gesture_three_finger_swipe_down_description">Swipe down with 3 fingers.</string>
+    <string name="gesture_three_finger_swipe_down_explanation">Use this gesture to jump to the next reading setting, for example from \'Links\' to \'Headings\'.</string>
 
     <!-- Gestures: one finger tap -->
     <string name="gestures_one_finger_tap">Tapping with 1 finger</string>
