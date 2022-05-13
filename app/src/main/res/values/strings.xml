@@ -294,8 +294,8 @@
     <string name="actions_header_navigation">Navigation</string>
     <string name="actions_header_text">Text editing</string>
 
-    <string name="gesture_completed_message">You performed the gesture correctly!</string>
-    <string name="action_completed_message">You have completed the training!</string>
+    <string name="gesture_completed_message">Gesture performed correctly!</string>
+    <string name="action_completed_message">Training completed successfully!</string>
 
     <!-- Actions: TalkBack -->
     <string name="actions_talkback_disabled_title">TalkBack is disabled</string>

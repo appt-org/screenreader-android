@@ -3,10 +3,9 @@ package app.screenreader.helpers
 import android.os.Bundle
 import app.screenreader.extensions.identifier
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.gson.Gson
 
 /**
- * Created by Jan Jaap de Groot on 09/12/2020
+ * Created by Jan Jaap de Groot on 13/05/2022
  * Copyright 2020 Stichting Appt
  */
 class Events(private val firebaseAnalytics: FirebaseAnalytics) {
@@ -39,10 +38,5 @@ class Events(private val firebaseAnalytics: FirebaseAnalytics) {
         }
 
         firebaseAnalytics.logEvent(category.identifier, bundle)
-    }
-
-    fun log(category: Category, data: Any) {
-        val json = Gson().toJson(data)
-        log(category, json)
     }
 }

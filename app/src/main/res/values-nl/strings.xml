@@ -289,8 +289,8 @@
     <string name="actions_header_navigation">Navigeren</string>
     <string name="actions_header_text">Tekst bewerken</string>
 
-    <string name="gesture_completed_message">Je hebt het gebaar correct uitgevoerd!</string>
-    <string name="action_completed_message">Je hebt de training afgerond!</string>
+    <string name="gesture_completed_message">Gebaar correct uitgevoerd!</string>
+    <string name="action_completed_message">Training succesvol afgerond!</string>
 
     <!-- Actions: TalkBack -->
     <string name="actions_talkback_disabled_title">TalkBack is uitgeschakeld</string>
