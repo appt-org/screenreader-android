@@ -53,7 +53,7 @@ enum class Gesture(
     FOUR_FINGER_DOUBLE_TAP(fingers = 4, taps = 2),
     FOUR_FINGER_DOUBLE_TAP_HOLD(fingers = 4, taps = 2, hold = true),
 
-    ONE_FINGER_SWIPE_UP_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.UP, Direction.RIGHT)),
+    //ONE_FINGER_SWIPE_UP_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.UP, Direction.RIGHT)),
     ONE_FINGER_SWIPE_UP_THEN_DOWN(fingers = 1, directions = arrayOf(Direction.UP, Direction.DOWN)),
     ONE_FINGER_SWIPE_UP_THEN_LEFT(fingers = 1, directions = arrayOf(Direction.UP, Direction.LEFT)),
 
@@ -119,7 +119,7 @@ enum class Gesture(
             THREE_FINGER_SWIPE_DOWN,
             THREE_FINGER_SWIPE_UP,
 
-            ONE_FINGER_SWIPE_UP_THEN_RIGHT,
+            //ONE_FINGER_SWIPE_UP_THEN_RIGHT,
             ONE_FINGER_SWIPE_UP_THEN_DOWN,
             ONE_FINGER_SWIPE_UP_THEN_LEFT,
 
@@ -208,7 +208,7 @@ enum class Gesture(
                 AccessibilityService.GESTURE_SWIPE_LEFT -> return ONE_FINGER_SWIPE_LEFT
 
                 // ONE FINGER SWIPE UP
-                AccessibilityService.GESTURE_SWIPE_UP_AND_RIGHT -> return ONE_FINGER_SWIPE_UP_THEN_RIGHT
+                //AccessibilityService.GESTURE_SWIPE_UP_AND_RIGHT -> return ONE_FINGER_SWIPE_UP_THEN_RIGHT
                 AccessibilityService.GESTURE_SWIPE_UP_AND_DOWN -> return ONE_FINGER_SWIPE_UP_THEN_DOWN
                 AccessibilityService.GESTURE_SWIPE_UP_AND_LEFT -> return ONE_FINGER_SWIPE_UP_THEN_LEFT
 
