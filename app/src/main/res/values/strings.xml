@@ -137,11 +137,11 @@
     <string name="gesture_one_finger_swipe_down_description">Swipe down with 1 finger.</string>
     <string name="gesture_one_finger_swipe_down_explanation">Swiping down takes you to the next setting. For example, you can activate navigation via headings. Or you can decrease the value of a slider.</string>
 
-    <string name="gesture_one_finger_swipe_right_title">Go to the next section</string>
+    <string name="gesture_one_finger_swipe_right_title">Go to the next item</string>
     <string name="gesture_one_finger_swipe_right_description">Swipe right with 1 finger.</string>
     <string name="gesture_one_finger_swipe_right_explanation">By swiping to the right you explore the screen from left to right and then from top to bottom.</string>
 
-    <string name="gesture_one_finger_swipe_left_title">Go to the previous section</string>
+    <string name="gesture_one_finger_swipe_left_title">Go to the previous item</string>
     <string name="gesture_one_finger_swipe_left_description">Swipe left with 1 finger.</string>
     <string name="gesture_one_finger_swipe_left_explanation">By swiping to the left you explore the screen from right to left and then from bottom to top.</string>
 
@@ -235,7 +235,7 @@
     <string name="gesture_four_finger_tap_description">Tap the screen once with 4 fingers</string>
     <string name="gesture_four_finger_tap_explanation">After you use this gesture, the TalkBack gesture practice mode opens.</string>
 
-    <string name="gesture_four_finger_double_tap_title">Help using TalkBack</string>
+    <string name="gesture_four_finger_double_tap_title">Open TalkBack help</string>
     <string name="gesture_four_finger_double_tap_description">Tap the screen 2 times with 4 fingers.</string>
     <string name="gesture_four_finger_double_tap_explanation">After using this gesture, information appears to help you with using TalkBack.</string>
 
