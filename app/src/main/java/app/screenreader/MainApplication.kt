@@ -2,6 +2,7 @@ package app.screenreader
 
 import android.app.Application
 import app.screenreader.helpers.Preferences
+import com.google.firebase.FirebaseApp
 import io.github.inflationx.calligraphy3.CalligraphyConfig
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor
 import io.github.inflationx.viewpump.ViewPump
@@ -11,11 +12,11 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
+        // Firebase
+        FirebaseApp.initializeApp(this)
+
         // Preferences
         Preferences.init(this)
-
-        // Firebase
-        //FirebaseApp.initializeApp(this)
 
         // Calligraphy
         ViewPump.init(

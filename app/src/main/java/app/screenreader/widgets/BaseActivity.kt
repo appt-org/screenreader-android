@@ -4,14 +4,12 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.ViewCompat
-import androidx.core.view.children
-import app.screenreader.R
 import app.screenreader.extensions.toast
+import app.screenreader.helpers.Events
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 
 /**
@@ -20,12 +18,15 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper
  */
 abstract class BaseActivity : AppCompatActivity() {
 
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
+    lateinit var events: Events
+
     abstract fun getLayoutId(): Int
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //firebaseAnalytics = Firebase.analytics
-        //events = Events(firebaseAnalytics)
+        firebaseAnalytics = Firebase.analytics
+        events = Events(firebaseAnalytics)
 
         setContentView(getLayoutId())
         onViewCreated()

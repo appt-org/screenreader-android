@@ -11,6 +11,7 @@ import androidx.appcompat.app.AlertDialog
 import app.screenreader.R
 import app.screenreader.extensions.*
 import app.screenreader.helpers.Accessibility
+import app.screenreader.helpers.Events
 import app.screenreader.model.Constants
 import app.screenreader.model.Gesture
 import app.screenreader.services.ScreenReaderService
@@ -145,7 +146,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         finished = true
         feedbackTextView.visibility = View.GONE
 
-        //events.log(Events.Category.gestureCompleted, gesture.identifier, errorCount)
+        events.log(Events.Category.gestureCompleted, gesture.identifier, errorCount)
         gesture.completed(baseContext, true)
         setResult(RESULT_OK)
 
@@ -174,7 +175,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         val feedback = if (instructions) {
             feedback
         } else {
-            "Fout"
+            getString(R.string.gestures_feedback_wrong)
         }
 
         // Show feedback

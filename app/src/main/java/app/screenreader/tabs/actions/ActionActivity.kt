@@ -4,8 +4,10 @@ import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Intent
 import app.screenreader.R
 import app.screenreader.extensions.doGetAction
+import app.screenreader.extensions.identifier
 import app.screenreader.extensions.showDialog
 import app.screenreader.helpers.Accessibility
+import app.screenreader.helpers.Events
 import app.screenreader.model.Action
 import app.screenreader.views.actions.ActionViewCallback
 import app.screenreader.widgets.ToolbarActivity
@@ -48,7 +50,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
 
     override fun correct(action: Action) {
         val elapsedTime = (System.currentTimeMillis() - startTime).toInt()
-        //events.log(Events.Category.actionCompleted, action.identifier, elapsedTime)
+        events.log(Events.Category.actionCompleted, action.identifier, elapsedTime)
 
         action.completed(this, true)
         setResult(RESULT_OK)

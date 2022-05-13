@@ -4,6 +4,8 @@ import androidx.appcompat.widget.Toolbar
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import app.screenreader.helpers.Accessibility
+import app.screenreader.helpers.Events
 import app.screenreader.widgets.BaseActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -49,5 +51,8 @@ class MainActivity : BaseActivity() {
             }
             setTitle(titleId)
         }
+
+        // Log screen reader status
+        events.property(Events.Property.screenreader, Accessibility.screenReader(this))
     }
 }

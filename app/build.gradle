@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -60,4 +62,10 @@ dependencies {
 
     // Gestures
     implementation 'it.sephiroth.android.library.uigestures:uigesture-recognizer-kotlin:1.2.7'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:30.0.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.code.gson:gson:2.8.9'
 }
