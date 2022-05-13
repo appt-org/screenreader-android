@@ -294,65 +294,65 @@
 
     <!-- Action: headings -->
     <string name="action_headings_title">Navigate by headings</string>
-    <string name="action_headings_instruction_1">Met TalkBack kun je via koppen navigeren. Dit is handig bij lange pagina\'s of websites.</string>
-    <string name="action_headings_instruction_2">Zo navigeer je via koppen:</string>
-    <string name="action_headings_instruction_3">1. Zet de navigatie-instelling op \'Koppen\' door met 1 vinger in een vloeiende beweging omhoog en omlaag te vegen. Doe dit een aantal keer tot je \'Koppen\' hoort.</string>
-    <string name="action_headings_instruction_4">2. Veeg met 1 vinger omlaag om naar de volgende kop te navigeren. Of veeg met 1 vinger omhoog om naar de vorige kop te navigeren.</string>
-    <string name="action_headings_instruction_5">Navigeer 3 keer via koppen om de training af te ronden.</string>
-    <string name="action_headings_heading_1">Kop 1</string>
-    <string name="action_headings_heading_2">Kop 2</string>
-    <string name="action_headings_heading_3">Kop 3</string>
-    <string name="action_headings_skip">Deze tekst sla je over wanneer je via koppen navigeert.</string>
+    <string name="action_headings_instruction_1">TalkBack allows you to navigate by headings. This is useful for long pages or websites.</string>
+    <string name="action_headings_instruction_2">This is how you navigate by headings:</string>
+    <string name="action_headings_instruction_3">1. Set the navigation setting to \'Headings\' by swiping up and down with 1 finger in a smooth motion. Do this several times until you hear \'Headings\'.</string>
+    <string name="action_headings_instruction_4">2. Swipe down with 1 finger to navigate to the next heading. Or swipe up with 1 finger to navigate to the previous heading.</string>
+    <string name="action_headings_instruction_5">Navigate by headings 3 times to complete the training.</string>
+    <string name="action_headings_heading_1">Heading 1</string>
+    <string name="action_headings_heading_2">Heading 2</string>
+    <string name="action_headings_heading_3">Heading 3</string>
+    <string name="action_headings_skip">This text is skipped when you navigate by headings.</string>
 
     <!-- Action: links -->
     <string name="action_links_title">Navigate by links</string>
-    <string name="action_links_instruction_1">Met TalkBack kun je via links navigeren. Dit is handig om bijvoorbeeld websites en telefoonnummers te vinden.</string>
-    <string name="action_links_instruction_2">Zo navigeer je via links:</string>
-    <string name="action_links_instruction_3">1. Zet de navigatie-instelling op \'Links\' door met 1 vinger in een vloeiende beweging omhoog en omlaag te vegen. Doe dit een aantal keer tot je \'Links\' hoort.</string>
-    <string name="action_links_instruction_4">2. Veeg met één vinger omlaag om naar de volgende link te navigeren. Of veeg met 1 vinger omhoog om naar de vorige link te navigeren.</string>
-    <string name="action_links_instruction_5">Navigeer 3 keer via links om de training af te ronden.</string>
-    <string name="action_links_heading_1">Link 1: www.appt.nl</string>
-    <string name="action_links_heading_2">Link 2: info@appt.nl</string>
+    <string name="action_links_instruction_1">TalkBack allows you to navigate by links. This is useful for finding information such as websites and phone numbers.</string>
+    <string name="action_links_instruction_2">This is how you navigate by links:</string>
+    <string name="action_links_instruction_3">1. Set the navigation setting to \'Links\' by swiping up and down with 1 finger in a smooth motion. Do this several times until you hear \'Links\'.</string>
+    <string name="action_links_instruction_4">2. Swipe down with 1 finger to navigate to the next link. Or swipe up with 1 finger to navigate to the previous link.</string>
+    <string name="action_links_instruction_5">Navigate by links 3 times to complete the training.</string>
+    <string name="action_links_heading_1">Link 1: www.screenreader.app</string>
+    <string name="action_links_heading_2">Link 2: info@screenreader.app</string>
     <string name="action_links_heading_3">Link 3: +31612345678</string>
-    <string name="action_links_skip">Deze tekst sla je over wanneer je via links navigeert.</string>
+    <string name="action_links_skip">This text is skipped when you navigate by links.</string>
 
     <!-- Action: select -->
     <string name="action_select_title">Select text</string>
-    <string name="action_select_instruction_1">Met TalkBack kun je tekst selecteren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
-    <string name="action_select_instruction_2">Zo selecteer je tekst:</string>
-    <string name="action_select_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
-    <string name="action_select_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
-    <string name="action_select_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
-    <string name="action_select_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
-    <string name="action_select_instruction_7">Selecteer alle tekst in het onderstaande tekstveld om de training af te ronden.</string>
-    <string name="action_select_text">Selecteer deze tekst</string>
+    <string name="action_select_instruction_1">TalkBack allows you to select text by using the context menu.</string>
+    <string name="action_select_instruction_2">This is how you select text:</string>
+    <string name="action_select_instruction_3">1. Highlight the field where you want to select text.</string>
+    <string name="action_select_instruction_4">2. Swipe down and then right in a fluid motion to open the context menu.</string>
+    <string name="action_select_instruction_5">3. Choose the option \'Editing options\'.</string>
+    <string name="action_select_instruction_6">4. Choose the option \'Select all\'.</string>
+    <string name="action_select_instruction_7">Select all text from the edit box below to complete the training.</string>
+    <string name="action_select_text">Select this text</string>
 
     <!-- Action: copy -->
     <string name="action_copy_title">Copy text</string>
-    <string name="action_copy_instruction_1">Met TalkBack kun je tekst kopiëren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
-    <string name="action_copy_instruction_2">Zo kopieer je tekst:</string>
-    <string name="action_copy_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
-    <string name="action_copy_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
-    <string name="action_copy_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
-    <string name="action_copy_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
-    <string name="action_copy_instruction_7">5. Veeg nogmaals met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
-    <string name="action_copy_instruction_8">6. Kies de optie \'Bewerkingopties\'.</string>
-    <string name="action_copy_instruction_9">7. Kies de optie \'Kopiëren\'.</string>
-    <string name="action_copy_instruction_10">Kopieer alle tekst uit het onderstaande tekstveld om de training af te ronden.</string>
-    <string name="action_copy_text">Kopieer deze tekst</string>
-    <string name="action_copy_incorrect">Kopieer tekst uit het tekstveld.</string>
+    <string name="action_copy_instruction_1">TalkBack allows you to copy text by using the context menu.</string>
+    <string name="action_copy_instruction_2">This is how you copy text:</string>
+    <string name="action_copy_instruction_3">1. Highlight the field where you want to copy text.</string>
+    <string name="action_copy_instruction_4">2. Swipe down and then right in a fluid motion to open the context menu.</string>
+    <string name="action_copy_instruction_5">3. Choose the option \'Editing options\'.</string>
+    <string name="action_copy_instruction_6">4. Choose the option \'Select all\'.</string>
+    <string name="action_copy_instruction_7">5. Swipe down and then right in a fluid motion to open the context menu again.</string>
+    <string name="action_copy_instruction_8">6. Choose the option \'Editing options\'.</string>
+    <string name="action_copy_instruction_9">7. Choose the option \'Copy\'.</string>
+    <string name="action_copy_instruction_10">Copy all the text from the edit box below to complete the training.</string>
+    <string name="action_copy_text">Copy this text</string>
+    <string name="action_copy_incorrect">Copy text from the input field.</string>
 
     <!-- Action: paste -->
     <string name="action_paste_title">Paste text</string>
-    <string name="action_paste_instruction_1">Met TalkBack kun je tekst plakken. Je kunt hiervoor gebruik maken van het contextmenu.</string>
-    <string name="action_paste_instruction_2">Zo plak je tekst:</string>
-    <string name="action_paste_instruction_3">1. Markeer het veld waar je tekst wilt plakken.</string>
-    <string name="action_paste_instruction_4">2. Dubbeltik met 1 vinger en houd het scherm 3 seconden vast. Laat je vinger daarna los om te starten met bewerken.</string>
-    <string name="action_paste_instruction_5">3. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
-    <string name="action_paste_instruction_6">4. Kies de optie \'Bewerkingopties\'.</string>
-    <string name="action_paste_instruction_7">5. Kies de optie \'Plakken\'.</string>
-    <string name="action_paste_instruction_8">Plak tekst in het onderstaande tekstveld om de training af te ronden.</string>
-    <string name="action_paste_text">Plak hier vanuit je klembord</string>
+    <string name="action_paste_instruction_1">TalkBack allows you to paste text by using the context menu.</string>
+    <string name="action_paste_instruction_2">This is how you paste text:</string>
+    <string name="action_paste_instruction_3">1. Highlight the field where you want to paste text.</string>
+    <string name="action_paste_instruction_4">2. Double tap with 1 finger and hold the screen for 3 seconds. Then release your finger to start editing.</string>
+    <string name="action_paste_instruction_5">3. Swipe down and then right in a fluid motion to open the context menu.</string>
+    <string name="action_paste_instruction_6">4. Choose the option \'Editing options\'.</string>
+    <string name="action_paste_instruction_7">5. Choose the option \'Paste\'.</string>
+    <string name="action_paste_instruction_8">Paste text into the edit box below to complete the training.</string>
+    <string name="action_paste_text">Paste here from your clipboard</string>
 
     <!-- ScreenReaderService -->
     <string name="service_label">ScreenReader gestures</string>

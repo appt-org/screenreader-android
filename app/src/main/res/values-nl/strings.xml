@@ -306,8 +306,8 @@
     <string name="action_links_instruction_3">1. Zet de navigatie-instelling op \'Links\' door met 1 vinger in een vloeiende beweging omhoog en omlaag te vegen. Doe dit een aantal keer tot je \'Links\' hoort.</string>
     <string name="action_links_instruction_4">2. Veeg met 1 vinger omlaag om naar de volgende link te navigeren. Of veeg met 1 vinger omhoog om naar de vorige link te navigeren.</string>
     <string name="action_links_instruction_5">Navigeer 3 keer via links om de training af te ronden.</string>
-    <string name="action_links_heading_1">Link 1: www.appt.nl</string>
-    <string name="action_links_heading_2">Link 2: info@appt.nl</string>
+    <string name="action_links_heading_1">Link 1: www.screenreader.app</string>
+    <string name="action_links_heading_2">Link 2: info@screenreader.app</string>
     <string name="action_links_heading_3">Link 3: +31612345678</string>
     <string name="action_links_skip">Deze tekst sla je over wanneer je via links navigeert.</string>
 
@@ -319,7 +319,7 @@
     <string name="action_select_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
     <string name="action_select_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
     <string name="action_select_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
-    <string name="action_select_instruction_7">Selecteer alle tekst in het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="action_select_instruction_7">Selecteer alle tekst in het onderstaande invoerveld om de training af te ronden.</string>
     <string name="action_select_text">Selecteer deze tekst</string>
 
     <!-- Action: copy -->
@@ -333,9 +333,9 @@
     <string name="action_copy_instruction_7">5. Veeg nogmaals met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
     <string name="action_copy_instruction_8">6. Kies de optie \'Bewerkingopties\'.</string>
     <string name="action_copy_instruction_9">7. Kies de optie \'Kopiëren\'.</string>
-    <string name="action_copy_instruction_10">Kopieer alle tekst uit het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="action_copy_instruction_10">Kopieer alle tekst uit het onderstaande invoerveld om de training af te ronden.</string>
     <string name="action_copy_text">Kopieer deze tekst</string>
-    <string name="action_copy_incorrect">Kopieer tekst uit het tekstveld.</string>
+    <string name="action_copy_incorrect">Kopieer tekst uit het invoerveld.</string>
 
     <!-- Action: paste -->
     <string name="action_paste_title">Tekst plakken</string>
@@ -346,7 +346,7 @@
     <string name="action_paste_instruction_5">3. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
     <string name="action_paste_instruction_6">4. Kies de optie \'Bewerkingopties\'.</string>
     <string name="action_paste_instruction_7">5. Kies de optie \'Plakken\'.</string>
-    <string name="action_paste_instruction_8">Plak tekst in het onderstaande tekstveld om de training af te ronden.</string>
+    <string name="action_paste_instruction_8">Plak tekst in het onderstaande invoerveld om de training af te ronden.</string>
     <string name="action_paste_text">Plak hier vanuit je klembord</string>
 
     <!-- ScreenReaderService -->
