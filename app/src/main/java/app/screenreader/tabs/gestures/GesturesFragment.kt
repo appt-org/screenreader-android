@@ -100,7 +100,7 @@ class GesturesFragment : ListFragment() {
 
     private fun onGestureClicked(gesture: Gesture) {
         if (Accessibility.screenReader(context)) {
-            context?.showDialog(R.string.gestures_talkback_enabled_title, R.string.gestures_talkback_enabled_message)
+            context?.showDialog(R.string.service_talkback_enabled_title, R.string.service_talkback_enabled_message)
             return
         }
 
@@ -111,7 +111,7 @@ class GesturesFragment : ListFragment() {
 
     private fun onPracticeClicked() {
         if (Accessibility.screenReader(context)) {
-            context?.showDialog(R.string.gestures_talkback_enabled_title, R.string.gestures_talkback_enabled_message)
+            context?.showDialog(R.string.service_talkback_enabled_title, R.string.service_talkback_enabled_message)
             return
         }
 

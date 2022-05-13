@@ -13,7 +13,7 @@
     <string name="loading">Loading, please wait</string>
 
     <!-- Actions -->
-    <string name="action_ok">Ok</string>
+    <string name="action_ok">OK</string>
     <string name="action_back">Back</string>
     <string name="action_cancel">Cancel</string>
     <string name="action_practice">Practice</string>
@@ -82,7 +82,7 @@
     <!-- Directions -->
     <string name="direction_up">up</string>
     <string name="direction_top_right">diagonally up to the right</string>
-    <string name="direction_right">to the right</string>
+    <string name="direction_right">right</string>
     <string name="direction_bottom_right">diagonally down to the right</string>
     <string name="direction_down">down</string>
     <string name="direction_bottom_left">diagonally down to the left</string>
@@ -94,10 +94,6 @@
     <string name="gestures_title">Learn gestures</string>
     <string name="gestures_tab">Gestures</string>
     <string name="gestures_description">You can learn all TalkBack gestures on this screen. Select a gesture to learn how to perform it. You can practice gestures via the \'Practice\'-button.</string>
-
-    <!-- Gestures: TalkBack -->
-    <string name="gestures_talkback_enabled_title">TalkBack is enabled</string>
-    <string name="gestures_talkback_enabled_message">Due to technical limitations, you can\'t practice gestures while TalkBack is on at this time.</string>
 
     <!-- Gestures: practice -->
     <string name="gestures_practice_title">Practice gestures</string>
@@ -289,12 +285,12 @@
     <string name="actions_header_navigation">Navigation</string>
     <string name="actions_header_text">Text editing</string>
 
-    <string name="gesture_completed_message">Je hebt het gebaar correct uitgevoerd!</string>
-    <string name="action_completed_message">Je hebt de training succesvol afgerond!</string>
+    <string name="gesture_completed_message">You performed the gesture correctly!</string>
+    <string name="action_completed_message">You have completed the training!</string>
 
     <!-- Actions: TalkBack -->
-    <string name="actions_talkback_disabled_title">TalkBack is uitgeschakeld</string>
-    <string name="actions_talkback_disabled_message">TalkBack moet ingeschakeld zijn voor deze training.</string>
+    <string name="actions_talkback_disabled_title">TalkBack is disabled</string>
+    <string name="actions_talkback_disabled_message">You need to enable TalkBack for this training.</string>
 
     <!-- Action: headings -->
     <string name="action_headings_title">Navigate by headings</string>
@@ -359,12 +355,14 @@
     <string name="action_paste_text">Plak hier vanuit je klembord</string>
 
     <!-- ScreenReaderService -->
-    <string name="service_label">ScreenReader</string>
-    <string name="service_summary">Herkennen van gebaren</string>
-    <string name="service_description">Om gebaren te herkennen is het noodzakelijk dat je deze service aanzet.\n\nDe gebaren training wordt automatisch gestart wanneer je de service aanzet.\n\nDe service wordt automatisch uitgeschakeld wanneer je de training stopt of wisselt naar een andere app.\n\nEr worden geen gegevens opgeslagen.</string>
-    <string name="service_killed">De ScreenReader service is automatisch uitgezet</string>
-    <string name="service_inactive">De ScreenReader service staat uit. Om gebaren te herkennen is het noodzakelijk dat je deze service aanzet.</string>
-    <string name="service_enable_title">ScreenReader service aanzetten</string>
-    <string name="service_reason_message">Wegens technische beperkingen kun je alleen gebruik maken van de optie \'Oefenen\' wanneer TalkBack aan staat.</string>
-    <string name="service_enable_message">Je moet eerst de ScreenReader service aanzetten zodat gebaren herkend kunnen worden wanneer TalkBack geactiveerd is.\n\nDat doe je als volgt:\n\n1. Navigeer naar de \'Activeren\' knop. Dubbeltik om de toegankelijkheidsinstellingen te openen.\n2. Navigeer naar geïnstalleerde service met de naam \'ScreenReader\'. Dubbeltik om het instellingenscherm te openen.\n3. Navigeer naar de schakelaar. Dubbeltik om de service toe te staan.\n4. Navigeer naar \'Toestaan\'. Dubbeltik om de service te activeren.\n5. Je hebt het activatieproces succesvol doorlopen. De gebaren training wordt automatisch gestart.\n\nNavigeer nu naar de \'Activeren\' knop om het activatieproces te starten.</string>
+    <string name="service_label">ScreenReader gestures</string>
+    <string name="service_summary">Recognizing gestures in the ScreenReader app</string>
+    <string name="service_description">This service must be activated to allow the ScreenReader app to recognize gestures.\n\nThe gesture training is automatically started when you turn on this service.\n\nThe service is automatically disabled when you stop the training or switch to another app.\n\nNo data is stored.</string>
+    <string name="service_disabled_message">The ScreenReader service has been turned off automatically.</string>
+    <string name="service_disabled_error">The ScreenReader service is turned off. The service must be turned on to allow the ScreenReader app to recognize gestures.</string>
+    <string name="service_enable_title">Enable \'ScreenReader gestures\' service</string>
+    <string name="service_reason_message">Due to technical limitations, you can only use the \'Practice\' option when TalkBack is enabled at this time.</string>
+    <string name="service_enable_message">You need to enable the \'ScreenReader gestures\' service to allow the ScreenReader app to recognize gestures when TalkBack is activated.\n\nFollow these steps:\n\n1. Navigate to the \'Activate\' button. Double-tap to open the accessibility settings of your device.\n\n2. Navigate to installed service named \'ScreenReader gestures\'. Double tap to open the settings screen.\n\n3. Navigate to the switch. Double-tap to enable the service.\n\n4. Navigate to the \'Allow\' option. Double tap to activate the service.\n\n5. You have successfully completed the activation process. The gesture training should start automatically.</string>
+    <string name="service_talkback_enabled_title">TalkBack is enabled</string>
+    <string name="service_talkback_enabled_message">Due to technical limitations, you can\'t practice gestures while TalkBack is enabled at this time.</string>
 </resources>

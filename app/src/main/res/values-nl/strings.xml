@@ -90,10 +90,6 @@
     <string name="gestures_tab">Gebaren</string>
     <string name="gestures_description">Op dit scherm kun je alle TalkBack gebaren leren. Selecteer een gebaar om te leren hoe je deze uitvoert. Via de \'Oefenen\'-knop kun je gebaren in een willekeurige volgorde oefenen.</string>
 
-    <!-- Gestures: TalkBack -->
-    <string name="gestures_talkback_enabled_title">TalkBack staat aan</string>
-    <string name="gestures_talkback_enabled_message">Wegens technische beperkingen kun je op dit moment nog niet gebaren oefenen wanneer TalkBack aan staat.</string>
-
     <!-- Gestures: practice -->
     <string name="gestures_practice_title">Gebaren oefenen</string>
     <string name="gestures_practice_message">Wil je oefenen met of zonder instructies?</string>
@@ -285,7 +281,7 @@
     <string name="actions_header_text">Tekst bewerken</string>
 
     <string name="gesture_completed_message">Je hebt het gebaar correct uitgevoerd!</string>
-    <string name="action_completed_message">Je hebt de training succesvol afgerond!</string>
+    <string name="action_completed_message">Je hebt de training afgerond!</string>
 
     <!-- Actions: TalkBack -->
     <string name="actions_talkback_disabled_title">TalkBack is uitgeschakeld</string>
@@ -354,12 +350,14 @@
     <string name="action_paste_text">Plak hier vanuit je klembord</string>
 
     <!-- ScreenReaderService -->
-    <string name="service_label">ScreenReader</string>
-    <string name="service_summary">Herkennen van gebaren</string>
+    <string name="service_label">ScreenReader gebaren</string>
+    <string name="service_summary">Gebaren herkennen in de ScreenReader app</string>
     <string name="service_description">Om gebaren te herkennen is het noodzakelijk dat je deze service aanzet.\n\nDe gebaren training wordt automatisch gestart wanneer je de service aanzet.\n\nDe service wordt automatisch uitgeschakeld wanneer je de training stopt of wisselt naar een andere app.\n\nEr worden geen gegevens opgeslagen.</string>
-    <string name="service_killed">De ScreenReader service is automatisch uitgezet</string>
-    <string name="service_inactive">De ScreenReader service staat uit. Om gebaren te herkennen is het noodzakelijk dat je deze service aanzet.</string>
-    <string name="service_enable_title">ScreenReader service aanzetten</string>
-    <string name="service_reason_message">Wegens technische beperkingen kun je alleen gebruik maken van de optie \'Oefenen\' wanneer TalkBack aan staat.</string>
-    <string name="service_enable_message">Je moet eerst de ScreenReader service aanzetten zodat gebaren herkend kunnen worden wanneer TalkBack geactiveerd is.\n\nDat doe je als volgt:\n\n1. Navigeer naar de \'Activeren\' knop. Dubbeltik om de toegankelijkheidsinstellingen te openen.\n2. Navigeer naar geïnstalleerde service met de naam \'ScreenReader\'. Dubbeltik om het instellingenscherm te openen.\n3. Navigeer naar de schakelaar. Dubbeltik om de service toe te staan.\n4. Navigeer naar \'Toestaan\'. Dubbeltik om de service te activeren.\n5. Je hebt het activatieproces succesvol doorlopen. De gebaren training wordt automatisch gestart.\n\nNavigeer nu naar de \'Activeren\' knop om het activatieproces te starten.</string>
+    <string name="service_disabled_message">De \'ScreenReader gebaren\'-service is automatisch uitgeschakeld.</string>
+    <string name="service_disabled_error">De \'ScreenReader gebaren\'-service staat uit. De ScreenReader app kan gebaren alleen herkennen wanneer de service aanstaat.</string>
+    <string name="service_enable_title">\'ScreenReader gebaren\'-service aanzetten</string>
+    <string name="service_reason_message">Wegens technische beperkingen kun je op dit moment alleen gebruik maken van de optie \'Oefenen\' wanneer TalkBack aan staat.</string>
+    <string name="service_enable_message">Je moet de \'ScreenReader gebaren\'-service aanzetten zodat de ScreenReader app gebaren kan detecteren wanneer TalkBack geactiveerd is.\n\nVolg deze stappen:\n\n1. Navigeer naar de \'Activeren\' knop. Dubbeltik om de toegankelijkheidsinstellingen van je toestel te openen.\n2. Navigeer naar geïnstalleerde service met de naam \'ScreenReader gebaren\'. Dubbeltik om het instellingenscherm te openen.\n3. Navigeer naar de schakelaar. Dubbeltik om de service toe te staan.\n4. Navigeer naar \'Toestaan\'. Dubbeltik om de service te activeren.\n5. Je hebt het activatieproces succesvol doorlopen. De gebaren training wordt automatisch gestart.\n\nNavigeer nu naar de \'Activeren\' knop om het activatieproces te starten.</string>
+    <string name="service_talkback_enabled_title">TalkBack staat aan</string>
+    <string name="service_talkback_enabled_message">Wegens technische beperkingen kun je op dit moment geen gebaren oefenen wanneer TalkBack aan staat.</string>
 </resources>

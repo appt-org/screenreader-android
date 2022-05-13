@@ -134,7 +134,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
                     }
                 }
             } else {
-                showError(R.string.service_inactive) {
+                showError(R.string.service_disabled_error) {
                     finish()
                 }
             }
