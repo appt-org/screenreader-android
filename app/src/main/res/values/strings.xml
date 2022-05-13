@@ -113,6 +113,15 @@
     <string name="gestures_feedback_hold_longer">Press and hold the screen longer after tapping.</string>
     <string name="gestures_feedback_hold_shorter">Press and hold the screen for a shorter time after tapping.</string>
 
+    <string name="gestures_feedback_incorrect">Incorrect.</string>
+    <string name="gestures_feedback_incorrect_amount">You performed the gestures incorrectly for %d times.</string>
+
+    <string name="gestures_feedback_wrong_action_talkback">\n\nSwipe left to stop.\n\nSwipe right to continue.</string>
+    <string name="gestures_feedback_wrong_action_talkback_practice">\n\nSwipe left to stop.\n\nSwipe down to skip.\n\nSwip right to continue.</string>
+
+    <string name="gestures_feedback_wrong_action">\n\nDo you want to continue or stop?</string>
+    <string name="gestures_feedback_wrong_action_practice">\n\nDo you want to continue, skip or stop?</string>
+
     <!-- Gestures: one finger swipe -->
     <string name="gestures_one_finger_swipe">Swiping with 1 finger</string>
 
@@ -280,7 +289,7 @@
     <!-- Actions -->
     <string name="actions_title">Learn actions</string>
     <string name="actions_tab">Actions</string>
-    <string name="actions_description">You can learn a couple of TalkBack actions on this screen. We recommend that you learn all the gestures first so that you can perform these actions properly.</string>
+    <string name="actions_description">You can learn several TalkBack actions on this screen. We recommend to first learn all gestures, to make sure you can perform these actions properly.</string>
 
     <string name="actions_header_navigation">Navigation</string>
     <string name="actions_header_text">Text editing</string>

@@ -175,7 +175,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         val feedback = if (instructions) {
             feedback
         } else {
-            getString(R.string.gestures_feedback_wrong)
+            getString(R.string.gestures_feedback_incorrect)
         }
 
         // Show feedback
@@ -200,19 +200,19 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         }
 
         // Show option dialog
-        var message = "Je hebt het gebaar $errorCount keer fout uitgevoerd."
+        var message = getString(R.string.gestures_feedback_incorrect_amount, errorCount)
 
         message += if (Accessibility.screenReader(this)) {
             if (isPracticing) {
-                "\n\nVeeg naar links om te stoppen.\n\nVeeg omlaag om over te slaan.\n\nVeeg naar rechts om door te gaan."
+                getString(R.string.gestures_feedback_wrong_action_talkback_practice)
             } else {
-                "\n\nVeeg naar links om te stoppen.\n\nVeeg naar rechts om door te gaan."
+                getString(R.string.gestures_feedback_wrong_action_talkback)
             }
         } else {
             if (isPracticing) {
-                "\n\nWil je doorgaan, overslaan of stoppen?"
+                getString(R.string.gestures_feedback_wrong_action_practice)
             } else {
-                "\n\nWil je doorgaan of stoppen?"
+                getString(R.string.gestures_feedback_wrong_action)
             }
         }
 

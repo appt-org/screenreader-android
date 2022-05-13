@@ -108,6 +108,15 @@
     <string name="gestures_feedback_hold_longer">Houd het scherm langer ingedrukt na het tikken.</string>
     <string name="gestures_feedback_hold_shorter">Houd het scherm korter ingedrukt na het tikken.</string>
 
+    <string name="gestures_feedback_incorrect">Incorrect.</string>
+    <string name="gestures_feedback_incorrect_amount">Je hebt het gebaar %d keer incorrect uitgevoerd.</string>
+
+    <string name="gestures_feedback_wrong_action_talkback">\n\nVeeg naar links om te stoppen.\n\nVeeg naar rechts om door te gaan.</string>
+    <string name="gestures_feedback_wrong_action_talkback_practice">\n\nVeeg naar links om te stoppen.\n\nVeeg omlaag om over te slaan.\n\nVeeg naar rechts om door te gaan.</string>
+
+    <string name="gestures_feedback_wrong_action">\n\nWil je doorgaan of stoppen?</string>
+    <string name="gestures_feedback_wrong_action_practice">\n\nWil je doorgaan, overslaan of stoppen?</string>
+
     <!-- Gestures: one finger swipe -->
     <string name="gestures_one_finger_swipe">Vegen met 1 vinger</string>
 
