@@ -146,7 +146,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         finished = true
         feedbackTextView.visibility = View.GONE
 
-        events.log(Events.Category.gestureCompleted, gesture.identifier, errorCount)
+        events.log(Events.Category.gesture_completed, gesture.identifier, errorCount)
         gesture.completed(baseContext, true)
         setResult(RESULT_OK)
 

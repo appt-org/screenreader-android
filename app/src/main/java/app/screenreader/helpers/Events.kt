@@ -23,8 +23,8 @@ class Events(private val firebaseAnalytics: FirebaseAnalytics) {
     }
 
     enum class Category {
-        actionCompleted,
-        gestureCompleted
+        action_completed,
+        gesture_completed
     }
 
     fun log(category: Category, identifier: String, value: Int? = null) {

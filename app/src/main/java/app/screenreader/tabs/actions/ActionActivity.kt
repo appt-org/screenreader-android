@@ -50,7 +50,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
 
     override fun correct(action: Action) {
         val elapsedTime = (System.currentTimeMillis() - startTime).toInt() / 1000
-        events.log(Events.Category.actionCompleted, action.identifier, elapsedTime)
+        events.log(Events.Category.action_completed, action.identifier, elapsedTime)
 
         action.completed(this, true)
         setResult(RESULT_OK)
