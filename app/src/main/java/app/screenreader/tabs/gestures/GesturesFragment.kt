@@ -141,9 +141,6 @@ class GesturesFragment : ListFragment() {
         }
 
         val gestures = Gesture.randomized()
-        gestures.forEach { gesture ->
-            gesture.completed(context, false)
-        }
 
         startActivity<GestureActivity>(REQUEST_CODE_MULTIPLE) {
             setGestures(gestures)
