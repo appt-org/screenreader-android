@@ -2,20 +2,61 @@ package app.screenreader.extensions
 
 import android.app.Activity
 import android.content.Context
-import android.content.Intent
 import android.net.Uri
-import android.util.Log
+import android.os.LocaleList
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.style.LocaleSpan
 import androidx.appcompat.app.AlertDialog
 import androidx.browser.customtabs.CustomTabColorSchemeParams
 import androidx.browser.customtabs.CustomTabsIntent
 import app.screenreader.R
-import java.net.URL
 import java.util.*
 import kotlin.concurrent.schedule
 
+/** String **/
+
+fun Context.getIdentifier(resourceType: String, resourceName: String): Int {
+    return resources.getIdentifier(resourceName, resourceType, packageName)
+}
+
+fun Context.getSpannable(name: String): SpannableString {
+    val identifier = getIdentifier("string", name)
+    return if (identifier > 0) {
+        getSpannable(identifier)
+    } else {
+        SpannableString(name)
+    }
+}
+
+fun Context.getSpannable(id: Int): SpannableString {
+    val string = getString(id)
+    return toSpannable(string)
+}
+
+fun Context.getSpannable(id: Int, vararg args: Any): SpannableString {
+    val string = getString(id, *args)
+    return toSpannable(string)
+}
+
+fun Context.toSpannable(string: CharSequence): SpannableString {
+    val language = getString(R.string.app_language)
+
+    val spannable = SpannableString(string)
+
+    val locales = LocaleList.forLanguageTags(language)
+    if (!locales.isEmpty) {
+        val locale = locales.get(0)
+        val localeSpan = LocaleSpan(locale)
+        spannable.setSpan(localeSpan, 0, string.length, Spanned.SPAN_INCLUSIVE_INCLUSIVE)
+    }
+
+    return spannable
+}
+
 /** Dialog **/
 
-fun Context.showDialog(title: String, message: String?, callback: (() -> Unit)? = null) {
+fun Context.showDialog(title: SpannableString, message: SpannableString?, callback: (() -> Unit)? = null) {
     if (this is Activity && this.isFinishing) {
         return
     }
@@ -25,7 +66,7 @@ fun Context.showDialog(title: String, message: String?, callback: (() -> Unit)? 
     builder.setTitle(title)
     builder.setMessage(message)
 
-    builder.setPositiveButton(R.string.action_ok) { _, _ ->
+    builder.setPositiveButton(getSpannable(R.string.action_ok)) { _, _ ->
         // Ignored, handled by on dismiss listener.
     }
 
@@ -39,8 +80,8 @@ fun Context.showDialog(title: String, message: String?, callback: (() -> Unit)? 
 }
 
 fun Context.showDialog(titleId: Int, messageId: Int?, callback: (() -> Unit)? = null) {
-    val title = getString(titleId)
-    val message = if (messageId != null) getString(messageId) else null
+    val title = getSpannable(titleId)
+    val message = if (messageId != null) getSpannable(messageId) else null
     showDialog(title, message, callback)
 }
 
@@ -48,14 +89,14 @@ fun Context.showError(messageId: Int, callback: (() -> Unit)? = null) {
     showDialog(R.string.error, messageId, callback)
 }
 
-fun Context.showError(message: String, callback: (() -> Unit)? = null) {
-    showDialog(getString(R.string.error), message, callback)
+fun Context.showError(message: SpannableString, callback: (() -> Unit)? = null) {
+    showDialog(getSpannable(R.string.error), message, callback)
 }
 
 /** Toast **/
 fun toast(
     context: Context?,
-    message: String,
+    message: SpannableString?,
     duration: Long = 3000,
     callback: (() -> Unit)? = null
 ) {
@@ -82,22 +123,7 @@ fun toast(
 }
 
 fun toast(context: Context?, message: Int, duration: Long = 3000, callback: (() -> Unit)? = null) {
-    toast(context, context?.getString(message) ?: "", duration, callback)
-}
-
-/** String **/
-
-fun Context.getIdentifier(resourceType: String, resourceName: String): Int {
-    return resources.getIdentifier(resourceName, resourceType, "app.screenreader")
-}
-
-fun Context.getString(name: String): String {
-    val identifier = getIdentifier("string", name)
-    return if (identifier > 0) {
-        getString(identifier)
-    } else {
-        name
-    }
+    toast(context, context?.getSpannable(message) ?: null, duration, callback)
 }
 
 /** Browser **/

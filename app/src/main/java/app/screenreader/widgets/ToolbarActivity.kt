@@ -1,5 +1,6 @@
 package app.screenreader.widgets
 
+import android.text.SpannableString
 import android.view.MenuItem
 import androidx.appcompat.widget.Toolbar
 import app.screenreader.R
@@ -12,7 +13,7 @@ abstract class ToolbarActivity : BaseActivity() {
 
     var toolbar: Toolbar? = null
 
-    abstract fun getToolbarTitle(): String?
+    abstract fun getToolbarTitle(): SpannableString?
 
     override fun onViewCreated() {
         super.onViewCreated()

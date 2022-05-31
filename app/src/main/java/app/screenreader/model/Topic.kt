@@ -1,7 +1,9 @@
 package app.screenreader.model
 
 import android.content.Context
+import android.text.SpannableString
 import app.screenreader.R
+import app.screenreader.extensions.getSpannable
 import java.io.Serializable
 
 /**
@@ -18,8 +20,8 @@ enum class Topic : Item, Serializable {
     ABRA,
     SIDN_FONDS;
 
-    override fun title(context: Context): String {
-        return context.getString(title)
+    override fun title(context: Context): SpannableString {
+        return context.getSpannable(title)
     }
 
     val title: Int
@@ -48,7 +50,7 @@ enum class Topic : Item, Serializable {
             }
         }
 
-    fun url(context: Context): String {
-        return context.getString(url)
+    fun url(context: Context): SpannableString {
+        return context.getSpannable(url)
     }
 }

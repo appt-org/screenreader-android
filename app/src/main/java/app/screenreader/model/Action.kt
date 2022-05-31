@@ -1,7 +1,8 @@
 package app.screenreader.model
 
 import android.content.Context
-import app.screenreader.extensions.getString
+import android.text.SpannableString
+import app.screenreader.extensions.getSpannable
 import app.screenreader.extensions.identifier
 import app.screenreader.helpers.Preferences
 import app.screenreader.views.actions.*
@@ -19,12 +20,12 @@ enum class Action: Training, Serializable {
     COPY,
     PASTE;
 
-    private fun getString(context: Context, property: String): String {
-        return context.getString("action_${identifier}_${property}")
+    private fun spannable(context: Context, property: String): SpannableString {
+        return context.getSpannable("action_${identifier}_${property}")
     }
 
-    override fun title(context: Context): String {
-        return getString(context, "title")
+    override fun title(context: Context): SpannableString {
+        return spannable(context, "title")
     }
 
     fun view(context: Context): ActionView {

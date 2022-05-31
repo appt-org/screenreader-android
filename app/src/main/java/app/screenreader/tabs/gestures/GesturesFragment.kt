@@ -116,15 +116,15 @@ class GesturesFragment : ListFragment() {
         }
 
         AlertDialog.Builder(requireContext())
-            .setTitle(R.string.gestures_practice_title)
-            .setMessage(R.string.gestures_practice_message)
-            .setPositiveButton(R.string.gestures_practice_with_instructions) { _, _ ->
+            .setTitle(context?.getSpannable(R.string.gestures_practice_title))
+            .setMessage(context?.getSpannable(R.string.gestures_practice_message))
+            .setPositiveButton(context?.getSpannable(R.string.gestures_practice_with_instructions)) { _, _ ->
                 startPractice(true)
             }
-            .setNegativeButton(R.string.gestures_practice_without_instructions) { _, _ ->
+            .setNegativeButton(context?.getSpannable(R.string.gestures_practice_without_instructions)) { _, _ ->
                 startPractice(false)
             }
-            .setNeutralButton(R.string.action_cancel) { _, _ ->
+            .setNeutralButton(context?.getSpannable(R.string.action_cancel)) { _, _ ->
                 // Cancels dialog
             }
             .show()

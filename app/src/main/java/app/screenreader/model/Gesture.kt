@@ -3,7 +3,8 @@ package app.screenreader.model
 import android.accessibilityservice.AccessibilityService
 import android.content.Context
 import android.os.Build
-import app.screenreader.extensions.getString
+import android.text.SpannableString
+import app.screenreader.extensions.getSpannable
 import app.screenreader.extensions.identifier
 import app.screenreader.helpers.Preferences
 import app.screenreader.views.gestures.*
@@ -68,13 +69,13 @@ enum class Gesture(
     ONE_FINGER_SWIPE_LEFT_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.LEFT, Direction.RIGHT)),
     ONE_FINGER_SWIPE_LEFT_THEN_DOWN(fingers = 1, directions = arrayOf(Direction.LEFT, Direction.DOWN));
 
-    private fun getString(context: Context, property: String): String {
-        return context.getString("gesture_${identifier}_${property}")
+    private fun spannable(context: Context, property: String): SpannableString {
+        return context.getSpannable("gesture_${identifier}_${property}")
     }
 
-    override fun title(context: Context) = getString(context, "title")
-    fun description(context: Context) = getString(context, "description")
-    fun explanation(context: Context) = getString(context, "explanation")
+    override fun title(context: Context) = spannable(context, "title")
+    fun description(context: Context) = spannable(context, "description")
+    fun explanation(context: Context) = spannable(context, "explanation")
 
     fun image(context: Context): Int {
         return context.resources.getIdentifier("gesture_${identifier}", "drawable", context.packageName)

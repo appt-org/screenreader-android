@@ -34,8 +34,8 @@ object Preferences {
         preferences.edit()?.putInt(key, value)?.apply()
     }
 
-    fun getString(key: String): String {
-        return preferences.getString(key, "") ?: ""
+    fun getString(key: String): String? {
+        return preferences.getString(key, "")
     }
 
     fun setString(key: String, value: String) {

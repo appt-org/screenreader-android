@@ -6,15 +6,20 @@ package app.screenreader.views.actions
  */
 
 import android.content.Context
+import android.text.SpannableString
 import android.view.View
 import android.view.ViewGroup
 import android.view.accessibility.AccessibilityEvent
 import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.core.view.allViews
+import app.screenreader.extensions.getSpannable
+import app.screenreader.extensions.toSpannable
 import app.screenreader.model.Action
 
 interface ActionViewCallback {
     fun correct(action: Action)
-    fun incorrect(action: Action, feedback: String)
+    fun incorrect(action: Action, feedback: SpannableString)
 }
 
 /**
@@ -26,6 +31,15 @@ abstract class ActionView(context: Context, private val action: Action, layoutId
     init {
         val view = inflate(context, layoutId, this)
         view.accessibilityDelegate = FocusDelegate()
+
+        // Set accessibility language for all subviews
+        if (view is ViewGroup) {
+            view.allViews.forEach { v ->
+                if (v is TextView) {
+                    v.text = context.toSpannable(v.text.toString())
+                }
+            }
+        }
     }
 
     /** Accessibility */
@@ -66,6 +80,6 @@ abstract class ActionView(context: Context, private val action: Action, layoutId
     }
 
     open fun incorrect(feedback: Int) {
-        callback?.incorrect(action, context.getString(feedback))
+        callback?.incorrect(action, context.getSpannable(feedback))
     }
 }

@@ -8,8 +8,8 @@ import androidx.core.view.AccessibilityDelegateCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 import androidx.core.view.setPadding
-import androidx.recyclerview.widget.RecyclerView
 import app.screenreader.R
+import app.screenreader.extensions.getSpannable
 import app.screenreader.model.Item
 import app.screenreader.model.Training
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegate
@@ -40,14 +40,12 @@ fun textResourceAdapterDelegate() = adapterDelegate<Int, Any>(R.layout.view_text
     val marginSmall = context.resources.getDimension(R.dimen.margin_small).toInt()
 
     bind {
-        textView.setText(item)
+        textView.text = context.getSpannable(item)
 
-        if (adapterPosition == 0) {
-            textView.setPadding(marginMedium)
-        } else if (adapterPosition == -1) { // TODO: Replace -1 with last index
-            textView.setPadding(marginMedium)
-        } else {
-            textView.setPadding(marginMedium, 0, marginMedium, marginSmall)
+        when (adapterPosition) {
+            0 -> textView.setPadding(marginMedium)
+            -1 -> textView.setPadding(marginMedium) // TODO: Replace -1 with last index
+            else -> textView.setPadding(marginMedium, 0, marginMedium, marginSmall)
         }
     }
 }
@@ -83,7 +81,7 @@ inline fun <reified T : Training> trainingAdapterDelegate(crossinline callback: 
 
             if (completed) {
                 imageView.setVisible(true)
-                Accessibility.label(itemView, getString(R.string.training_accessibility_label, title))
+                Accessibility.label(itemView, context.getSpannable(R.string.training_accessibility_label, title))
             } else {
                 imageView.setVisible(false)
                 Accessibility.label(itemView, title)

@@ -18,6 +18,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.hardware.display.DisplayManagerCompat
 import app.screenreader.MainActivity
 import app.screenreader.R
+import app.screenreader.extensions.getSpannable
 import app.screenreader.model.Constants
 import app.screenreader.model.Gesture
 import java.io.Serializable
@@ -205,14 +206,14 @@ class ScreenReaderService: AccessibilityService() {
             this.instructions = instructions
 
             AlertDialog.Builder(context)
-                .setTitle(R.string.service_enable_title)
-                .setMessage(R.string.service_enable_message)
-                .setPositiveButton(R.string.action_activate) { _, _ ->
+                .setTitle(context.getSpannable(R.string.service_enable_title))
+                .setMessage(context.getSpannable(R.string.service_enable_message))
+                .setPositiveButton(context.getSpannable(R.string.action_activate)) { _, _ ->
                     val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     context.startActivity(intent)
                 }
-                .setNegativeButton(R.string.action_cancel) { _, _ ->
+                .setNegativeButton(context.getSpannable(R.string.action_cancel)) { _, _ ->
                     // Dismiss
                 }
                 .setCancelable(false)

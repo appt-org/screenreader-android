@@ -5,7 +5,7 @@ import android.text.method.LinkMovementMethod
 import android.text.util.Linkify
 import android.util.AttributeSet
 import android.view.accessibility.AccessibilityEvent
-import android.widget.TextView
+import androidx.appcompat.widget.AppCompatTextView
 
 /**
  * Created by Jan Jaap de Groot on 18/11/2020
@@ -15,7 +15,7 @@ class LinkTextView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyle: Int = 0
-) : TextView(context, attrs, defStyle) {
+) : AppCompatTextView(context, attrs, defStyle) {
 
     init {
         autoLinkMask = Linkify.ALL

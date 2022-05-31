@@ -11,6 +11,7 @@ import androidx.core.view.AccessibilityDelegateCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.accessibility.AccessibilityEventCompat
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
+import app.screenreader.extensions.toSpannable
 
 /*
  *  Copyright (c) 2021 De Staat der Nederlanden, Ministerie van Volksgezondheid, Welzijn en Sport.
@@ -203,7 +204,7 @@ object Accessibility {
      * @param label The label to set
      */
     fun label(view: View, label: CharSequence): View {
-        view.contentDescription = label
+        view.contentDescription = view.context.toSpannable(label)
         return view
     }
 

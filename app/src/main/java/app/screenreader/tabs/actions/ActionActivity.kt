@@ -2,6 +2,7 @@ package app.screenreader.tabs.actions
 
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Intent
+import android.text.SpannableString
 import app.screenreader.R
 import app.screenreader.extensions.doGetAction
 import app.screenreader.extensions.identifier
@@ -60,7 +61,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
         }
     }
 
-    override fun incorrect(action: Action, feedback: String) {
+    override fun incorrect(action: Action, feedback: SpannableString) {
         toast(feedback)
     }
 

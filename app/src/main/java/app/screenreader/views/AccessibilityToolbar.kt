@@ -6,6 +6,8 @@ import android.view.View
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.appcompat.widget.ActionMenuView
 import androidx.appcompat.widget.AppCompatTextView
+import androidx.core.text.toSpannable
+import app.screenreader.extensions.toSpannable
 import app.screenreader.extensions.toast
 import app.screenreader.helpers.Accessibility
 
@@ -32,7 +34,8 @@ class AccessibilityToolbar @JvmOverloads constructor(
 
                     // Show full title on long press
                     child.setOnLongClickListener {
-                        toast(context, child.text.toString())
+                        val title = context.toSpannable(child.text)
+                        toast(context, title)
                         true
                     }
                 }

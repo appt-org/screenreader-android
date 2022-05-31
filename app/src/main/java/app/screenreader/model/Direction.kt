@@ -1,7 +1,10 @@
 package app.screenreader.model
 
 import android.content.Context
+import android.text.Spannable
+import android.text.SpannableString
 import app.screenreader.R
+import app.screenreader.extensions.getSpannable
 
 /**
  * Created by Jan Jaap de Groot on 15/10/2020
@@ -19,8 +22,8 @@ enum class Direction(var fingers: Int = 1) {
     UNKNOWN;
 
 
-    fun title(context: Context): String {
-        return context.getString(title)
+    fun title(context: Context): SpannableString {
+        return context.getSpannable(title)
     }
 
     val title: Int

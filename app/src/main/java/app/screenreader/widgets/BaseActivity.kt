@@ -4,7 +4,9 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.text.SpannableString
 import androidx.appcompat.app.AppCompatActivity
+import app.screenreader.extensions.getSpannable
 import app.screenreader.extensions.toast
 import app.screenreader.helpers.Events
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -36,6 +38,11 @@ abstract class BaseActivity : AppCompatActivity() {
         // Can be overridden
     }
 
+    override fun setTitle(titleId: Int) {
+        val title = getSpannable(titleId)
+        super.setTitle(title)
+    }
+
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase))
     }
@@ -45,7 +52,7 @@ abstract class BaseActivity : AppCompatActivity() {
         return super.onSupportNavigateUp()
     }
 
-    fun toast(message: String, duration: Long = 3000, callback: (() -> Unit)? = null) {
+    fun toast(message: SpannableString, duration: Long = 3000, callback: (() -> Unit)? = null) {
         toast(this, message, duration, callback)
     }
 

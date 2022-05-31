@@ -4,12 +4,14 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Matrix
 import android.graphics.Paint
+import android.text.SpannableString
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.accessibility.AccessibilityEvent
 import androidx.core.content.ContextCompat
 import app.screenreader.R
+import app.screenreader.extensions.getSpannable
 import app.screenreader.extensions.isStart
 import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Gesture
@@ -18,7 +20,7 @@ import kotlin.math.atan2
 
 interface GestureViewCallback {
     fun correct(gesture: Gesture)
-    fun incorrect(gesture: Gesture, feedback: String)
+    fun incorrect(gesture: Gesture, feedback: SpannableString)
 }
 
 /**
@@ -280,8 +282,6 @@ abstract class GestureView(val gesture: Gesture, context: Context) : View(contex
     var callback: GestureViewCallback? = null
 
     open fun correct() {
-        Log.d(TAG, "Correct")
-
         if (!correct) {
             correct = true
             callback?.correct(gesture)
@@ -290,9 +290,7 @@ abstract class GestureView(val gesture: Gesture, context: Context) : View(contex
 
     open fun incorrect(feedback: Int, vararg arguments: Any) {
         if (!correct) {
-            val message = context.getString(feedback, *arguments)
-            Log.d(TAG, "Incorrect: $message")
-
+            val message = context.getSpannable(feedback, *arguments)
             callback?.incorrect(gesture, message)
         }
     }
