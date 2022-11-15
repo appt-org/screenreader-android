@@ -25,13 +25,16 @@ open class SwipeGestureView(
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         super.onTouchEvent(event)
-        gestureDetector.onTouchEvent(event)
 
-        if (event?.isStart() == true) {
-            swiped = false
-        } else if (event?.isEnd() == true) {
-            if (!swiped) {
-                incorrect(R.string.gestures_feedback_swipe_larger)
+        if (event != null) {
+            gestureDetector.onTouchEvent(event)
+
+            if (event.isStart()) {
+                swiped = false
+            } else if (event.isEnd()) {
+                if (!swiped) {
+                    incorrect(R.string.gestures_feedback_swipe_larger)
+                }
             }
         }
 
@@ -79,7 +82,7 @@ open class SwipeGestureView(
         private val THRESHOLD = 15
         private var path = arrayListOf<Direction>()
 
-        override fun onScroll(e1: MotionEvent?, e2: MotionEvent?, distanceX: Float, distanceY: Float): Boolean {
+        override fun onScroll(e1: MotionEvent, e2: MotionEvent, distanceX: Float, distanceY: Float): Boolean {
             Log.d(TAG, "onScroll, distanceX: $distanceX, distanceY: $distanceY")
 
             // Determine direction
@@ -101,7 +104,7 @@ open class SwipeGestureView(
 
             if (direction != Direction.UNKNOWN) {
                 // Determine amount of fingers
-                direction.fingers = e2?.pointerCount ?: 1
+                direction.fingers = e2.pointerCount ?: 1
                 if (ScreenReaderService.isEnabled(context)) {
                     direction.fingers++
                 }
@@ -124,7 +127,7 @@ open class SwipeGestureView(
             return super.onScroll(e1, e2, distanceX, distanceY)
         }
 
-        override fun onFling(e1: MotionEvent?, e2: MotionEvent?, velocityX: Float, velocityY: Float): Boolean {
+        override fun onFling(e1: MotionEvent, e2: MotionEvent, velocityX: Float, velocityY: Float): Boolean {
             Log.d(TAG, "onFling, velocityX: $velocityX, velocityY: $velocityY")
 
             if (path.isNotEmpty()) {

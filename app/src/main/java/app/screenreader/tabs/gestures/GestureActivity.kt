@@ -185,7 +185,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
             .alpha(0.0f)
             .setDuration(250)
             .setListener(object : AnimatorListenerAdapter() {
-                override fun onAnimationEnd(animator: Animator?) {
+                override fun onAnimationEnd(animator: Animator) {
                     if (finished) {
                         return
                     }

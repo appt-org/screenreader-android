@@ -229,12 +229,12 @@ object Accessibility {
      */
     fun setTraversal(view: View, before: View? = null, after: View? = null) {
         ViewCompat.setAccessibilityDelegate(view, object : AccessibilityDelegateCompat() {
-            override fun onInitializeAccessibilityNodeInfo(host: View?, info: AccessibilityNodeInfoCompat?) {
+            override fun onInitializeAccessibilityNodeInfo(host: View, info: AccessibilityNodeInfoCompat) {
                 before?.let { before ->
-                    info?.setTraversalBefore(before)
+                    info.setTraversalBefore(before)
                 }
                 after?.let { after ->
-                    info?.setTraversalAfter(after)
+                    info.setTraversalAfter(after)
                 }
                 super.onInitializeAccessibilityNodeInfo(host, info)
             }

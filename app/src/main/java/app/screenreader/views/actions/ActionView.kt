@@ -47,9 +47,9 @@ abstract class ActionView(context: Context, private val action: Action, layoutId
         private val elements = arrayListOf<String>()
 
         override fun onRequestSendAccessibilityEvent(
-            host: ViewGroup?,
-            child: View?,
-            event: AccessibilityEvent?
+            host: ViewGroup,
+            child: View,
+            event: AccessibilityEvent
         ): Boolean {
             if (event != null && event.eventType == AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED) {
                 onFocused(host, child, event.className)
