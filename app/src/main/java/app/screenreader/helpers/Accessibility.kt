@@ -3,14 +3,17 @@ package app.screenreader.helpers
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Context
 import android.view.View
+import android.view.ViewGroup
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityManager
 import android.widget.Button
+import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.AccessibilityDelegateCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.accessibility.AccessibilityEventCompat
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
+import androidx.core.view.allViews
 import app.screenreader.extensions.toSpannable
 
 /*
@@ -268,6 +271,45 @@ object Accessibility {
             for (i in 0..views.size-2) {
                 setTraversalBefore(views[i], views[i+1])
             }
+        }
+    }
+
+    /**
+     * Applies the current app language to string resources
+     *
+     * @param view The view
+     */
+    fun language(view: View) {
+        val contentDescription = view.contentDescription
+        if (contentDescription != null && contentDescription.isNotEmpty()) {
+            view.contentDescription = view.context.toSpannable(contentDescription)
+        }
+
+        val tooltip = view.tooltipText
+        if (tooltip != null && tooltip.isNotEmpty()) {
+            view.tooltipText = view.context.toSpannable(tooltip)
+        }
+
+        if (view is TextView) {
+            val text = view.text
+            if (text != null && text.isNotEmpty()) {
+                view.text = view.context.toSpannable(text)
+            }
+        }
+    }
+
+    /**
+     * Applies the current app language to all descendants of a view
+     *
+     * @param view The view
+     */
+    fun languages(view: View) {
+        if (view is ViewGroup) {
+            view.allViews.forEach { child ->
+                language(child)
+            }
+        } else {
+            language(view)
         }
     }
 }

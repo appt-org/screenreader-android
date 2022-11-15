@@ -35,7 +35,7 @@
     <string name="talkback_section_2">Learning TalkBack</string>
     <string name="talkback_section_2_paragraph_1">The ScreenReader app helps you learn all TalkBack gestures. In addition, you can learn some common actions.</string>
     <string name="talkback_section_2_paragraph_2">Are you dependent on the screen reader? This app can help you to improve your skills.</string>
-    <string name="talkback_section_2_paragraph_3">Are you an app dveloper? Use the learnings to improve the accessibility of your apps.</string>
+    <string name="talkback_section_2_paragraph_3">Are you an app developer? Use the learnings to improve the accessibility of your apps.</string>
     <string name="talkback_section_3">Turning on TalkBack</string>
     <string name="talkback_section_3_paragraph_1">Open the \'Settings\' app, select \'Accessibility\', select \'TalkBack\' and turn on the switch.</string>
     <string name="talkback_section_3_paragraph_2">Note: from this point on, you need to swipe to navigate and double tap to activate.</string>

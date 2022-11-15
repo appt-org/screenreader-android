@@ -11,10 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.accessibility.AccessibilityEvent
 import android.widget.LinearLayout
-import android.widget.TextView
-import androidx.core.view.allViews
 import app.screenreader.extensions.getSpannable
-import app.screenreader.extensions.toSpannable
+import app.screenreader.helpers.Accessibility
 import app.screenreader.model.Action
 
 interface ActionViewCallback {
@@ -31,15 +29,7 @@ abstract class ActionView(context: Context, private val action: Action, layoutId
     init {
         val view = inflate(context, layoutId, this)
         view.accessibilityDelegate = FocusDelegate()
-
-        // Set accessibility language for all subviews
-        if (view is ViewGroup) {
-            view.allViews.forEach { v ->
-                if (v is TextView) {
-                    v.text = context.toSpannable(v.text.toString())
-                }
-            }
-        }
+        Accessibility.languages(view) // Set language of children
     }
 
     /** Accessibility */

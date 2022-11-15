@@ -4,14 +4,12 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.content.*
 import android.text.SpannableString
-import android.text.SpannableStringBuilder
 import android.text.TextUtils
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AlertDialog
-import androidx.core.text.toSpannable
 import app.screenreader.R
 import app.screenreader.extensions.*
 import app.screenreader.helpers.Accessibility

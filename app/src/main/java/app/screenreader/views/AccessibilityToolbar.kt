@@ -3,10 +3,9 @@ package app.screenreader.views
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
+import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.appcompat.widget.ActionMenuView
-import androidx.appcompat.widget.AppCompatTextView
-import androidx.core.text.toSpannable
 import app.screenreader.extensions.toSpannable
 import app.screenreader.extensions.toast
 import app.screenreader.helpers.Accessibility
@@ -28,7 +27,7 @@ class AccessibilityToolbar @JvmOverloads constructor(
         setOnHierarchyChangeListener(object : OnHierarchyChangeListener {
             override fun onChildViewAdded(parent: View?, child: View?) {
                 // Title view?
-                if (child is AppCompatTextView) {
+                if (child is TextView) {
                     // Mark title as heading
                     Accessibility.heading(child)
 
@@ -44,9 +43,10 @@ class AccessibilityToolbar @JvmOverloads constructor(
                 if (child is ActionMenuView) {
                     child.setOnHierarchyChangeListener(object : OnHierarchyChangeListener {
                         override fun onChildViewAdded(parent: View?, child: View?) {
-                            // Mark menu items as button
+                            // Mark menu items as button & set language
                             if (child is ActionMenuItemView) {
                                 Accessibility.button(child)
+                                Accessibility.language(child)
                             }
                         }
 
