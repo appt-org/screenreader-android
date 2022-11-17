@@ -22,6 +22,7 @@
     <string name="action_stop">Stop</string>
     <string name="action_continue">Continue</string>
     <string name="action_skip">Skip</string>
+    <string name="action_completed">Completed</string>
 
     <!-- Home -->
     <string name="talkback_title">Learn TalkBack</string>
@@ -46,9 +47,6 @@
     <string name="talkback_section_5_paragraph_1">It is possible add a shortcut to toggle TalkBack on or off.</string>
     <string name="talkback_section_5_paragraph_2">Open the \'Settings\'-app, select \'Accessibility\', select \'Advanced settings\', select \'Volume up and down keys\' and choose \'TalkBack\'.</string>
     <string name="talkback_section_5_paragraph_3">Press and hold the volume up and down buttons for 3 seconds to turn TalkBack on or off.</string>
-
-    <!-- Training -->
-    <string name="training_accessibility_label">Completed. \'%1$s\'</string>
 
     <!-- More -->
     <string name="more_title">More information</string>
@@ -77,7 +75,7 @@
     <string name="topic_abra_url">https://abra.nl/</string>
 
     <string name="topic_sidn_fonds_title">SIDN fund</string>
-    <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/</string>
+    <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/excerpt</string>
 
     <!-- Directions -->
     <string name="direction_up">up</string>

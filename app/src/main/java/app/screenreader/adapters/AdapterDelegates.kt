@@ -1,12 +1,7 @@
 package app.screenreader.adapters
 
-import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.view.AccessibilityDelegateCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 import androidx.core.view.setPadding
 import app.screenreader.R
 import app.screenreader.extensions.getSpannable
@@ -15,6 +10,9 @@ import app.screenreader.model.Training
 import com.hannesdorfmann.adapterdelegates4.dsl.adapterDelegate
 import app.screenreader.extensions.setVisible
 import app.screenreader.helpers.Accessibility
+import app.screenreader.helpers.Accessibility.setAccessibilityButton
+import app.screenreader.helpers.Accessibility.setAccessibilityLabel
+import app.screenreader.helpers.Accessibility.setAccessibilityState
 import app.screenreader.model.Header
 
 fun headerAdapterDelegate() = adapterDelegate<Header, Any>(R.layout.view_header) {
@@ -22,7 +20,7 @@ fun headerAdapterDelegate() = adapterDelegate<Header, Any>(R.layout.view_header)
 
     bind {
         header.text = item.title(context)
-        setAccessibilityHeading(header)
+        Accessibility.heading(header, true)
     }
 }
 
@@ -58,6 +56,8 @@ inline fun <reified T : Item> itemAdapterDelegate(crossinline callback: (T) -> U
             callback(item)
         }
 
+        Accessibility.button(itemView)
+
         bind {
             textView.text = item.title(context)
         }
@@ -79,36 +79,15 @@ inline fun <reified T : Training> trainingAdapterDelegate(crossinline callback: 
 
             textView.text = title
 
+            Accessibility.label(itemView, title)
+            Accessibility.button(itemView, true)
+
             if (completed) {
                 imageView.setVisible(true)
-                Accessibility.label(itemView, context.getSpannable(R.string.training_accessibility_label, title))
+                Accessibility.state(itemView, context.getSpannable(R.string.action_completed))
             } else {
                 imageView.setVisible(false)
-                Accessibility.label(itemView, title)
+                Accessibility.state(itemView, null)
             }
         }
     }
-
-private fun setAccessibilityButtonDelegate(view: View) {
-    ViewCompat.setAccessibilityDelegate(view, object : AccessibilityDelegateCompat() {
-        override fun onInitializeAccessibilityNodeInfo(
-            host: View,
-            info: AccessibilityNodeInfoCompat
-        ) {
-            super.onInitializeAccessibilityNodeInfo(host, info)
-            info.className = Button::class.java.name
-        }
-    })
-}
-
-private fun setAccessibilityHeading(header: View){
-    ViewCompat.setAccessibilityDelegate(header, object : AccessibilityDelegateCompat() {
-        override fun onInitializeAccessibilityNodeInfo(
-            host: View,
-            info: AccessibilityNodeInfoCompat
-        ) {
-            super.onInitializeAccessibilityNodeInfo(host, info)
-            info.isHeading = true
-        }
-    })
-}

@@ -2,13 +2,18 @@ package app.screenreader.helpers
 
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Context
+import android.graphics.Region
+import android.os.Build
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityManager
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.hardware.display.DisplayManagerCompat
 import androidx.core.view.AccessibilityDelegateCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.accessibility.AccessibilityEventCompat
@@ -132,9 +137,7 @@ object Accessibility {
      * @param isHeading Value to apply
      */
     fun heading(view: View, isHeading: Boolean = true): View {
-        accessibilityDelegate(view) { _, info ->
-            info.isHeading = isHeading
-        }
+        ViewCompat.setAccessibilityHeading(view, isHeading)
         return view
     }
 
@@ -169,8 +172,23 @@ object Accessibility {
      *
      * @param isButton Value to apply
      */
-    fun View.setAsAccessibilityButton(isButton: Boolean = true): View {
+    fun View.setAccessibilityButton(isButton: Boolean = true): View {
         return button(this, isButton)
+    }
+
+    /**
+     * Helper method to set the state description for a view
+     */
+    fun state(view: View, state: CharSequence?): View {
+        ViewCompat.setStateDescription(view, state)
+        return view
+    }
+
+    /**
+     * Helper method to set the state description for a view
+     */
+    fun View.setAccessibilityState(state: String): View {
+        return state(this, state)
     }
 
     /**
@@ -275,30 +293,6 @@ object Accessibility {
     }
 
     /**
-     * Applies the current app language to string resources
-     *
-     * @param view The view
-     */
-    fun language(view: View) {
-        val contentDescription = view.contentDescription
-        if (contentDescription != null && contentDescription.isNotEmpty()) {
-            view.contentDescription = view.context.toSpannable(contentDescription)
-        }
-
-        val tooltip = view.tooltipText
-        if (tooltip != null && tooltip.isNotEmpty()) {
-            view.tooltipText = view.context.toSpannable(tooltip)
-        }
-
-        if (view is TextView) {
-            val text = view.text
-            if (text != null && text.isNotEmpty()) {
-                view.text = view.context.toSpannable(text)
-            }
-        }
-    }
-
-    /**
      * Applies the current app language to all descendants of a view
      *
      * @param view The view
@@ -310,6 +304,32 @@ object Accessibility {
             }
         } else {
             language(view)
+        }
+    }
+
+    /**
+     * Applies the current app language to string resources
+     *
+     * @param view The view
+     */
+    fun language(view: View) {
+        val contentDescription = view.contentDescription
+        if (contentDescription != null && contentDescription.isNotEmpty()) {
+            view.contentDescription = view.context.toSpannable(contentDescription)
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val tooltip = view.tooltipText
+            if (tooltip != null && tooltip.isNotEmpty()) {
+                view.tooltipText = view.context.toSpannable(tooltip)
+            }
+        }
+
+        if (view is TextView) {
+            val text = view.text
+            if (text != null && text.isNotEmpty()) {
+                view.text = view.context.toSpannable(text)
+            }
         }
     }
 }

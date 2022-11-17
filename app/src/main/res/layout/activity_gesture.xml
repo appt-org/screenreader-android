@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:focusable="true"
-        android:clickable="true">
+        android:clickable="true"
+        android:importantForAccessibility="yes">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,7 +24,8 @@
             android:gravity="center"
             android:orientation="vertical"
             android:focusable="false"
-            android:clickable="false">
+            android:clickable="false"
+            android:importantForAccessibility="no">
 
             <TextView style="@style/Widget.TextView.Bold"
                 android:id="@+id/titleTextView"
@@ -31,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:focusable="false"
                 android:clickable="false"
+                android:importantForAccessibility="no"
                 android:gravity="center"
                 android:textSize="20sp"
                 android:text="Titel" />
@@ -42,6 +45,7 @@
                 android:layout_marginTop="8dp"
                 android:focusable="false"
                 android:clickable="false"
+                android:importantForAccessibility="no"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:text="Uitleg"/>
@@ -52,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:focusable="false"
                 android:clickable="false"
+                android:importantForAccessibility="no"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:textColor="@color/red"
@@ -66,6 +71,9 @@
                 android:layout_weight="1"
                 android:layout_marginTop="16dp"
                 android:scaleType="fitCenter"
+                android:focusable="false"
+                android:clickable="false"
+                android:importantForAccessibility="no"
                 tools:src="@drawable/gesture_one_finger_double_tap"/>
         </LinearLayout>
     </FrameLayout>

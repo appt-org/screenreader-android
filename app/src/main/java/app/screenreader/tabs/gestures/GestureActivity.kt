@@ -92,7 +92,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
 
         // Setup instructions
         if (instructions) {
-            Accessibility.label(container, String.format("%s: %s", titleTextView.text, descriptionTextView.text))
+            Accessibility.label(container, String.format("%s. %s", titleTextView.text, descriptionTextView.text))
         } else {
             descriptionTextView.setVisible(false)
             gestureImageView.setVisible(false)

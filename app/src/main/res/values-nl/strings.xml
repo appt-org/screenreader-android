@@ -17,6 +17,7 @@
     <string name="action_stop">Stoppen</string>
     <string name="action_continue">Doorgaan</string>
     <string name="action_skip">Overslaan</string>
+    <string name="action_completed">Afgerond</string>
 
     <!-- TalkBack -->
     <string name="talkback_title">TalkBack leren</string>
@@ -41,9 +42,6 @@
     <string name="talkback_section_5_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uit te schakelen.</string>
     <string name="talkback_section_5_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en kies voor \'TalkBack\'.</string>
     <string name="talkback_section_5_paragraph_3">Houd de volume omhoog en omlaag knoppen 3 seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
-
-    <!-- Training -->
-    <string name="training_accessibility_label">Afgerond. \'%1$s\'</string>
 
     <!-- More -->
     <string name="more_title">Meer informatie</string>
