@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#e048d0</color>
-    <color name="highlight">#80e048d0</color>
+    <color name="primary">#F967E9</color>
+    <color name="highlight">#80F967E9</color>
+    <color name="error">#FF3333</color>
 
-    <color name="foreground">#eee</color>
-    <color name="background">#000</color>
-    <color name="divider">#383838</color>
+    <color name="background">#1C1C1C</color>
+    <color name="foreground">#FFF</color>
+
+    <color name="divider">#333</color>
+    <color name="disabled">#858585</color>
 </resources>

@@ -69,10 +69,10 @@
     <string name="topic_source_url">https://github.com/appt-org/screenreader-android</string>
 
     <string name="topic_stichting_appt_title">Appt Foundation</string>
-    <string name="topic_stichting_appt_url">https://appt.org</string>
+    <string name="topic_stichting_appt_url">https://appt.org/en</string>
 
     <string name="topic_abra_title">Abra</string>
-    <string name="topic_abra_url">https://abra.nl/</string>
+    <string name="topic_abra_url">https://abra.nl/en</string>
 
     <string name="topic_sidn_fonds_title">SIDN fund</string>
     <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/excerpt</string>

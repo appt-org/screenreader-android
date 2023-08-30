@@ -4,15 +4,16 @@
     <color name="colorPrimaryDark">@color/background</color>
     <color name="colorAccent">@color/primary</color>
 
-    <color name="primary">#cc00b9</color>
-    <color name="highlight">#80cc00b9</color>
-
-    <color name="red">#f00</color>
     <color name="black">#000</color>
-    <color name="white">#fff</color>
+    <color name="white">#FFF</color>
 
-    <color name="foreground">#111</color>
-    <color name="background">#fff</color>
-    <color name="divider">#c6c6c6</color>
+    <color name="primary">#CC00B9</color>
+    <color name="highlight">#80CC00B9</color>
+    <color name="error">#DD0000</color>
+
+    <color name="background">#FFF</color>
+    <color name="foreground">#000</color>
+
+    <color name="divider">#CCC</color>
     <color name="disabled">#757575</color>
 </resources>
