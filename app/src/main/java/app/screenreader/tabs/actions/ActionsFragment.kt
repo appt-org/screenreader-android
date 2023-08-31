@@ -55,10 +55,7 @@ class ActionsFragment: ListFragment() {
 
         if (resultCode == Activity.RESULT_OK) {
             adapter.notifyDataSetChanged()
-
-            if (Preferences.getActionsCompleted() >= 1) {
-                activity?.requestReview()
-            }
+            activity?.requestReview()
         }
     }
 

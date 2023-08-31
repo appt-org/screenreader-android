@@ -45,50 +45,42 @@ object Preferences {
 
     /* Gesture */
 
-    fun isGestureCompleted(gesture: Gesture): Boolean {
+    fun isActionCompleted(gesture: Gesture): Boolean {
         return getBoolean(gesture.toString())
     }
 
-    fun setGestureCompleted(gesture: Gesture, completed: Boolean) {
+    fun isActionCompleted(gesture: Gesture, completed: Boolean) {
         setBoolean(gesture.toString(), completed)
     }
 
     fun getGesturesCompleted(): Int {
         var count = 0
-        Gesture.all().forEach { gesture ->
-            if (isGestureCompleted(gesture)) {
+        Gesture.values().forEach { gesture ->
+            if (isActionCompleted(gesture)) {
                 count++
             }
         }
         return count
     }
 
-    fun isGesturesCompleted(): Boolean {
-        return getGesturesCompleted() == Gesture.all().size
-    }
-
     /* Action */
 
-    fun isGestureCompleted(action: Action): Boolean {
+    fun isActionCompleted(action: Action): Boolean {
         return getBoolean(action.toString())
     }
 
-    fun setGestureCompleted(action: Action, completed: Boolean) {
+    fun isActionCompleted(action: Action, completed: Boolean) {
         setBoolean(action.toString(), completed)
     }
 
     fun getActionsCompleted(): Int {
         var count = 0
-        Gesture.all().forEach { gesture ->
-            if (isGestureCompleted(gesture)) {
+        Action.values().forEach { action ->
+            if (isActionCompleted(action)) {
                 count++
             }
         }
         return count
-    }
-
-    fun isActionsCompleted(): Boolean {
-        return getGesturesCompleted() == Gesture.all().size
     }
 
     /* Review */

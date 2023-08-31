@@ -140,10 +140,10 @@ enum class Gesture(
     }
 
     override fun completed(context: Context): Boolean {
-        return Preferences.isGestureCompleted(this)
+        return Preferences.isActionCompleted(this)
     }
     override fun completed(context: Context, completed: Boolean) {
-        Preferences.setGestureCompleted(this, completed)
+        Preferences.isActionCompleted(this, completed)
     }
 
     companion object {

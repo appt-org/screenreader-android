@@ -96,10 +96,7 @@ class GesturesFragment : ListFragment() {
 
         if (resultCode == Activity.RESULT_OK) {
             adapter.notifyDataSetChanged()
-
-            if (Preferences.getGesturesCompleted() >= 5) {
-                activity?.requestReview()
-            }
+            activity?.requestReview()
         }
     }
 

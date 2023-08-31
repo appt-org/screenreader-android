@@ -47,7 +47,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
     private lateinit var gestureView: GestureView
 
     private var dialog: AlertDialog? = null
-    private var errorLimit = 10
+    private var errorLimit = 5
     private var errorCount = 0
     private var finished = false
 

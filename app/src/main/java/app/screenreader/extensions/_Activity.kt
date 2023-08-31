@@ -12,6 +12,12 @@ fun Activity.requestReview() {
         return
     }
 
+    // At least 5 completed events
+    val count = Preferences.getGesturesCompleted() + Preferences.getActionsCompleted()
+    if (count < 5) {
+        return
+    }
+
     // Check if user wants to leave a review
     AlertDialog.Builder(this)
         .setTitle(getSpannable(R.string.app_review))
