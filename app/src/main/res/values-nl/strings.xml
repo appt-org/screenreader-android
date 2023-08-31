@@ -2,6 +2,7 @@
     <!-- App -->
     <string name="app_name">ScreenReader</string>
     <string name="app_language">nl-NL</string>
+    <string name="app_review">Vind je de ScreenReader app handig? Laat een recensie achter!</string>
 
     <!-- General -->
     <string name="error">Foutmelding</string>

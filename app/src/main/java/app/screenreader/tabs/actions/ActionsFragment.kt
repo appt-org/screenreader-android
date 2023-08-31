@@ -7,8 +7,10 @@ import app.screenreader.adapters.headerAdapterDelegate
 import app.screenreader.adapters.textResourceAdapterDelegate
 import app.screenreader.adapters.trainingAdapterDelegate
 import app.screenreader.extensions.doSetAction
+import app.screenreader.extensions.requestReview
 import app.screenreader.extensions.showDialog
 import app.screenreader.helpers.Accessibility
+import app.screenreader.helpers.Preferences
 import app.screenreader.model.Action
 import app.screenreader.model.Header
 import app.screenreader.widgets.ListFragment
@@ -53,6 +55,10 @@ class ActionsFragment: ListFragment() {
 
         if (resultCode == Activity.RESULT_OK) {
             adapter.notifyDataSetChanged()
+
+            if (Preferences.getActionsCompleted() >= 1) {
+                activity?.requestReview()
+            }
         }
     }
 

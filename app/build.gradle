@@ -67,4 +67,8 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:30.0.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
+    // Google Play
+    implementation "com.google.android.play:review:2.0.1"
+    implementation "com.google.android.play:review-ktx:2.0.1"
 }

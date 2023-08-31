@@ -13,6 +13,7 @@ import app.screenreader.model.Gesture
 object Preferences {
 
     private lateinit var preferences: SharedPreferences
+    private val REVIEW = "review"
 
     fun init(context: Context) {
         preferences = context.getSharedPreferences("preferences", Context.MODE_PRIVATE)
@@ -44,21 +45,59 @@ object Preferences {
 
     /* Gesture */
 
-    fun isCompleted(gesture: Gesture): Boolean {
+    fun isGestureCompleted(gesture: Gesture): Boolean {
         return getBoolean(gesture.toString())
     }
 
-    fun setCompleted(gesture: Gesture, completed: Boolean) {
+    fun setGestureCompleted(gesture: Gesture, completed: Boolean) {
         setBoolean(gesture.toString(), completed)
+    }
+
+    fun getGesturesCompleted(): Int {
+        var count = 0
+        Gesture.all().forEach { gesture ->
+            if (isGestureCompleted(gesture)) {
+                count++
+            }
+        }
+        return count
+    }
+
+    fun isGesturesCompleted(): Boolean {
+        return getGesturesCompleted() == Gesture.all().size
     }
 
     /* Action */
 
-    fun isCompleted(action: Action): Boolean {
+    fun isGestureCompleted(action: Action): Boolean {
         return getBoolean(action.toString())
     }
 
-    fun setCompleted(action: Action, completed: Boolean) {
+    fun setGestureCompleted(action: Action, completed: Boolean) {
         setBoolean(action.toString(), completed)
+    }
+
+    fun getActionsCompleted(): Int {
+        var count = 0
+        Gesture.all().forEach { gesture ->
+            if (isGestureCompleted(gesture)) {
+                count++
+            }
+        }
+        return count
+    }
+
+    fun isActionsCompleted(): Boolean {
+        return getGesturesCompleted() == Gesture.all().size
+    }
+
+    /* Review */
+
+    fun isReviewPrompted(): Boolean {
+        return getBoolean(REVIEW)
+    }
+
+    fun setReviewPrompted(value: Boolean) {
+        setBoolean(REVIEW, value)
     }
 }

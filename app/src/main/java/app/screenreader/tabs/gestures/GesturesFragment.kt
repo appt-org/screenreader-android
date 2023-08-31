@@ -11,6 +11,7 @@ import app.screenreader.adapters.textResourceAdapterDelegate
 import app.screenreader.adapters.trainingAdapterDelegate
 import app.screenreader.extensions.*
 import app.screenreader.helpers.Accessibility
+import app.screenreader.helpers.Preferences
 import app.screenreader.model.Gesture
 import app.screenreader.model.Header
 import app.screenreader.services.ScreenReaderService
@@ -95,6 +96,10 @@ class GesturesFragment : ListFragment() {
 
         if (resultCode == Activity.RESULT_OK) {
             adapter.notifyDataSetChanged()
+
+            if (Preferences.getGesturesCompleted() >= 5) {
+                activity?.requestReview()
+            }
         }
     }
 

@@ -7,6 +7,7 @@
     <!-- App -->
     <string name="app_name">ScreenReader</string>
     <string name="app_language">en-US</string>
+    <string name="app_review">Do you find the ScreenReader app useful? Please leave a review!</string>
 
     <!-- General -->
     <string name="error">Error</string>

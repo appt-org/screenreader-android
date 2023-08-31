@@ -56,7 +56,7 @@ fun Context.toSpannable(string: CharSequence): SpannableString {
 
 /** Dialog **/
 
-fun Context.showDialog(title: SpannableString, message: SpannableString?, callback: (() -> Unit)? = null) {
+fun Context.showDialog(title: CharSequence, message: CharSequence?, callback: (() -> Unit)? = null) {
     if (this is Activity && this.isFinishing) {
         return
     }
@@ -89,14 +89,14 @@ fun Context.showError(messageId: Int, callback: (() -> Unit)? = null) {
     showDialog(R.string.error, messageId, callback)
 }
 
-fun Context.showError(message: SpannableString, callback: (() -> Unit)? = null) {
+fun Context.showError(message: CharSequence, callback: (() -> Unit)? = null) {
     showDialog(getSpannable(R.string.error), message, callback)
 }
 
 /** Toast **/
 fun toast(
     context: Context?,
-    message: SpannableString?,
+    message: CharSequence?,
     duration: Long = 3000,
     callback: (() -> Unit)? = null
 ) {

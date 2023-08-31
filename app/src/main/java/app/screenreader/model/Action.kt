@@ -39,9 +39,9 @@ enum class Action: Training, Serializable {
     }
 
     override fun completed(context: Context): Boolean {
-        return Preferences.isCompleted(this)
+        return Preferences.isGestureCompleted(this)
     }
     override fun completed(context: Context, completed: Boolean) {
-        Preferences.setCompleted(this, true)
+        Preferences.setGestureCompleted(this, true)
     }
 }

@@ -17,6 +17,7 @@ class MainApplication : Application() {
 
         // Preferences
         Preferences.init(this)
+        Preferences.setReviewPrompted(false)
 
         // Calligraphy
         ViewPump.init(
