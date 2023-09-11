@@ -35,6 +35,11 @@ class TalkBackFragment: ListFragment() {
         Header(R.string.talkback_section_5),
         R.string.talkback_section_5_paragraph_1,
         R.string.talkback_section_5_paragraph_2,
-        R.string.talkback_section_5_paragraph_3
+        R.string.talkback_section_5_paragraph_3,
+        R.string.talkback_section_5_paragraph_4,
+        Header(R.string.talkback_section_6),
+        R.string.talkback_section_6_paragraph_1,
+        R.string.talkback_section_6_paragraph_2,
+        R.string.talkback_section_6_paragraph_3,
     )
 }
