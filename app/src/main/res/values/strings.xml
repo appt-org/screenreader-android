@@ -34,21 +34,26 @@
     <string name="talkback_section_1_paragraph_1">TalkBack is an essential accessibility feature for visually impaired and blind people to control their devices.</string>
     <string name="talkback_section_1_paragraph_2">By using gestures you can navigate between elements on the screen. Each element is announced as it is selected.</string>
     <string name="talkback_section_1_paragraph_3">This allows you to control your device even if you can\'t see the screen.</string>
+
     <string name="talkback_section_2">Learning TalkBack</string>
     <string name="talkback_section_2_paragraph_1">The ScreenReader app helps you learn all TalkBack gestures. In addition, you can learn some common actions.</string>
     <string name="talkback_section_2_paragraph_2">Are you dependent on the screen reader? This app can help you to improve your skills.</string>
-    <string name="talkback_section_2_paragraph_3">Are you an app developer? Use the learnings to improve the accessibility of your apps.</string>
+    <string name="talkback_section_2_paragraph_3">Are you an app developer? Use the screen reader to improve the accessibility of your apps.</string>
+
     <string name="talkback_section_3">Turning on TalkBack</string>
     <string name="talkback_section_3_paragraph_1">Open the \'Settings\' app, select \'Accessibility\', select \'TalkBack\' and turn on the switch.</string>
     <string name="talkback_section_3_paragraph_2">Note: from this point on, you need to swipe to navigate and double tap to activate.</string>
     <string name="talkback_section_3_paragraph_3">Are these steps not correct for your device? Search for  \'TalkBack\' to jump to the correct screen.</string>
+
     <string name="talkback_section_4">Turning off TalkBack</string>
     <string name="talkback_section_4_paragraph_1">Open the \'Settings\' app, select \'Accessibility\', select \'TalkBack\' and turn off the switch. Or search for \'TalkBack\' to jump to this screen.</string>
+
     <string name="talkback_section_5">Customize TalkBack gestures</string>
     <string name="talkback_section_5_paragraph_1">It is possible to customize TalkBack\'s gestures.</string>
     <string name="talkback_section_5_paragraph_2">Open the \'Settings\'-app, select \'Accessibility\', select \'TalkBack\', select \'Settings\' and choose \'Customize gestures\'.</string>
     <string name="talkback_section_5_paragraph_3">Choose a gesture from the list to customize the action.</string>
-    <string name="talkback_section_5_paragraph_4">Note: the ScreenReader app uses the default TalkBack gestures.</string>
+    <string name="talkback_section_5_paragraph_4">Note: the ScreenReader app uses the default TalkBack settings.</string>
+
     <string name="talkback_section_6">Add TalkBack shortcut</string>
     <string name="talkback_section_6_paragraph_1">It is possible add a shortcut to toggle TalkBack on or off.</string>
     <string name="talkback_section_6_paragraph_2">Open the \'Settings\'-app, select \'Accessibility\', select \'Advanced settings\', select \'Volume up and down keys\' and choose \'TalkBack\'.</string>
