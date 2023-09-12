@@ -41,17 +41,18 @@
     <string name="talkback_section_3_paragraph_3">Kloppen deze stappen niet voor jouw toestel? Zoek dan op \'TalkBack\' om naar het juiste scherm te springen.</string>
 
     <string name="talkback_section_4">TalkBack uitschakelen</string>
-    <string name="talkback_section_4_paragraph_1">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\' en zet de schakelaar uit. Of zoek op \'TalkBack\' om naar dit scherm te verspringen.</string>
+    <string name="talkback_section_4_paragraph_1">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\' en zet de schakelaar uit.</string>
+    <string name="talkback_section_4_paragraph_2">Je kunt ook zoeken naar \'TalkBack\' om naar dit scherm te verspringen.</string>
 
     <string name="talkback_section_5">TalkBack gebaren aanpassen</string>
     <string name="talkback_section_5_paragraph_1">Het is mogelijk om de TalkBack gebaren aan te passen.</string>
-    <string name="talkback_section_5_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\', selecteer \'Instellingen\' en kies voor \'Gebaren aanpassen\'.</string>
+    <string name="talkback_section_5_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'TalkBack\', selecteer \'Instellingen\' en selecteer \'Gebaren aanpassen\'.</string>
     <string name="talkback_section_5_paragraph_3">Kies een gebaar uit de lijst om de actie aan te passen.</string>
     <string name="talkback_section_5_paragraph_4">Let op: de ScreenReader app maakt gebruik van de standaard TalkBack instellingen.</string>
 
     <string name="talkback_section_6">TalkBack snelkoppeling toevoegen</string>
     <string name="talkback_section_6_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uit te schakelen.</string>
-    <string name="talkback_section_6_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en kies voor \'TalkBack\'.</string>
+    <string name="talkback_section_6_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en selecteer \'TalkBack\' in de lijst.</string>
     <string name="talkback_section_6_paragraph_3">Houd de volume omhoog en omlaag knoppen 3 seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
 
     <!-- More -->
@@ -75,10 +76,10 @@
     <string name="topic_source_url">https://github.com/appt-org/screenreader-android</string>
 
     <string name="topic_stichting_appt_title">Stichting Appt</string>
-    <string name="topic_stichting_appt_url">https://appt.nl</string>
+    <string name="topic_stichting_appt_url">https://appt.org/nl</string>
 
     <string name="topic_abra_title">Abra</string>
-    <string name="topic_abra_url">https://abra.nl</string>
+    <string name="topic_abra_url">https://abra.ai</string>
 
     <string name="topic_sidn_fonds_title">SIDN fonds</string>
     <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl</string>

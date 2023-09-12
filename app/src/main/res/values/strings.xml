@@ -46,7 +46,8 @@
     <string name="talkback_section_3_paragraph_3">Are these steps not correct for your device? Search for  \'TalkBack\' to jump to the correct screen.</string>
 
     <string name="talkback_section_4">Turning off TalkBack</string>
-    <string name="talkback_section_4_paragraph_1">Open the \'Settings\' app, select \'Accessibility\', select \'TalkBack\' and turn off the switch. Or search for \'TalkBack\' to jump to this screen.</string>
+    <string name="talkback_section_4_paragraph_1">Open the \'Settings\' app, select \'Accessibility\', select \'TalkBack\' and turn off the switch.</string>
+    <string name="talkback_section_4_paragraph_2">You can also search for \'TalkBack\' to jump to this screen.</string>
 
     <string name="talkback_section_5">Customize TalkBack gestures</string>
     <string name="talkback_section_5_paragraph_1">It is possible to customize TalkBack\'s gestures.</string>
@@ -56,7 +57,7 @@
 
     <string name="talkback_section_6">Add TalkBack shortcut</string>
     <string name="talkback_section_6_paragraph_1">It is possible add a shortcut to toggle TalkBack on or off.</string>
-    <string name="talkback_section_6_paragraph_2">Open the \'Settings\'-app, select \'Accessibility\', select \'Advanced settings\', select \'Volume up and down keys\' and choose \'TalkBack\'.</string>
+    <string name="talkback_section_6_paragraph_2">Open the \'Settings\'-app, select \'Accessibility\', select \'Advanced settings\', select \'Volume up and down keys\' and choose \'TalkBack\' from the list.</string>
     <string name="talkback_section_6_paragraph_3">Press and hold the volume up and down buttons for 3 seconds to turn TalkBack on or off.</string>
 
     <!-- More -->
@@ -83,7 +84,7 @@
     <string name="topic_stichting_appt_url">https://appt.org/en</string>
 
     <string name="topic_abra_title">Abra</string>
-    <string name="topic_abra_url">https://abra.nl/en</string>
+    <string name="topic_abra_url">https://abra.ai</string>
 
     <string name="topic_sidn_fonds_title">SIDN fund</string>
     <string name="topic_sidn_fonds_url">https://www.sidnfonds.nl/excerpt</string>

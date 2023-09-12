@@ -161,8 +161,8 @@
     </style>
 
     <style name="Widget.BottomNavigationView.TextAppearance.Inactive" parent="Widget.BottomNavigationView.TextAppearance">
-        <item name="fontPath">@string/font_regular</item>
-        <item name="android:fontFamily">@font/open_sans_regular</item>
+        <item name="fontPath">@string/font_semibold</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
     </style>
 
     <style name="Widget.Button" parent="TextAppearance.AppCompat.Button">
