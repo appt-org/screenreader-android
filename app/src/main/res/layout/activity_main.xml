@@ -28,6 +28,7 @@
     <include layout="@layout/view_divider" />
 
     <app.screenreader.views.AccessibilityBottomNavigationView
+        style="@style/Widget.BottomNavigationView"
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

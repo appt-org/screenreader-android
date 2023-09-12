@@ -146,6 +146,23 @@
         <item name="fontPath">@string/font_semibold</item>
         <item name="android:fontFamily">@font/open_sans_semibold</item>
         <item name="labelVisibilityMode">labeled</item>
+
+        <item name="itemTextAppearanceActive">@style/Widget.BottomNavigationView.TextAppearance.Active</item>
+        <item name="itemTextAppearanceInactive">@style/Widget.BottomNavigationView.TextAppearance.Inactive</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView.TextAppearance">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView.TextAppearance.Active" parent="Widget.BottomNavigationView.TextAppearance">
+        <item name="fontPath">@string/font_bold</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView.TextAppearance.Inactive" parent="Widget.BottomNavigationView.TextAppearance">
+        <item name="fontPath">@string/font_regular</item>
+        <item name="android:fontFamily">@font/open_sans_regular</item>
     </style>
 
     <style name="Widget.Button" parent="TextAppearance.AppCompat.Button">
