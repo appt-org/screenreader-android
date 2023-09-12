@@ -137,8 +137,8 @@ fun Context.openWebsite(url: String) {
 }
 
 fun Context.openWebsite(uri: Uri) {
-    val darkBackground = resources.getColor(R.color.black, null)
-    val lightBackground = resources.getColor(R.color.white, null)
+    val darkBackground = resources.getColor(R.color.background_dark, null)
+    val lightBackground = resources.getColor(R.color.background_light, null)
 
     val dark = CustomTabColorSchemeParams.Builder()
         .setToolbarColor(darkBackground)

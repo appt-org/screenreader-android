@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">@color/background</color>
     <color name="colorAccent">@color/primary</color>
 
-    <color name="black">#000</color>
-    <color name="white">#FFF</color>
+    <color name="background_dark">#1C1C1C</color>
+    <color name="background_light">#FFF</color>
 
     <color name="primary">#CC00B9</color>
     <color name="highlight">#80CC00B9</color>
