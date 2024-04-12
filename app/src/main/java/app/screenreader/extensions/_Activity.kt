@@ -23,7 +23,6 @@ fun Activity.requestReview() {
         .setTitle(getSpannable(R.string.app_review))
         .setPositiveButton(getSpannable(R.string.action_continue)) { _, _ ->
             // Request review flow
-            Preferences.setReviewPrompted(true)
             val manager = ReviewManagerFactory.create(this)
             val request = manager.requestReviewFlow()
 
@@ -39,4 +38,7 @@ fun Activity.requestReview() {
             // Ignored
         }
         .show()
+
+    // Prevent re-prompting, no matter how the user responds
+    Preferences.setReviewPrompted(true)
 }
