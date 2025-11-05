@@ -3,16 +3,15 @@ package app.screenreader.tabs.actions
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.content.Intent
 import android.text.SpannableString
+import android.widget.ScrollView
 import app.screenreader.R
 import app.screenreader.extensions.doGetAction
-import app.screenreader.extensions.identifier
 import app.screenreader.extensions.showDialog
 import app.screenreader.helpers.Accessibility
 import app.screenreader.helpers.Events
 import app.screenreader.model.Action
 import app.screenreader.views.actions.ActionViewCallback
 import app.screenreader.widgets.ToolbarActivity
-import kotlinx.android.synthetic.main.activity_action.*
 
 /**
  * Created by Jan Jaap de Groot on 16/11/2020
@@ -22,6 +21,7 @@ class ActionActivity: ToolbarActivity(), ActionViewCallback {
 
     private val startTime = System.currentTimeMillis()
 
+    private val scrollView get() = findViewById<ScrollView>(R.id.scrollView)
     private val action: Action by lazy {
         intent.doGetAction() ?: Action.SELECT
     }

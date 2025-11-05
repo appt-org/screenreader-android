@@ -1,7 +1,6 @@
 package app.screenreader.views.actions
 
 import android.content.Context
-import kotlinx.android.synthetic.main.action_selection.view.*
 import app.screenreader.R
 import app.screenreader.model.Action
 import app.screenreader.views.TrainingField
@@ -17,7 +16,7 @@ class SelectionActionView(context: Context) : ActionView(
 ), TrainingField.OnSelectionChangedListener {
 
     init {
-        trainingField.callback = this
+        findViewById<TrainingField>(R.id.trainingField).callback = this
     }
 
     override fun onSelectionChanged(start: Int, end: Int) {

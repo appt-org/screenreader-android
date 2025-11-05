@@ -82,7 +82,7 @@ open class SwipeGestureView(
         private val THRESHOLD = 15
         private var path = arrayListOf<Direction>()
 
-        override fun onScroll(e1: MotionEvent, e2: MotionEvent, distanceX: Float, distanceY: Float): Boolean {
+        override fun onScroll(e1: MotionEvent?, e2: MotionEvent, distanceX: Float, distanceY: Float): Boolean {
             Log.d(TAG, "onScroll, distanceX: $distanceX, distanceY: $distanceY")
 
             // Determine direction
@@ -127,7 +127,7 @@ open class SwipeGestureView(
             return super.onScroll(e1, e2, distanceX, distanceY)
         }
 
-        override fun onFling(e1: MotionEvent, e2: MotionEvent, velocityX: Float, velocityY: Float): Boolean {
+        override fun onFling(e1: MotionEvent?, e2: MotionEvent, velocityX: Float, velocityY: Float): Boolean {
             Log.d(TAG, "onFling, velocityX: $velocityX, velocityY: $velocityY")
 
             if (path.isNotEmpty()) {

@@ -1,8 +1,13 @@
 package app.screenreader.extensions
 
+import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.BroadcastReceiver
 import android.content.Context
+import android.content.IntentFilter
 import android.net.Uri
+import android.os.Build
+import android.os.Build.VERSION.SDK_INT
 import android.os.LocaleList
 import android.text.SpannableString
 import android.text.Spanned
@@ -164,4 +169,23 @@ fun Context.openWebsite(uri: Uri) {
         .build()
 
     intent.launchUrl(this, uri)
+}
+
+@SuppressLint("UnspecifiedRegisterReceiverFlag")
+fun Context.registerBroadcastReceiver(
+    broadcastReceiver: BroadcastReceiver,
+    intentFilter: IntentFilter?,
+    exported: Boolean = true,
+) {
+
+    when {
+        SDK_INT >= Build.VERSION_CODES.TIRAMISU -> {
+            val exportedFlag =
+                if (exported) Context.RECEIVER_EXPORTED else Context.RECEIVER_NOT_EXPORTED
+
+            registerReceiver(broadcastReceiver, intentFilter, exportedFlag)
+        }
+
+        else -> registerReceiver(broadcastReceiver, intentFilter)
+    }
 }

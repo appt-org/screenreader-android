@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
 import app.screenreader.R
 import app.screenreader.extensions.*
@@ -20,7 +21,6 @@ import app.screenreader.services.ScreenReaderService
 import app.screenreader.views.gestures.GestureView
 import app.screenreader.views.gestures.GestureViewCallback
 import app.screenreader.widgets.ToolbarActivity
-import kotlinx.android.synthetic.main.activity_gesture.*
 import java.util.*
 import kotlin.concurrent.schedule
 
@@ -50,6 +50,12 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
     private var errorLimit = 5
     private var errorCount = 0
     private var finished = false
+
+    private val container get() = findViewById<FrameLayout>(R.id.container)
+    private val titleTextView get() = findViewById<android.widget.TextView>(R.id.titleTextView)
+    private val descriptionTextView get() = findViewById<android.widget.TextView>(R.id.descriptionTextView)
+    private val gestureImageView get() = findViewById<android.widget.ImageView>(R.id.gestureImageView)
+    private val feedbackTextView get() = findViewById<android.widget.TextView>(R.id.feedbackTextView)
 
     private val isPracticing: Boolean
         get() = gestures.isNotEmpty()
@@ -102,7 +108,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         // Listen to events from ScreenReaderService
         val filter = IntentFilter()
         filter.addAction(Constants.SERVICE_ACTION)
-        registerReceiver(receiver, filter)
+        registerBroadcastReceiver(receiver, filter)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

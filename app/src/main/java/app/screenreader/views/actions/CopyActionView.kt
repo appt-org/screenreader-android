@@ -4,7 +4,7 @@ import android.content.ClipboardManager
 import android.content.Context
 import app.screenreader.R
 import app.screenreader.model.Action
-import kotlinx.android.synthetic.main.action_copy.view.*
+import app.screenreader.views.TrainingField
 
 /**
  * Created by Jan Jaap de Groot on 23/11/2020
@@ -24,7 +24,7 @@ class CopyActionView(context: Context): ActionView(
                 if (clip.itemCount > 0) {
                     val text = clip.getItemAt(0).text
 
-                    if (trainingField.text.toString().contains(text, false)) {
+                    if (findViewById<TrainingField>(R.id.trainingField).text.toString().contains(text, false)) {
                         correct()
                     } else {
                         incorrect(R.string.action_copy_incorrect)
