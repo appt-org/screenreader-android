@@ -11,5 +11,6 @@ class Constants {
         val SERVICE_ACTION = "SCREENREADER_SERVICE"
         val SERVICE_GESTURE = "GESTURE"
         val SERVICE_KILLED = "KILLED"
+        val SERVICE_MOTION_EVENT = "MOTION_EVENT"
     }
 }

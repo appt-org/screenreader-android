@@ -3,11 +3,13 @@ package app.screenreader.tabs.gestures
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.content.*
+import android.os.Build
 import android.text.SpannableString
 import android.text.TextUtils
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.MotionEvent
 import android.view.View
 import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
@@ -73,6 +75,15 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
                     dialog?.onAccessibilityGesture(gesture) // Pass gesture to AlertDialog if shown.
                 } else {
                     gestureView.onAccessibilityGesture(gesture) // Pass gesture to GestureView.
+                }
+            }
+
+            // Received motion event (from ScreenReaderService intercepting raw touch events)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                (intent?.getParcelableExtra(Constants.SERVICE_MOTION_EVENT, MotionEvent::class.java))?.let { event ->
+                    Log.d(TAG, "Received motion event from service: action=${event.action}, pointerCount=${event.pointerCount}")
+                    gestureView.dispatchTouchEvent(event)
+                    event.recycle()
                 }
             }
         }

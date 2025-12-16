@@ -384,4 +384,6 @@
     <string name="service_enable_message">You need to enable the \'ScreenReader gestures\' service to allow the ScreenReader app to recognize gestures when TalkBack is activated.\n\nFollow these steps:\n\n1. Navigate to the \'Activate\' button. Double-tap to open the accessibility settings of your device.\n\n2. Navigate to installed service named \'ScreenReader gestures\'. Double tap to open the settings screen.\n\n3. Navigate to the switch. Double-tap to enable the service.\n\n4. Navigate to the \'Allow\' option. Double tap to activate the service.\n\n5. You have successfully completed the activation process. The gesture training should start automatically.</string>
     <string name="service_talkback_enabled_title">TalkBack is enabled</string>
     <string name="service_talkback_enabled_message">Due to technical limitations, you can\'t practice gestures while TalkBack is enabled at this time.</string>
+    <string name="talkback_not_supported_title">Android version not supported</string>
+    <string name="talkback_not_supported_message">Gesture training with TalkBack enabled requires Android 12L (API 32) or higher.\n\nYour device is running an older version of Android. Please disable TalkBack to practice gestures, or update your device to a newer Android version.</string>
 </resources>

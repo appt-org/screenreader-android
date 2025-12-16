@@ -101,9 +101,18 @@ class GesturesFragment : ListFragment() {
     }
 
     private fun onGestureClicked(gesture: Gesture) {
+        val context = this.context ?: return
+
+        // If TalkBack is enabled, check if device supports gesture training with TalkBack
         if (Accessibility.screenReader(context)) {
-            context?.showDialog(R.string.service_talkback_enabled_title, R.string.service_talkback_enabled_message)
-            return
+            if (!ScreenReaderService.supportsTalkBackCompatibility()) {
+                showTalkBackNotSupportedDialog()
+                return
+            }
+            if (!ScreenReaderService.isEnabled(context)) {
+                ScreenReaderService.enable(context, true)
+                return
+            }
         }
 
         startActivity<GestureActivity>(REQUEST_CODE_SINGLE) {
@@ -112,10 +121,7 @@ class GesturesFragment : ListFragment() {
     }
 
     private fun onPracticeClicked() {
-        if (Accessibility.screenReader(context)) {
-            context?.showDialog(R.string.service_talkback_enabled_title, R.string.service_talkback_enabled_message)
-            return
-        }
+        // Note: TalkBack compatibility is handled in startPractice() by enabling ScreenReaderService
 
         AlertDialog.Builder(requireContext())
             .setTitle(context?.getSpannable(R.string.gestures_practice_title))
@@ -136,6 +142,10 @@ class GesturesFragment : ListFragment() {
         val context = this.context ?: return
 
         if (Accessibility.screenReader(context)) {
+            if (!ScreenReaderService.supportsTalkBackCompatibility()) {
+                showTalkBackNotSupportedDialog()
+                return
+            }
             if (!ScreenReaderService.isEnabled(context)) {
                 ScreenReaderService.enable(context, instructions)
                 return
@@ -148,6 +158,16 @@ class GesturesFragment : ListFragment() {
             setGestures(gestures)
             setInstructions(instructions)
         }
+    }
+
+    private fun showTalkBackNotSupportedDialog() {
+        AlertDialog.Builder(requireContext())
+            .setTitle(context?.getSpannable(R.string.talkback_not_supported_title))
+            .setMessage(context?.getSpannable(R.string.talkback_not_supported_message))
+            .setPositiveButton(context?.getSpannable(R.string.action_ok)) { _, _ ->
+                // Dismiss
+            }
+            .show()
     }
 
     companion object {

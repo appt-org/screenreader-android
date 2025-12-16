@@ -9,7 +9,6 @@ import app.screenreader.extensions.isEnd
 import app.screenreader.extensions.isStart
 import app.screenreader.model.Direction
 import app.screenreader.model.Gesture
-import app.screenreader.services.ScreenReaderService
 
 /**
  * Created by Jan Jaap de Groot on 15/10/2020
@@ -27,6 +26,7 @@ open class SwipeGestureView(
         super.onTouchEvent(event)
 
         if (event != null) {
+            Log.d(TAG, "onTouchEvent: action=${event.action}, pointerCount=${event.pointerCount}")
             gestureDetector.onTouchEvent(event)
 
             if (event.isStart()) {
@@ -42,14 +42,18 @@ open class SwipeGestureView(
     }
 
     override fun onAccessibilityGesture(gesture: Gesture) {
+        Log.d(TAG, "onAccessibilityGesture received: $gesture (expected: ${this.gesture})")
         when {
             this.gesture == gesture -> {
+                Log.d(TAG, "Gesture matches! Marking correct.")
                 correct()
             }
             gesture.directions.isNotEmpty() -> {
+                Log.d(TAG, "Gesture has directions but doesn't match, calling onSwipe")
                 onSwipe(gesture.directions)
             }
             else -> {
+                Log.d(TAG, "Unknown gesture, marking incorrect")
                 incorrect(R.string.gestures_feedback_swipe)
             }
         }
@@ -59,7 +63,7 @@ open class SwipeGestureView(
         swiped = true
 
         val fingers = directions.map { it.fingers }.average().toInt()
-        Log.d(TAG, "onSwipe: ${directions.joinToString { it.toString() }}, fingers: $fingers")
+        Log.d(TAG, "onSwipe (touch-based): directions=${directions.joinToString { it.toString() }}, fingers=$fingers, expected=${gesture.fingers}")
 
         when {
             fingers != gesture.fingers -> {
@@ -85,29 +89,27 @@ open class SwipeGestureView(
         override fun onScroll(e1: MotionEvent?, e2: MotionEvent, distanceX: Float, distanceY: Float): Boolean {
             Log.d(TAG, "onScroll, distanceX: $distanceX, distanceY: $distanceY")
 
-            // Determine direction
+            // Determine direction based on the DOMINANT axis (larger absolute movement)
             var direction = Direction.UNKNOWN
-            when {
-                distanceX > THRESHOLD -> {
-                    direction = Direction.LEFT
-                }
-                distanceX < -THRESHOLD -> {
-                    direction = Direction.RIGHT
-                }
-                distanceY > THRESHOLD -> {
-                    direction = Direction.UP
-                }
-                distanceY < -THRESHOLD -> {
-                    direction = Direction.DOWN
+            val absX = kotlin.math.abs(distanceX)
+            val absY = kotlin.math.abs(distanceY)
+
+            // Only detect direction if movement exceeds threshold
+            // Prioritize the axis with larger movement to avoid detecting
+            // slight horizontal drift during vertical swipes (and vice versa)
+            if (absX > THRESHOLD || absY > THRESHOLD) {
+                if (absY >= absX) {
+                    // Vertical movement is dominant
+                    direction = if (distanceY > 0) Direction.UP else Direction.DOWN
+                } else {
+                    // Horizontal movement is dominant
+                    direction = if (distanceX > 0) Direction.LEFT else Direction.RIGHT
                 }
             }
 
             if (direction != Direction.UNKNOWN) {
                 // Determine amount of fingers
                 direction.fingers = e2.pointerCount ?: 1
-                if (ScreenReaderService.isEnabled(context)) {
-                    direction.fingers++
-                }
 
                 if (path.isEmpty()) {
                     // Add first direction
