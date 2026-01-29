@@ -57,8 +57,9 @@
 
     <string name="talkback_section_6">Add TalkBack shortcut</string>
     <string name="talkback_section_6_paragraph_1">It is possible add a shortcut to toggle TalkBack on or off.</string>
-    <string name="talkback_section_6_paragraph_2">Open the \'Settings\'-app, select \'Accessibility\', select \'Advanced settings\', select \'Volume up and down keys\' and choose \'TalkBack\' from the list.</string>
-    <string name="talkback_section_6_paragraph_3">Press and hold the volume up and down buttons for 3 seconds to turn TalkBack on or off.</string>
+    <string name="talkback_section_6_paragraph_2">Open the \'Settings\'-app, scroll down to select \'Accessibility\' and select \'Advanced settings\'.</string>
+    <string name="talkback_section_6_paragraph_3">Choose one of the accessibility shortcut options, for example: \'Accessibility button\', \'Side and Volume up keys\' or \'Volume up and down keys\'.</string>
+    <string name="talkback_section_6_paragraph_4">Select \'TalkBack\' and follow the instructions to activate the shortcut.</string>
 
     <!-- More -->
     <string name="more_title">More information</string>

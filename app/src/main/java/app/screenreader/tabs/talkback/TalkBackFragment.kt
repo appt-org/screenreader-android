@@ -42,5 +42,6 @@ class TalkBackFragment: ListFragment() {
         R.string.talkback_section_6_paragraph_1,
         R.string.talkback_section_6_paragraph_2,
         R.string.talkback_section_6_paragraph_3,
+        R.string.talkback_section_6_paragraph_4,
     )
 }

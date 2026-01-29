@@ -52,8 +52,9 @@
 
     <string name="talkback_section_6">TalkBack snelkoppeling toevoegen</string>
     <string name="talkback_section_6_paragraph_1">Het is mogelijk een snelkoppeling toe te voegen om TalkBack in- of uit te schakelen.</string>
-    <string name="talkback_section_6_paragraph_2">Open de \'Instellingen\'-app, selecteer \'Toegankelijkheid\', selecteer \'Geavanceerde instellingen\', selecteer \'Toetsen Volume omhoog en omlaag\' en selecteer \'TalkBack\' in de lijst.</string>
-    <string name="talkback_section_6_paragraph_3">Houd de volume omhoog en omlaag knoppen 3 seconden ingedrukt om TalkBack in- of uit te schakelen.</string>
+    <string name="talkback_section_6_paragraph_2">Open de \'Instellingen\'-app, scroll naar beneden en selecteer \'Toegankelijkheid\' en selecteer \'Geavanceerde instellingen\'.</string>
+    <string name="talkback_section_6_paragraph_3">Kies één van de snelkoppelingen, bijvoorbeeld: \'Knop Toegankelijkheid\', \'Zijtoets en toets Volume omhoog\' of \'Toetsen Volume omhoog en omlaag\'.</string>
+    <string name="talkback_section_6_paragraph_4">Selecteer \'TalkBack\' en volg de instructies om de snelkoppeling te activeren.</string>
 
     <!-- More -->
     <string name="more_title">Meer informatie</string>
