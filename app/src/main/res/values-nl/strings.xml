@@ -154,21 +154,21 @@
     <!-- Gestures: two finger swipe -->
     <string name="gestures_two_fingers_swipe">Vegen met 2 vingers</string>
 
-    <string name="gesture_two_finger_swipe_up_title">Omhoog scrollen</string>
+    <string name="gesture_two_finger_swipe_up_title">Omlaag scrollen</string>
     <string name="gesture_two_finger_swipe_up_description">Veeg met 2 vingers omhoog.</string>
-    <string name="gesture_two_finger_swipe_up_explanation">In lijsten kun je met dit gebaar omhoog scrollen.</string>
+    <string name="gesture_two_finger_swipe_up_explanation">In lijsten kun je met dit gebaar omlaag scrollen.</string>
 
-    <string name="gesture_two_finger_swipe_down_title">Omlaag scrollen</string>
+    <string name="gesture_two_finger_swipe_down_title">Omhoog scrollen</string>
     <string name="gesture_two_finger_swipe_down_description">Veeg met 2 vingers omlaag.</string>
-    <string name="gesture_two_finger_swipe_down_explanation">In lijsten kun je met dit gebaar omlaag scrollen.</string>
+    <string name="gesture_two_finger_swipe_down_explanation">In lijsten kun je met dit gebaar omhoog scrollen.</string>
 
-    <string name="gesture_two_finger_swipe_right_title">Naar rechts scrollen</string>
+    <string name="gesture_two_finger_swipe_right_title">Naar links scrollen</string>
     <string name="gesture_two_finger_swipe_right_description">Veeg met 2 vingers naar rechts.</string>
-    <string name="gesture_two_finger_swipe_right_explanation">In lijsten kun je met dit gebaar naar rechts scrollen. Soms kun je ook naar het volgende scherm navigeren met dit gebaar.</string>
+    <string name="gesture_two_finger_swipe_right_explanation">In lijsten kun je met dit gebaar naar links scrollen. Soms kun je ook naar het vorige scherm navigeren met dit gebaar.</string>
 
-    <string name="gesture_two_finger_swipe_left_title">Naar links scrollen</string>
+    <string name="gesture_two_finger_swipe_left_title">Naar rechts scrollen</string>
     <string name="gesture_two_finger_swipe_left_description">Veeg met 2 vingers naar links.</string>
-    <string name="gesture_two_finger_swipe_left_explanation">In lijsten kun je met dit gebaar naar links scrollen. Soms kun je ook naar het vorige scherm navigeren met dit gebaar.</string>
+    <string name="gesture_two_finger_swipe_left_explanation">In lijsten kun je met dit gebaar naar rechts scrollen. Soms kun je ook naar het volgende scherm navigeren met dit gebaar.</string>
 
     <!-- Three finger swipe -->
     <string name="gestures_three_fingers_swipe">Vegen met 3 vingers</string>
