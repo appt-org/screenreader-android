@@ -65,7 +65,7 @@ dependencies {
     implementation 'it.sephiroth.android.library.uigestures:uigesture-recognizer-kotlin:1.2.7'
 
     // Firebase
-    implementation platform('com.google.firebase:firebase-bom:32.2.3')
+    implementation platform('com.google.firebase:firebase-bom:33.16.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
 
