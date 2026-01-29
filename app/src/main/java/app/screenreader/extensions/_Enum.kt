@@ -7,4 +7,4 @@ import java.util.*
  * Copyright 2020 Stichting Appt
  */
 inline val <reified T : Enum<T>> T.identifier
-    get() = toString().toLowerCase(Locale.ROOT)
+    get() = toString().lowercase(Locale.ROOT)

@@ -334,25 +334,27 @@
     <string name="action_select_title">Tekst selecteren</string>
     <string name="action_select_instruction_1">Met TalkBack kun je tekst selecteren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_select_instruction_2">Zo selecteer je tekst:</string>
-    <string name="action_select_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
-    <string name="action_select_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
-    <string name="action_select_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
-    <string name="action_select_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
-    <string name="action_select_instruction_7">Selecteer alle tekst in het onderstaande invoerveld om de training af te ronden.</string>
+    <string name="action_select_instruction_3">1. Navigeer naar het veld waar je tekst wilt selecteren.</string>
+    <string name="action_select_instruction_4">2. Dubbeltik om te starten met bewerken.</string>
+    <string name="action_select_instruction_5">3. Tik op het scherm met 3 vingers aan om het contextmenu te openen.</string>
+    <string name="action_select_instruction_6">4. Kies de optie \'Acties\'.</string>
+    <string name="action_select_instruction_7">5. Kies de optie \'Alles selecteren\'.</string>
+    <string name="action_select_instruction_8">Selecteer alle tekst in het onderstaande invoerveld om de training af te ronden.</string>
     <string name="action_select_text">Selecteer deze tekst</string>
 
     <!-- Action: copy -->
     <string name="action_copy_title">Tekst kopiëren</string>
     <string name="action_copy_instruction_1">Met TalkBack kun je tekst kopiëren. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_copy_instruction_2">Zo kopieer je tekst:</string>
-    <string name="action_copy_instruction_3">1. Markeer het veld waar je tekst wilt selecteren.</string>
-    <string name="action_copy_instruction_4">2. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
-    <string name="action_copy_instruction_5">3. Kies de optie \'Bewerkingopties\'.</string>
-    <string name="action_copy_instruction_6">4. Kies de optie \'Alles selecteren\'.</string>
-    <string name="action_copy_instruction_7">5. Veeg nogmaals met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
-    <string name="action_copy_instruction_8">6. Kies de optie \'Bewerkingopties\'.</string>
-    <string name="action_copy_instruction_9">7. Kies de optie \'Kopiëren\'.</string>
-    <string name="action_copy_instruction_10">Kopieer alle tekst uit het onderstaande invoerveld om de training af te ronden.</string>
+    <string name="action_copy_instruction_3">1. Navigeer naar het veld waar je tekst wilt selecteren.</string>
+    <string name="action_copy_instruction_4">2. Dubbeltik om te starten met bewerken.</string>
+    <string name="action_copy_instruction_5">3. Tik op het scherm met 3 vingers aan om het contextmenu te openen.</string>
+    <string name="action_copy_instruction_6">4. Kies de optie \'Acties\'.</string>
+    <string name="action_copy_instruction_7">5. Kies de optie \'Alles selecteren\'.</string>
+    <string name="action_copy_instruction_8">6. Raak het scherm met 3 vingers aan om het contextmenu opnieuw te openen.</string>
+    <string name="action_copy_instruction_9">7. Kies de optie \'Bewerkingopties\'.</string>
+    <string name="action_copy_instruction_10">8. Kies de optie \'Kopiëren\'.</string>
+    <string name="action_copy_instruction_11">Kopieer alle tekst uit het onderstaande invoerveld om de training af te ronden.</string>
     <string name="action_copy_text">Kopieer deze tekst</string>
     <string name="action_copy_incorrect">Kopieer tekst uit het invoerveld.</string>
 
@@ -360,10 +362,10 @@
     <string name="action_paste_title">Tekst plakken</string>
     <string name="action_paste_instruction_1">Met TalkBack kun je tekst plakken. Je kunt hiervoor gebruik maken van het contextmenu.</string>
     <string name="action_paste_instruction_2">Zo plak je tekst:</string>
-    <string name="action_paste_instruction_3">1. Markeer het veld waar je tekst wilt plakken.</string>
-    <string name="action_paste_instruction_4">2. Tik met 1 vinger 2 keer op het scherm en houd 3 seconden vast. Laat je vinger daarna los om te starten met bewerken.</string>
-    <string name="action_paste_instruction_5">3. Veeg met 1 vinger in een vloeiende beweging omlaag en dan naar rechts om het contextmenu te openen.</string>
-    <string name="action_paste_instruction_6">4. Kies de optie \'Bewerkingopties\'.</string>
+    <string name="action_paste_instruction_3">1. Navigeer naar het veld waar je tekst wilt plakken.</string>
+    <string name="action_paste_instruction_4">2. Dubbeltik om te starten met bewerken.</string>
+    <string name="action_paste_instruction_5">3. Tik op het scherm met 3 vingers aan om het contextmenu te openen.</string>
+    <string name="action_paste_instruction_6">4. Kies de optie \'Acties\'.</string>
     <string name="action_paste_instruction_7">5. Kies de optie \'Plakken\'.</string>
     <string name="action_paste_instruction_8">Plak tekst in het onderstaande invoerveld om de training af te ronden.</string>
     <string name="action_paste_text">Plak hier vanuit je klembord</string>
@@ -379,4 +381,6 @@
     <string name="service_enable_message">Je moet de \'ScreenReader gebaren\'-service aanzetten zodat de ScreenReader app gebaren kan detecteren wanneer TalkBack geactiveerd is.\n\nVolg deze stappen:\n\n1. Navigeer naar de \'Activeren\' knop. Dubbeltik om de toegankelijkheidsinstellingen van je toestel te openen.\n2. Navigeer naar geïnstalleerde service met de naam \'ScreenReader gebaren\'. Dubbeltik om het instellingenscherm te openen.\n3. Navigeer naar de schakelaar. Dubbeltik om de service toe te staan.\n4. Navigeer naar \'Toestaan\'. Dubbeltik om de service te activeren.\n5. Je hebt het activatieproces succesvol doorlopen. De gebaren training wordt automatisch gestart.\n\nNavigeer nu naar de \'Activeren\' knop om het activatieproces te starten.</string>
     <string name="service_talkback_enabled_title">TalkBack staat aan</string>
     <string name="service_talkback_enabled_message">Wegens technische beperkingen kun je op dit moment geen gebaren oefenen wanneer TalkBack aan staat.</string>
+    <string name="talkback_not_supported_title">Android-versie niet ondersteund</string>
+    <string name="talkback_not_supported_message">Gebaren oefenen met TalkBack ingeschakeld vereist Android 12L (API 32) of hoger.\n\nJe apparaat draait op een oudere versie van Android. Schakel TalkBack uit om gebaren te oefenen, of werk je apparaat bij naar een nieuwere Android-versie.</string>
 </resources>

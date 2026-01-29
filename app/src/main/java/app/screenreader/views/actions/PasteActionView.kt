@@ -2,9 +2,9 @@ package app.screenreader.views.actions
 
 import android.content.Context
 import androidx.core.widget.addTextChangedListener
-import kotlinx.android.synthetic.main.action_paste.view.*
 import app.screenreader.R
 import app.screenreader.model.Action
+import app.screenreader.views.TrainingField
 
 /**
  * Created by Jan Jaap de Groot on 23/11/2020
@@ -17,7 +17,7 @@ class PasteActionView(context: Context) : ActionView(
 ) {
 
     init {
-        trainingField.addTextChangedListener(beforeTextChanged = { _, _, _, after ->
+        findViewById<TrainingField>(R.id.trainingField).addTextChangedListener(beforeTextChanged = { _, _, _, after ->
             if (after > 1) {
                 correct()
             }

@@ -18,6 +18,9 @@ fun Activity.requestReview() {
         return
     }
 
+    // Ensure user only gets prompted once per session
+    Preferences.setReviewPrompted(true)
+
     // Check if user wants to leave a review
     AlertDialog.Builder(this)
         .setTitle(getSpannable(R.string.app_review))
@@ -38,7 +41,4 @@ fun Activity.requestReview() {
             // Ignored
         }
         .show()
-
-    // Prevent re-prompting, no matter how the user responds
-    Preferences.setReviewPrompted(true)
 }

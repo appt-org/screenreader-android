@@ -101,10 +101,25 @@ class GesturesFragment : ListFragment() {
     }
 
     private fun onGestureClicked(gesture: Gesture) {
+        val context = this.context ?: return
+
+        // If TalkBack is enabled, show that gesture training is not available
         if (Accessibility.screenReader(context)) {
             context?.showDialog(R.string.service_talkback_enabled_title, R.string.service_talkback_enabled_message)
             return
         }
+
+        // TODO: If TalkBack is enabled, use ScreenReaderService to allow gesture training
+//        if (Accessibility.screenReader(context)) {
+//            if (!ScreenReaderService.supportsTalkBackCompatibility()) {
+//                showTalkBackNotSupportedDialog()
+//                return
+//            }
+//            if (!ScreenReaderService.isEnabled(context)) {
+//                ScreenReaderService.enable(context, true)
+//                return
+//            }
+//        }
 
         startActivity<GestureActivity>(REQUEST_CODE_SINGLE) {
             setGesture(gesture)
@@ -112,30 +127,36 @@ class GesturesFragment : ListFragment() {
     }
 
     private fun onPracticeClicked() {
+        // If TalkBack is enabled, show that gesture training is not available
         if (Accessibility.screenReader(context)) {
             context?.showDialog(R.string.service_talkback_enabled_title, R.string.service_talkback_enabled_message)
             return
         }
 
-        AlertDialog.Builder(requireContext())
-            .setTitle(context?.getSpannable(R.string.gestures_practice_title))
-            .setMessage(context?.getSpannable(R.string.gestures_practice_message))
-            .setPositiveButton(context?.getSpannable(R.string.gestures_practice_with_instructions)) { _, _ ->
-                startPractice(true)
-            }
-            .setNegativeButton(context?.getSpannable(R.string.gestures_practice_without_instructions)) { _, _ ->
-                startPractice(false)
-            }
-            .setNeutralButton(context?.getSpannable(R.string.action_cancel)) { _, _ ->
-                // Cancels dialog
-            }
-            .show()
+        // TODO: If TalkBack is enabled, use ScreenReaderService to allow gesture training
+//        AlertDialog.Builder(requireContext())
+//            .setTitle(context?.getSpannable(R.string.gestures_practice_title))
+//            .setMessage(context?.getSpannable(R.string.gestures_practice_message))
+//            .setPositiveButton(context?.getSpannable(R.string.gestures_practice_with_instructions)) { _, _ ->
+//                startPractice(true)
+//            }
+//            .setNegativeButton(context?.getSpannable(R.string.gestures_practice_without_instructions)) { _, _ ->
+//                startPractice(false)
+//            }
+//            .setNeutralButton(context?.getSpannable(R.string.action_cancel)) { _, _ ->
+//                // Cancels dialog
+//            }
+//            .show()
     }
 
     private fun startPractice(instructions: Boolean) {
         val context = this.context ?: return
 
         if (Accessibility.screenReader(context)) {
+            if (!ScreenReaderService.supportsTalkBackCompatibility()) {
+                showTalkBackNotSupportedDialog()
+                return
+            }
             if (!ScreenReaderService.isEnabled(context)) {
                 ScreenReaderService.enable(context, instructions)
                 return
@@ -148,6 +169,16 @@ class GesturesFragment : ListFragment() {
             setGestures(gestures)
             setInstructions(instructions)
         }
+    }
+
+    private fun showTalkBackNotSupportedDialog() {
+        AlertDialog.Builder(requireContext())
+            .setTitle(context?.getSpannable(R.string.talkback_not_supported_title))
+            .setMessage(context?.getSpannable(R.string.talkback_not_supported_message))
+            .setPositiveButton(context?.getSpannable(R.string.action_ok)) { _, _ ->
+                // Dismiss
+            }
+            .show()
     }
 
     companion object {

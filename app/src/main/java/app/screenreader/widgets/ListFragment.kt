@@ -3,12 +3,13 @@ package app.screenreader.widgets
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.RecyclerView
 import app.screenreader.R
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
-import kotlinx.android.synthetic.main.view_list.*
 
 abstract class ListFragment: BaseFragment() {
 
+    private val recyclerView get() = view?.findViewById<RecyclerView>(R.id.recyclerView)
     override fun getLayoutId(): Int {
         return R.layout.view_list
     }
@@ -22,10 +23,10 @@ abstract class ListFragment: BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         adapter.items = items
-        recyclerView.adapter = adapter
+        recyclerView?.adapter = adapter
 
         if (decoration) {
-            recyclerView.addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
+            recyclerView?.addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
         }
     }
 }

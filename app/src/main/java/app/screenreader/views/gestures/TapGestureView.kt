@@ -7,7 +7,6 @@ import app.screenreader.extensions.isEnd
 import app.screenreader.extensions.isStart
 import app.screenreader.model.Gesture
 import app.screenreader.model.Touch
-import app.screenreader.services.ScreenReaderService
 import app.screenreader.R
 
 /**
@@ -34,10 +33,6 @@ class TapGestureView(
             fingers = recognizer.touchesRequired
             taps = recognizer.tapsRequired
             hold = true
-        }
-
-        if (ScreenReaderService.isEnabled(context)) {
-            taps += 1
         }
 
         when {

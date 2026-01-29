@@ -40,6 +40,9 @@
         <TextView style="@style/Widget.TextView.Training"
             android:text="@string/action_copy_instruction_10" />
 
+        <TextView style="@style/Widget.TextView.Training"
+            android:text="@string/action_copy_instruction_11" />
+
         <!-- Action -->
         <app.screenreader.views.TrainingField
             style="@style/Widget.EditText.Training"

@@ -3,12 +3,15 @@ package app.screenreader.tabs.gestures
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.content.*
+import android.os.Build
 import android.text.SpannableString
 import android.text.TextUtils
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.MotionEvent
 import android.view.View
+import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
 import app.screenreader.R
 import app.screenreader.extensions.*
@@ -20,7 +23,6 @@ import app.screenreader.services.ScreenReaderService
 import app.screenreader.views.gestures.GestureView
 import app.screenreader.views.gestures.GestureViewCallback
 import app.screenreader.widgets.ToolbarActivity
-import kotlinx.android.synthetic.main.activity_gesture.*
 import java.util.*
 import kotlin.concurrent.schedule
 
@@ -51,6 +53,12 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
     private var errorCount = 0
     private var finished = false
 
+    private val container get() = findViewById<FrameLayout>(R.id.container)
+    private val titleTextView get() = findViewById<android.widget.TextView>(R.id.titleTextView)
+    private val descriptionTextView get() = findViewById<android.widget.TextView>(R.id.descriptionTextView)
+    private val gestureImageView get() = findViewById<android.widget.ImageView>(R.id.gestureImageView)
+    private val feedbackTextView get() = findViewById<android.widget.TextView>(R.id.feedbackTextView)
+
     private val isPracticing: Boolean
         get() = gestures.isNotEmpty()
 
@@ -67,6 +75,15 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
                     dialog?.onAccessibilityGesture(gesture) // Pass gesture to AlertDialog if shown.
                 } else {
                     gestureView.onAccessibilityGesture(gesture) // Pass gesture to GestureView.
+                }
+            }
+
+            // Received motion event (from ScreenReaderService intercepting raw touch events)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                (intent?.getParcelableExtra(Constants.SERVICE_MOTION_EVENT, MotionEvent::class.java))?.let { event ->
+                    Log.d(TAG, "Received motion event from service: action=${event.action}, pointerCount=${event.pointerCount}")
+                    gestureView.dispatchTouchEvent(event)
+                    event.recycle()
                 }
             }
         }
@@ -102,7 +119,7 @@ class GestureActivity: ToolbarActivity(), GestureViewCallback {
         // Listen to events from ScreenReaderService
         val filter = IntentFilter()
         filter.addAction(Constants.SERVICE_ACTION)
-        registerReceiver(receiver, filter)
+        registerBroadcastReceiver(receiver, filter)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

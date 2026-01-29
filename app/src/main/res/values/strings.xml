@@ -339,25 +339,27 @@
     <string name="action_select_title">Select text</string>
     <string name="action_select_instruction_1">TalkBack allows you to select text by using the context menu.</string>
     <string name="action_select_instruction_2">This is how you select text:</string>
-    <string name="action_select_instruction_3">1. Highlight the field where you want to select text.</string>
-    <string name="action_select_instruction_4">2. Swipe down and then right in a fluid motion to open the context menu.</string>
-    <string name="action_select_instruction_5">3. Choose the option \'Editing options\'.</string>
-    <string name="action_select_instruction_6">4. Choose the option \'Select all\'.</string>
-    <string name="action_select_instruction_7">Select all text from the edit box below to complete the training.</string>
+    <string name="action_select_instruction_3">1. Navigate to the field where you want to select text.</string>
+    <string name="action_select_instruction_4">2. Double tap to start editing.</string>
+    <string name="action_select_instruction_5">3. Tap the screen with 3 fingers to open the context menu.</string>
+    <string name="action_select_instruction_6">4. Choose the option \'Actions\'.</string>
+    <string name="action_select_instruction_7">5. Choose the option \'Select all\'.</string>
+    <string name="action_select_instruction_8">Select all text from the edit box below to complete the training.</string>
     <string name="action_select_text">Select this text</string>
 
     <!-- Action: copy -->
     <string name="action_copy_title">Copy text</string>
     <string name="action_copy_instruction_1">TalkBack allows you to copy text by using the context menu.</string>
     <string name="action_copy_instruction_2">This is how you copy text:</string>
-    <string name="action_copy_instruction_3">1. Highlight the field where you want to copy text.</string>
-    <string name="action_copy_instruction_4">2. Swipe down and then right in a fluid motion to open the context menu.</string>
-    <string name="action_copy_instruction_5">3. Choose the option \'Editing options\'.</string>
-    <string name="action_copy_instruction_6">4. Choose the option \'Select all\'.</string>
-    <string name="action_copy_instruction_7">5. Swipe down and then right in a fluid motion to open the context menu again.</string>
-    <string name="action_copy_instruction_8">6. Choose the option \'Editing options\'.</string>
-    <string name="action_copy_instruction_9">7. Choose the option \'Copy\'.</string>
-    <string name="action_copy_instruction_10">Copy all the text from the edit box below to complete the training.</string>
+    <string name="action_copy_instruction_3">1. Navigate the field where you want to copy text.</string>
+    <string name="action_copy_instruction_4">2. Double tap to start editing.</string>
+    <string name="action_copy_instruction_5">3. Tap the screen with 3 fingers to open the context menu.</string>
+    <string name="action_copy_instruction_6">4. Choose the option \'Actions\'.</string>
+    <string name="action_copy_instruction_7">5. Choose the option \'Select all\'.</string>
+    <string name="action_copy_instruction_8">6. Tap the screen with 3 fingers to open the context menu again.</string>
+    <string name="action_copy_instruction_9">7. Choose the option \'Actions\'.</string>
+    <string name="action_copy_instruction_10">8. Choose the option \'Copy\'.</string>
+    <string name="action_copy_instruction_11">Copy all the text from the edit box below to complete the training.</string>
     <string name="action_copy_text">Copy this text</string>
     <string name="action_copy_incorrect">Copy text from the input field.</string>
 
@@ -365,10 +367,10 @@
     <string name="action_paste_title">Paste text</string>
     <string name="action_paste_instruction_1">TalkBack allows you to paste text by using the context menu.</string>
     <string name="action_paste_instruction_2">This is how you paste text:</string>
-    <string name="action_paste_instruction_3">1. Highlight the field where you want to paste text.</string>
-    <string name="action_paste_instruction_4">2. Double tap with 1 finger and hold the screen for 3 seconds. Then release your finger to start editing.</string>
-    <string name="action_paste_instruction_5">3. Swipe down and then right in a fluid motion to open the context menu.</string>
-    <string name="action_paste_instruction_6">4. Choose the option \'Editing options\'.</string>
+    <string name="action_paste_instruction_3">1. Navigate to the field where you want to paste text.</string>
+    <string name="action_paste_instruction_4">2. Double tap to start editing.</string>
+    <string name="action_paste_instruction_5">3. Tap the screen with 3 fingers to open the context menu.</string>
+    <string name="action_paste_instruction_6">4. Choose the option \'Actions\'.</string>
     <string name="action_paste_instruction_7">5. Choose the option \'Paste\'.</string>
     <string name="action_paste_instruction_8">Paste text into the edit box below to complete the training.</string>
     <string name="action_paste_text">Paste here from your clipboard</string>
@@ -384,4 +386,6 @@
     <string name="service_enable_message">You need to enable the \'ScreenReader gestures\' service to allow the ScreenReader app to recognize gestures when TalkBack is activated.\n\nFollow these steps:\n\n1. Navigate to the \'Activate\' button. Double-tap to open the accessibility settings of your device.\n\n2. Navigate to installed service named \'ScreenReader gestures\'. Double tap to open the settings screen.\n\n3. Navigate to the switch. Double-tap to enable the service.\n\n4. Navigate to the \'Allow\' option. Double tap to activate the service.\n\n5. You have successfully completed the activation process. The gesture training should start automatically.</string>
     <string name="service_talkback_enabled_title">TalkBack is enabled</string>
     <string name="service_talkback_enabled_message">Due to technical limitations, you can\'t practice gestures while TalkBack is enabled at this time.</string>
+    <string name="talkback_not_supported_title">Android version not supported</string>
+    <string name="talkback_not_supported_message">Gesture training with TalkBack enabled requires Android 12L (API 32) or higher.\n\nYour device is running an older version of Android. Please disable TalkBack to practice gestures, or update your device to a newer Android version.</string>
 </resources>
