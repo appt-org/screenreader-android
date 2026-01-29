@@ -159,21 +159,21 @@
     <!-- Gestures: two finger swipe -->
     <string name="gestures_two_fingers_swipe">Swiping with 2 fingers</string>
 
-    <string name="gesture_two_finger_swipe_up_title">Scroll up</string>
+    <string name="gesture_two_finger_swipe_up_title">Scroll down</string>
     <string name="gesture_two_finger_swipe_up_description">Swipe up with 2 fingers.</string>
-    <string name="gesture_two_finger_swipe_up_explanation">In lists, you can scroll up with this gesture.</string>
+    <string name="gesture_two_finger_swipe_up_explanation">In lists, you can scroll down with this gesture.</string>
 
-    <string name="gesture_two_finger_swipe_down_title">Scroll down</string>
+    <string name="gesture_two_finger_swipe_down_title">Scroll up</string>
     <string name="gesture_two_finger_swipe_down_description">Swipe down with 2 fingers.</string>
-    <string name="gesture_two_finger_swipe_down_explanation">In lists, you can scroll down with this gesture.</string>
+    <string name="gesture_two_finger_swipe_down_explanation">In lists, you can scroll up with this gesture.</string>
 
-    <string name="gesture_two_finger_swipe_right_title">Scroll right</string>
+    <string name="gesture_two_finger_swipe_right_title">Scroll left</string>
     <string name="gesture_two_finger_swipe_right_description">Swipe right with 2 fingers.</string>
-    <string name="gesture_two_finger_swipe_right_explanation">In lists, you can use this gesture to scroll to the right. Sometimes you can also navigate to the next screen with this gesture.</string>
+    <string name="gesture_two_finger_swipe_right_explanation">In lists, you can use this gesture to scroll to the left. Sometimes you can also navigate to the previous screen with this gesture.</string>
 
-    <string name="gesture_two_finger_swipe_left_title">Scroll left</string>
+    <string name="gesture_two_finger_swipe_left_title">Scroll right</string>
     <string name="gesture_two_finger_swipe_left_description">Swipe left with 2 fingers.</string>
-    <string name="gesture_two_finger_swipe_left_explanation">In lists, you can use this gesture to scroll left. Sometimes you can also navigate to the previous screen with this gesture.</string>
+    <string name="gesture_two_finger_swipe_left_explanation">In lists, you can use this gesture to scroll right. Sometimes you can also navigate to the next screen with this gesture.</string>
 
     <!-- Three finger swipe -->
     <string name="gestures_three_fingers_swipe">Swiping with 3 fingers</string>

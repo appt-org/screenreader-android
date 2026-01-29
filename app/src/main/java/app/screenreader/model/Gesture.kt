@@ -23,6 +23,7 @@ enum class Gesture(
 ): Training, Serializable {
 
     ONE_FINGER_TOUCH(fingers = 1, taps = 1),
+
     ONE_FINGER_SWIPE_UP(fingers = 1, directions = arrayOf(Direction.UP)),
     ONE_FINGER_SWIPE_RIGHT(fingers = 1, directions = arrayOf(Direction.RIGHT)),
     ONE_FINGER_SWIPE_DOWN(fingers = 1, directions = arrayOf(Direction.DOWN)),
@@ -35,6 +36,21 @@ enum class Gesture(
 
     THREE_FINGER_SWIPE_UP(fingers = 3, directions = arrayOf(Direction.UP)),
     THREE_FINGER_SWIPE_DOWN(fingers = 3, directions = arrayOf(Direction.DOWN)),
+
+    //ONE_FINGER_SWIPE_UP_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.UP, Direction.RIGHT)),
+    ONE_FINGER_SWIPE_UP_THEN_DOWN(fingers = 1, directions = arrayOf(Direction.UP, Direction.DOWN)),
+    ONE_FINGER_SWIPE_UP_THEN_LEFT(fingers = 1, directions = arrayOf(Direction.UP, Direction.LEFT)),
+
+    ONE_FINGER_SWIPE_RIGHT_THEN_DOWN(fingers = 1, directions = arrayOf(Direction.RIGHT, Direction.DOWN)),
+    ONE_FINGER_SWIPE_RIGHT_THEN_LEFT(fingers = 1, directions = arrayOf(Direction.RIGHT, Direction.LEFT)),
+
+    ONE_FINGER_SWIPE_DOWN_THEN_UP(fingers = 1, directions = arrayOf(Direction.DOWN, Direction.UP)),
+    ONE_FINGER_SWIPE_DOWN_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.DOWN, Direction.RIGHT)),
+    ONE_FINGER_SWIPE_DOWN_THEN_LEFT(fingers = 1, directions = arrayOf(Direction.DOWN, Direction.LEFT)),
+
+    ONE_FINGER_SWIPE_LEFT_THEN_UP(fingers = 1, directions = arrayOf(Direction.LEFT, Direction.UP)),
+    ONE_FINGER_SWIPE_LEFT_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.LEFT, Direction.RIGHT)),
+    ONE_FINGER_SWIPE_LEFT_THEN_DOWN(fingers = 1, directions = arrayOf(Direction.LEFT, Direction.DOWN)),
 
     ONE_FINGER_DOUBLE_TAP(fingers = 1, taps = 2),
     ONE_FINGER_DOUBLE_TAP_HOLD(fingers = 1, taps = 2, hold = true),
@@ -52,22 +68,7 @@ enum class Gesture(
 
     FOUR_FINGER_TAP(fingers = 4, taps = 1),
     FOUR_FINGER_DOUBLE_TAP(fingers = 4, taps = 2),
-    FOUR_FINGER_DOUBLE_TAP_HOLD(fingers = 4, taps = 2, hold = true),
-
-    //ONE_FINGER_SWIPE_UP_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.UP, Direction.RIGHT)),
-    ONE_FINGER_SWIPE_UP_THEN_DOWN(fingers = 1, directions = arrayOf(Direction.UP, Direction.DOWN)),
-    ONE_FINGER_SWIPE_UP_THEN_LEFT(fingers = 1, directions = arrayOf(Direction.UP, Direction.LEFT)),
-
-    ONE_FINGER_SWIPE_RIGHT_THEN_DOWN(fingers = 1, directions = arrayOf(Direction.RIGHT, Direction.DOWN)),
-    ONE_FINGER_SWIPE_RIGHT_THEN_LEFT(fingers = 1, directions = arrayOf(Direction.RIGHT, Direction.LEFT)),
-
-    ONE_FINGER_SWIPE_DOWN_THEN_UP(fingers = 1, directions = arrayOf(Direction.DOWN, Direction.UP)),
-    ONE_FINGER_SWIPE_DOWN_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.DOWN, Direction.RIGHT)),
-    ONE_FINGER_SWIPE_DOWN_THEN_LEFT(fingers = 1, directions = arrayOf(Direction.DOWN, Direction.LEFT)),
-
-    ONE_FINGER_SWIPE_LEFT_THEN_UP(fingers = 1, directions = arrayOf(Direction.LEFT, Direction.UP)),
-    ONE_FINGER_SWIPE_LEFT_THEN_RIGHT(fingers = 1, directions = arrayOf(Direction.LEFT, Direction.RIGHT)),
-    ONE_FINGER_SWIPE_LEFT_THEN_DOWN(fingers = 1, directions = arrayOf(Direction.LEFT, Direction.DOWN));
+    FOUR_FINGER_DOUBLE_TAP_HOLD(fingers = 4, taps = 2, hold = true);
 
     private fun spannable(context: Context, property: String): SpannableString {
         return context.getSpannable("gesture_${identifier}_${property}")
@@ -85,6 +86,36 @@ enum class Gesture(
         return when (this) {
             ONE_FINGER_TOUCH -> {
                 TouchGestureView(context, this)
+            }
+
+            ONE_FINGER_SWIPE_UP,
+            ONE_FINGER_SWIPE_RIGHT,
+            ONE_FINGER_SWIPE_DOWN,
+            ONE_FINGER_SWIPE_LEFT,
+
+            TWO_FINGER_SWIPE_UP,
+            TWO_FINGER_SWIPE_RIGHT,
+            TWO_FINGER_SWIPE_DOWN,
+            TWO_FINGER_SWIPE_LEFT,
+
+            THREE_FINGER_SWIPE_UP,
+            THREE_FINGER_SWIPE_DOWN,
+
+            //ONE_FINGER_SWIPE_UP_THEN_RIGHT,
+            ONE_FINGER_SWIPE_UP_THEN_DOWN,
+            ONE_FINGER_SWIPE_UP_THEN_LEFT,
+
+            ONE_FINGER_SWIPE_RIGHT_THEN_DOWN,
+            ONE_FINGER_SWIPE_RIGHT_THEN_LEFT,
+
+            ONE_FINGER_SWIPE_DOWN_THEN_UP,
+            ONE_FINGER_SWIPE_DOWN_THEN_RIGHT,
+            ONE_FINGER_SWIPE_DOWN_THEN_LEFT,
+
+            ONE_FINGER_SWIPE_LEFT_THEN_UP,
+            ONE_FINGER_SWIPE_LEFT_THEN_RIGHT,
+            ONE_FINGER_SWIPE_LEFT_THEN_DOWN -> {
+                SwipeGestureView(context, this)
             }
 
             ONE_FINGER_DOUBLE_TAP,
@@ -105,36 +136,6 @@ enum class Gesture(
             FOUR_FINGER_DOUBLE_TAP,
             FOUR_FINGER_DOUBLE_TAP_HOLD -> {
                 TapGestureView(context, this)
-            }
-
-            ONE_FINGER_SWIPE_RIGHT,
-            ONE_FINGER_SWIPE_LEFT,
-            ONE_FINGER_SWIPE_DOWN,
-            ONE_FINGER_SWIPE_UP,
-
-            TWO_FINGER_SWIPE_DOWN,
-            TWO_FINGER_SWIPE_UP,
-            TWO_FINGER_SWIPE_RIGHT,
-            TWO_FINGER_SWIPE_LEFT,
-
-            THREE_FINGER_SWIPE_DOWN,
-            THREE_FINGER_SWIPE_UP,
-
-            //ONE_FINGER_SWIPE_UP_THEN_RIGHT,
-            ONE_FINGER_SWIPE_UP_THEN_DOWN,
-            ONE_FINGER_SWIPE_UP_THEN_LEFT,
-
-            ONE_FINGER_SWIPE_LEFT_THEN_UP,
-            ONE_FINGER_SWIPE_LEFT_THEN_RIGHT,
-            ONE_FINGER_SWIPE_LEFT_THEN_DOWN,
-
-            ONE_FINGER_SWIPE_RIGHT_THEN_DOWN,
-            ONE_FINGER_SWIPE_RIGHT_THEN_LEFT,
-
-            ONE_FINGER_SWIPE_DOWN_THEN_UP,
-            ONE_FINGER_SWIPE_DOWN_THEN_RIGHT,
-            ONE_FINGER_SWIPE_DOWN_THEN_LEFT -> {
-                SwipeGestureView(context, this)
             }
         }
     }
