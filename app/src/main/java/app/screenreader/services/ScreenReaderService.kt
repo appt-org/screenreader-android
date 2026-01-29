@@ -1,5 +1,6 @@
 package app.screenreader.services
 
+import android.accessibilityservice.AccessibilityGestureEvent
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
 import android.accessibilityservice.TouchInteractionController
@@ -15,6 +16,7 @@ import android.view.MotionEvent
 import android.view.WindowManager
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityManager
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.core.hardware.display.DisplayManagerCompat
@@ -23,6 +25,8 @@ import app.screenreader.R
 import app.screenreader.tabs.actions.ActionActivity
 import app.screenreader.tabs.gestures.GestureActivity
 import app.screenreader.extensions.getSpannable
+import app.screenreader.extensions.setGestures
+import app.screenreader.extensions.setInstructions
 import app.screenreader.model.Constants
 import app.screenreader.model.Gesture
 import java.io.Serializable
@@ -84,7 +88,7 @@ class ScreenReaderService: AccessibilityService() {
     }
 
     private fun setupTouchInteractionController() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S_V2) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             try {
                 // Use default display (ID = 0)
                 val displayId = android.view.Display.DEFAULT_DISPLAY
@@ -158,7 +162,7 @@ class ScreenReaderService: AccessibilityService() {
         Log.i(TAG, "onUnbind")
 
         // Cleanup TouchInteractionController
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S_V2) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             touchControllerCallback?.let { callback ->
                 touchController?.unregisterCallback(callback)
             }
@@ -205,8 +209,8 @@ class ScreenReaderService: AccessibilityService() {
         kill()
     }
 
-    override fun onGesture(gestureId: Int): Boolean {
-        Log.i(TAG, "onGesture called with gestureId: $gestureId")
+    private fun handleGesture(gestureId: Int): Boolean {
+        Log.i(TAG, "handleGesture called with gestureId: $gestureId")
 
         // Broadcast gesture to GestureActivity
         val gesture = Gesture.from(gestureId)
@@ -225,6 +229,18 @@ class ScreenReaderService: AccessibilityService() {
         }
 
         return true
+    }
+
+    @RequiresApi(Build.VERSION_CODES.R)
+    override fun onGesture(gestureEvent: AccessibilityGestureEvent): Boolean {
+        Log.i(TAG, "onGesture called with gestureEvent: $gestureEvent")
+        return handleGesture(gestureEvent.gestureId)
+    }
+
+    @Deprecated("Deprecated in API level 30 (Android 11)")
+    override fun onGesture(gestureId: Int): Boolean {
+        Log.i(TAG, "onGesture called with gestureId: $gestureId")
+        return handleGesture(gestureId)
     }
 
     private fun broadcast(key: String, value: Serializable) {
@@ -282,6 +298,12 @@ class ScreenReaderService: AccessibilityService() {
         gestures.forEach { gesture ->
             gesture.completed(this, false)
         }
+
+        val intent = Intent(this, GestureActivity::class.java)
+        intent.setGestures(gestures)
+        intent.setInstructions(instructions)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        startActivity(intent)
     }
 
     companion object {

@@ -9,7 +9,6 @@ import app.screenreader.model.Gesture
  * Created by Jan Jaap de Groot on 26/11/2020
  * Copyright 2020 Stichting Appt
  */
-
 object Preferences {
 
     private lateinit var preferences: SharedPreferences

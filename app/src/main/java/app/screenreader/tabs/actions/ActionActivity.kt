@@ -6,6 +6,7 @@ import android.text.SpannableString
 import android.widget.ScrollView
 import app.screenreader.R
 import app.screenreader.extensions.doGetAction
+import app.screenreader.extensions.identifier
 import app.screenreader.extensions.showDialog
 import app.screenreader.helpers.Accessibility
 import app.screenreader.helpers.Events

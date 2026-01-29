@@ -38,6 +38,10 @@
             android:id="@+id/textView7"
             android:text="@string/action_select_instruction_7" />
 
+        <TextView style="@style/Widget.TextView.Training"
+            android:id="@+id/textView8"
+            android:text="@string/action_select_instruction_8" />
+
         <!-- Action -->
         <app.screenreader.views.TrainingField
             style="@style/Widget.EditText.Training"
