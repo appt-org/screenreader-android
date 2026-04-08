@@ -10,6 +10,10 @@ plugins {
 android {
     compileSdk = 36
 
+    androidResources {
+        generateLocaleConfig = true
+    }
+
     defaultConfig {
         applicationId 'app.screenreader'
         minSdk 24
